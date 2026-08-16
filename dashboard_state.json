@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-16T14:55:34.079922Z",
+  "generated_at": "2026-08-16T17:58:00.296023Z",
   "pipeline1": {
     "total_processed": 1000,
     "live": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-08-16T14:05:48.729834",
+    "last_run": "2026-08-16T17:08:28.844057",
     "skip_reasons": {
-      "EarnKaro bot conversion failed": 189,
-      "No Real Photo (Image Fetch/Validation Failed)": 493,
-      "No product URL found": 22,
-      "Low Profit Margin (0-2%) / Blacklist": 134,
-      "Already exists on website": 162
+      "No Real Photo (Image Fetch/Validation Failed)": 524,
+      "EarnKaro bot conversion failed": 177,
+      "Already exists on website": 153,
+      "No product URL found": 20,
+      "Low Profit Margin (0-2%) / Blacklist": 126
     },
     "profit_tiers": {
-      "Unknown": 866,
-      "Low": 134
+      "Unknown": 874,
+      "Low": 126
     },
     "timeline": [
       {
         "date": "2026-08-04",
-        "count": 199
+        "count": 158
       },
       {
         "date": "2026-08-05",
@@ -40,48 +40,72 @@
       },
       {
         "date": "2026-08-16",
-        "count": 65
+        "count": 106
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 167,
-    "pinned": 157,
-    "not_pinned": 10,
-    "pin_rate_pct": 94.01,
-    "total_pins": 46,
-    "last_run": "2026-08-16T14:05:48.737595",
+    "total_deals": 168,
+    "pinned": 160,
+    "not_pinned": 8,
+    "pin_rate_pct": 95.24,
+    "total_pins": 48,
+    "last_run": "2026-08-16T17:08:28.850516",
     "platforms": {
-      "Flipkart": 62,
-      "Ajio": 27,
       "Amazon": 54,
+      "Ajio": 28,
+      "Flipkart": 62,
       "Myntra": 18,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "Loot: Foxtale SuperGlow Face Wash @ \u20b9196",
-        "platform": "Flipkart",
+        "title": "Haier 7kg Front Load Washing Machine at \u20b919,992",
+        "platform": "Amazon",
         "pinned": true,
-        "timestamp": "2026-08-16T14:05:48.737595"
+        "timestamp": "2026-08-16T17:08:28.850516"
       },
       {
-        "title": "GRAB: Hyphen Double Shot Serum 10ml @ \u20b9237",
-        "platform": "Flipkart",
-        "pinned": false,
-        "timestamp": "2026-08-16T14:04:14.237627"
+        "title": "Police Origine Cabin Trolley 65L @1599.",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-08-16T17:05:11.356547"
+      },
+      {
+        "title": "3199",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-08-16T17:00:20.947357"
+      },
+      {
+        "title": "AJIO Loot : Upto 75% Off On NETPLAY Clothing.",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-08-16T16:42:49.459557"
       },
       {
         "title": "Ajio Loot : Upto 80% Off On Buda Jeans Co Clothing.",
         "platform": "Ajio",
         "pinned": true,
-        "timestamp": "2026-08-16T13:38:43.762413"
+        "timestamp": "2026-08-16T15:41:39.332515"
       },
       {
-        "title": "Loot: Best Smart TV Deals | Starting @ \u20b910,251",
+        "title": "Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
         "platform": "Flipkart",
-        "pinned": false,
-        "timestamp": "2026-08-16T13:34:56.960568"
+        "pinned": true,
+        "timestamp": "2026-08-16T15:16:44.351354Z"
+      },
+      {
+        "title": "Atix Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T15:15:32.958509Z"
+      },
+      {
+        "title": "Spinner Roatating | Gyro | Spinner | Analog Watch  - For Men SP...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T15:13:48.928047Z"
       },
       {
         "title": "PRICE DROP ALERTS \u2013 Limited Time Deals",
@@ -94,30 +118,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T13:01:18.288444Z"
-      },
-      {
-        "title": "ANALOGUE Hexa Series | Smart Watch Strap | 3D Glass | Smart Clip...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T13:00:11.049703Z"
-      },
-      {
-        "title": "Tarido Analog Watch Analog Watch  - For Men TD-4605SL01 NEW PU...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T12:59:00.594610Z"
-      },
-      {
-        "title": "LOOT: Godrej 3MP Smart Wi-Fi CCTV Camera (EVE Pro 3) @ \u20b92,150",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-08T03:06:13.393214"
-      },
-      {
-        "title": "Loot : Best Deals On Personal Care.",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-07T17:13:12.512626"
       }
     ]
   }

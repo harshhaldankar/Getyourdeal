@@ -1,26 +1,47 @@
 {
-  "generated_at": "2026-08-16T17:58:00.296023Z",
+  "generated_at": "2026-08-16T21:28:37.684385Z",
+  "session_health": {
+    "pinterest": {
+      "status": "EXPIRED",
+      "expired_cookies": [
+        "_ir"
+      ]
+    },
+    "instagram": {
+      "status": "ACTIVE",
+      "expired_cookies": []
+    }
+  },
+  "board_stats": {
+    "Hot Deals India": 0,
+    "Shoes & Sneaker Deals": 0,
+    "Home & Kitchen": 0,
+    "Beauty & Skincare": 0
+  },
   "pipeline1": {
     "total_processed": 1000,
     "live": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-08-16T17:08:28.844057",
+    "last_run": "2026-08-16T20:50:06.057875",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 524,
-      "EarnKaro bot conversion failed": 177,
-      "Already exists on website": 153,
-      "No product URL found": 20,
-      "Low Profit Margin (0-2%) / Blacklist": 126
+      "Discount Filter": 36,
+      "No Real Photo (Image Fetch/Validation Failed)": 486,
+      "EarnKaro bot conversion failed": 150,
+      "Low Profit Margin (0-2%) / Blacklist": 137,
+      "No product URL found": 22,
+      "Already exists on website": 167
     },
     "profit_tiers": {
-      "Unknown": 874,
-      "Low": 126
+      "Unknown": 857,
+      "Medium": 3,
+      "High": 2,
+      "Low": 138
     },
     "timeline": [
       {
         "date": "2026-08-04",
-        "count": 158
+        "count": 225
       },
       {
         "date": "2026-08-05",
@@ -40,48 +61,54 @@
       },
       {
         "date": "2026-08-16",
-        "count": 106
+        "count": 39
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 168,
-    "pinned": 160,
-    "not_pinned": 8,
-    "pin_rate_pct": 95.24,
-    "total_pins": 48,
-    "last_run": "2026-08-16T17:08:28.850516",
+    "total_deals": 169,
+    "pinned": 120,
+    "not_pinned": 49,
+    "pin_rate_pct": 71.01,
+    "total_pins": 8,
+    "last_run": "2026-08-16T20:51:14.351587",
     "platforms": {
-      "Amazon": 54,
-      "Ajio": 28,
-      "Flipkart": 62,
+      "Amazon": 55,
+      "Flipkart": 63,
+      "Ajio": 27,
       "Myntra": 18,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "Haier 7kg Front Load Washing Machine at \u20b919,992",
+        "title": "71% Off - Biotique Papaya Deep Cleanse Face Wash | Gentle Exfoliation | Visibly Glowing Skin | ",
         "platform": "Amazon",
         "pinned": true,
-        "timestamp": "2026-08-16T17:08:28.850516"
+        "timestamp": "2026-08-16T20:51:14.351587"
       },
       {
-        "title": "Police Origine Cabin Trolley 65L @1599.",
+        "title": "47% Off - Bergner BE Essentials TriPro TriPly Stainless Steel 3 Pcs Cookware Set - 24cm (3 L) K",
         "platform": "Amazon",
         "pinned": true,
-        "timestamp": "2026-08-16T17:05:11.356547"
+        "timestamp": "2026-08-16T20:50:06.501004"
       },
       {
-        "title": "3199",
+        "title": "66% Off : Lakme Matte Sunscreen (50ml) @170.",
         "platform": "Amazon",
         "pinned": true,
-        "timestamp": "2026-08-16T17:00:20.947357"
+        "timestamp": "2026-08-16T20:49:01.530204"
       },
       {
-        "title": "AJIO Loot : Upto 75% Off On NETPLAY Clothing.",
-        "platform": "Ajio",
+        "title": "54% Off : Colgate Visible White Toothpaste (120g X 4) @365",
+        "platform": "Amazon",
         "pinned": true,
-        "timestamp": "2026-08-16T16:42:49.459557"
+        "timestamp": "2026-08-16T20:47:46.338776"
+      },
+      {
+        "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T20:45:02.998911"
       },
       {
         "title": "Ajio Loot : Upto 80% Off On Buda Jeans Co Clothing.",
@@ -112,12 +139,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T13:33:03.108613"
-      },
-      {
-        "title": "house of common Analog Watch  - For Men HOC656-Black Mahavev Photo PU A...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T13:01:18.288444Z"
       }
     ]
   }

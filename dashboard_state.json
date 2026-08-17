@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T02:38:41.101959Z",
+  "generated_at": "2026-08-17T06:35:39.723022Z",
   "session_health": {
     "pinterest": {
       "status": "EXPIRED",
@@ -24,25 +24,24 @@
     "live": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-08-17T01:58:49.114275",
+    "last_run": "2026-08-17T05:54:34.971113",
     "skip_reasons": {
-      "Discount Filter": 39,
+      "Discount Filter": 43,
       "Already exists on website": 166,
-      "No Real Photo (Image Fetch/Validation Failed)": 486,
-      "EarnKaro bot conversion failed": 150,
-      "Low Profit Margin (0-2%) / Blacklist": 136,
+      "No Real Photo (Image Fetch/Validation Failed)": 485,
+      "EarnKaro bot conversion failed": 147,
+      "Low Profit Margin (0-2%) / Blacklist": 135,
       "No product URL found": 21
     },
     "profit_tiers": {
-      "Unknown": 858,
-      "Medium": 3,
-      "High": 2,
-      "Low": 137
+      "Unknown": 863,
+      "Medium": 2,
+      "Low": 135
     },
     "timeline": [
       {
         "date": "2026-08-04",
-        "count": 221
+        "count": 215
       },
       {
         "date": "2026-08-05",
@@ -66,19 +65,19 @@
       },
       {
         "date": "2026-08-17",
-        "count": 39
+        "count": 45
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 166,
+    "total_deals": 167,
     "pinned": 110,
-    "not_pinned": 56,
-    "pin_rate_pct": 66.27,
+    "not_pinned": 57,
+    "pin_rate_pct": 65.87,
     "total_pins": 382,
-    "last_run": "2026-08-17T02:00:39.673150",
+    "last_run": "2026-08-17T05:57:16.252147",
     "platforms": {
-      "Amazon": 53,
+      "Amazon": 54,
       "Flipkart": 62,
       "Ajio": 27,
       "Myntra": 18,
@@ -86,28 +85,34 @@
     },
     "recent_deals": [
       {
-        "title": "50% Off - ASICS Men Gel-Contend 4B+ Black/Vital Green Running Shoes",
+        "title": "76% Off - Graphene Kids & Baby's Piano Display Screen Educational Tablet Learning Machine, STEM",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T02:00:39.673150"
+        "timestamp": "2026-08-17T05:57:16.252147"
       },
       {
-        "title": "71% Off - Biotique Papaya Deep Cleanse Face Wash | Gentle Exfoliation | Visibly Glowing Skin | ",
+        "title": "69% Off - CELLO Fit & Fresh Round Lunch Box Container for Daily Use 400 ml, Clear | Microwave &",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T01:59:44.770203"
+        "timestamp": "2026-08-17T05:56:22.692163"
       },
       {
-        "title": "47% Off - Bergner BE Essentials TriPro TriPly Stainless Steel 3 Pcs Cookware Set - 24cm (3 L) K",
+        "title": "85% Off - amazon basics Writing Tablet with 8.5-inch rainbow colour LCD screen and Stylus Pen f",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T01:58:49.708853"
+        "timestamp": "2026-08-17T05:55:29.421529"
+      },
+      {
+        "title": "83% Off - Lifelong Kick Scooter with Adjustable Height - Foldable - Skate for Kids with PVC Whe",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T05:54:35.542583"
       },
       {
         "title": "66% Off : Lakme Matte Sunscreen (50ml) @170.",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T01:57:53.902466"
+        "timestamp": "2026-08-17T05:53:37.513213"
       },
       {
         "title": "54% Off : Colgate Visible White Toothpaste (120g X 4) @365",
@@ -138,12 +143,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T15:15:32.958509Z"
-      },
-      {
-        "title": "Spinner Roatating | Gyro | Spinner | Analog Watch  - For Men SP...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:13:48.928047Z"
       }
     ]
   }

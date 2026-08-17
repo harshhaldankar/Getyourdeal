@@ -1,9 +1,16 @@
 {
-  "generated_at": "2026-08-17T16:42:13.467341Z",
+  "generated_at": "2026-08-17T19:09:20.054472Z",
   "session_health": {
     "pinterest": {
-      "status": "ACTIVE",
-      "expired_cookies": []
+      "status": "EXPIRED",
+      "expired_cookies": [
+        "_routing_id",
+        "sessionFunnelEventLogged",
+        "_ir",
+        "_routing_id",
+        "sessionFunnelEventLogged",
+        "_ir"
+      ]
     },
     "instagram": {
       "status": "ACTIVE",
@@ -21,26 +28,26 @@
     "live": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-08-17T15:44:55.518290",
+    "last_run": "2026-08-17T19:08:51.192430",
     "skip_reasons": {
-      "Discount Filter": 63,
+      "Already exists on website": 156,
+      "Discount Filter": 80,
       "No product URL found": 22,
-      "Already exists on website": 161,
-      "No Real Photo (Image Fetch/Validation Failed)": 471,
-      "EarnKaro bot conversion failed": 145,
-      "Low Profit Margin (0-2%) / Blacklist": 132
+      "No Real Photo (Image Fetch/Validation Failed)": 465,
+      "EarnKaro bot conversion failed": 141,
+      "Low Profit Margin (0-2%) / Blacklist": 128
     },
     "profit_tiers": {
-      "Unknown": 861,
-      "High": 2,
-      "Low": 133,
-      "Medium": 3,
-      "Ultra-High": 1
+      "Unknown": 860,
+      "Medium": 5,
+      "High": 3,
+      "Low": 130,
+      "Ultra-High": 2
     },
     "timeline": [
       {
         "date": "2026-08-04",
-        "count": 191
+        "count": 170
       },
       {
         "date": "2026-08-05",
@@ -64,19 +71,19 @@
       },
       {
         "date": "2026-08-17",
-        "count": 69
+        "count": 90
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 166,
-    "pinned": 156,
-    "not_pinned": 10,
-    "pin_rate_pct": 93.98,
-    "total_pins": 48,
-    "last_run": "2026-08-17T15:49:34.436621",
+    "total_deals": 167,
+    "pinned": 108,
+    "not_pinned": 59,
+    "pin_rate_pct": 64.67,
+    "total_pins": 382,
+    "last_run": "2026-08-17T19:09:05.552101",
     "platforms": {
-      "Amazon": 54,
+      "Amazon": 55,
       "Flipkart": 61,
       "Ajio": 27,
       "Myntra": 18,
@@ -84,64 +91,64 @@
     },
     "recent_deals": [
       {
-        "title": "64% Off - Daniel Hechter Paris Rivoli Collection Modern Analog Watch for Men with Octagon Dial ",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-17T15:49:34.436621"
-      },
-      {
-        "title": "73% Off - Zebronics Juke BAR 9535 525W Soundbar, Dolby Audio, 5.1 CH Surround Sound, Floor-Stan",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-17T15:48:22.323734"
-      },
-      {
         "title": "72% Off - Kratos Tune V7 C Type Earphones Wired, Deep Bass Drivers Earphone, Inline Control Typ",
         "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-17T15:47:06.548519"
+        "pinned": false,
+        "timestamp": "2026-08-17T19:09:05.552101"
       },
       {
         "title": "80% Off - Kuber Industries Pack of 6 Cotton Kitchen Cloth/Napkins | Fridge, Table, Kitchen Plat",
         "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-17T15:46:03.479367"
+        "pinned": false,
+        "timestamp": "2026-08-17T19:08:51.197459"
+      },
+      {
+        "title": "50% Off : Pond's Bright Beauty Glow Serum @274",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T19:08:36.411492"
+      },
+      {
+        "title": "59% Off : Dabur Vatika Long & Black Shampoo 640ml @237",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T19:08:23.401343"
+      },
+      {
+        "title": "53% Off : Maybelline New York Tattoo Liner Gel Pencil @235",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T19:08:06.918460"
       },
       {
         "title": "87% Off - YAJNAS Green Chalkboard & Laptop Table | Portable Lap Desk with Laptop Support for Be",
         "platform": "Amazon",
-        "pinned": true,
+        "pinned": false,
         "timestamp": "2026-08-17T15:44:56.207770"
       },
       {
         "title": "82% Off - Wipro Northwest Nowa 6A Bell Push, Silver Grey (pack of 10)",
         "platform": "Amazon",
-        "pinned": true,
+        "pinned": false,
         "timestamp": "2026-08-17T10:52:13.704198"
       },
       {
         "title": "66% Off : Lakme Matte Sunscreen (50ml) @170.",
         "platform": "Amazon",
-        "pinned": true,
+        "pinned": false,
         "timestamp": "2026-08-17T05:53:37.513213"
       },
       {
         "title": "54% Off : Colgate Visible White Toothpaste (120g X 4) @365",
         "platform": "Amazon",
-        "pinned": true,
+        "pinned": false,
         "timestamp": "2026-08-17T01:57:01.560726"
       },
       {
         "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
         "platform": "Flipkart",
-        "pinned": true,
+        "pinned": false,
         "timestamp": "2026-08-16T20:45:02.998911"
-      },
-      {
-        "title": "Ajio Loot : Upto 80% Off On Buda Jeans Co Clothing.",
-        "platform": "Ajio",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:41:39.332515"
       }
     ]
   }

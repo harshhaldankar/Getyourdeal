@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T19:09:20.054472Z",
+  "generated_at": "2026-08-17T20:48:40.919277Z",
   "session_health": {
     "pinterest": {
       "status": "EXPIRED",
@@ -28,26 +28,26 @@
     "live": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-08-17T19:08:51.192430",
+    "last_run": "2026-08-17T20:47:55.623331",
     "skip_reasons": {
-      "Already exists on website": 156,
-      "Discount Filter": 80,
+      "Already exists on website": 155,
+      "Discount Filter": 91,
       "No product URL found": 22,
-      "No Real Photo (Image Fetch/Validation Failed)": 465,
-      "EarnKaro bot conversion failed": 141,
-      "Low Profit Margin (0-2%) / Blacklist": 128
+      "No Real Photo (Image Fetch/Validation Failed)": 461,
+      "EarnKaro bot conversion failed": 138,
+      "Low Profit Margin (0-2%) / Blacklist": 124
     },
     "profit_tiers": {
       "Unknown": 860,
-      "Medium": 5,
-      "High": 3,
-      "Low": 130,
-      "Ultra-High": 2
+      "Medium": 6,
+      "High": 4,
+      "Low": 127,
+      "Ultra-High": 3
     },
     "timeline": [
       {
         "date": "2026-08-04",
-        "count": 170
+        "count": 156
       },
       {
         "date": "2026-08-05",
@@ -71,19 +71,19 @@
       },
       {
         "date": "2026-08-17",
-        "count": 90
+        "count": 104
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 167,
+    "total_deals": 168,
     "pinned": 108,
-    "not_pinned": 59,
-    "pin_rate_pct": 64.67,
+    "not_pinned": 60,
+    "pin_rate_pct": 64.29,
     "total_pins": 382,
-    "last_run": "2026-08-17T19:09:05.552101",
+    "last_run": "2026-08-17T20:48:25.313233",
     "platforms": {
-      "Amazon": 55,
+      "Amazon": 56,
       "Flipkart": 61,
       "Ajio": 27,
       "Myntra": 18,
@@ -91,28 +91,34 @@
     },
     "recent_deals": [
       {
+        "title": "73% Off - Zebronics Juke BAR 9535 525W Soundbar, Dolby Audio, 5.1 CH Surround Sound, Floor-Stan",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T20:48:25.313233"
+      },
+      {
         "title": "72% Off - Kratos Tune V7 C Type Earphones Wired, Deep Bass Drivers Earphone, Inline Control Typ",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T19:09:05.552101"
+        "timestamp": "2026-08-17T20:48:10.628107"
       },
       {
         "title": "80% Off - Kuber Industries Pack of 6 Cotton Kitchen Cloth/Napkins | Fridge, Table, Kitchen Plat",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T19:08:51.197459"
+        "timestamp": "2026-08-17T20:47:55.628754"
       },
       {
         "title": "50% Off : Pond's Bright Beauty Glow Serum @274",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T19:08:36.411492"
+        "timestamp": "2026-08-17T20:47:41.138748"
       },
       {
         "title": "59% Off : Dabur Vatika Long & Black Shampoo 640ml @237",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T19:08:23.401343"
+        "timestamp": "2026-08-17T20:47:25.881356"
       },
       {
         "title": "53% Off : Maybelline New York Tattoo Liner Gel Pencil @235",
@@ -143,12 +149,6 @@
         "platform": "Amazon",
         "pinned": false,
         "timestamp": "2026-08-17T01:57:01.560726"
-      },
-      {
-        "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
-        "platform": "Flipkart",
-        "pinned": false,
-        "timestamp": "2026-08-16T20:45:02.998911"
       }
     ]
   }

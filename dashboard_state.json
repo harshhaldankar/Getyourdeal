@@ -1,12 +1,9 @@
 {
-  "generated_at": "2026-08-17T06:35:39.723022Z",
+  "generated_at": "2026-08-17T11:35:22.980389Z",
   "session_health": {
     "pinterest": {
-      "status": "EXPIRED",
-      "expired_cookies": [
-        "_ir",
-        "_ir"
-      ]
+      "status": "ACTIVE",
+      "expired_cookies": []
     },
     "instagram": {
       "status": "ACTIVE",
@@ -24,24 +21,25 @@
     "live": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-08-17T05:54:34.971113",
+    "last_run": "2026-08-17T10:52:13.140748",
     "skip_reasons": {
-      "Discount Filter": 43,
+      "Discount Filter": 48,
       "Already exists on website": 166,
-      "No Real Photo (Image Fetch/Validation Failed)": 485,
+      "No Real Photo (Image Fetch/Validation Failed)": 479,
       "EarnKaro bot conversion failed": 147,
       "Low Profit Margin (0-2%) / Blacklist": 135,
       "No product URL found": 21
     },
     "profit_tiers": {
-      "Unknown": 863,
+      "Unknown": 862,
+      "High": 1,
       "Medium": 2,
       "Low": 135
     },
     "timeline": [
       {
         "date": "2026-08-04",
-        "count": 215
+        "count": 209
       },
       {
         "date": "2026-08-05",
@@ -65,7 +63,7 @@
       },
       {
         "date": "2026-08-17",
-        "count": 45
+        "count": 51
       }
     ]
   },
@@ -74,8 +72,8 @@
     "pinned": 110,
     "not_pinned": 57,
     "pin_rate_pct": 65.87,
-    "total_pins": 382,
-    "last_run": "2026-08-17T05:57:16.252147",
+    "total_pins": 1,
+    "last_run": "2026-08-17T10:55:44.523588",
     "platforms": {
       "Amazon": 54,
       "Flipkart": 62,
@@ -85,28 +83,34 @@
     },
     "recent_deals": [
       {
-        "title": "76% Off - Graphene Kids & Baby's Piano Display Screen Educational Tablet Learning Machine, STEM",
+        "title": "50% Off - Wild Stone Night Rider Long Lasting Eau de Parfum for Men, 30ml",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T05:57:16.252147"
+        "timestamp": "2026-08-17T10:55:44.523588"
       },
       {
-        "title": "69% Off - CELLO Fit & Fresh Round Lunch Box Container for Daily Use 400 ml, Clear | Microwave &",
+        "title": "63% Off - Park Avenue Conquer, Eau De Parfum Men, 100ml | Long Lasting Perfume for Men | Premiu",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T05:56:22.692163"
+        "timestamp": "2026-08-17T10:54:52.564847"
       },
       {
-        "title": "85% Off - amazon basics Writing Tablet with 8.5-inch rainbow colour LCD screen and Stylus Pen f",
+        "title": "78% Off - Zebronics Duke Plus (2026 Upgrade) Wireless Headphones, BT v5.4, Upto 70hrs Playback,",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T05:55:29.421529"
+        "timestamp": "2026-08-17T10:54:00.255896"
       },
       {
-        "title": "83% Off - Lifelong Kick Scooter with Adjustable Height - Foldable - Skate for Kids with PVC Whe",
+        "title": "72% Off - Philips 9W Motion Sensor B22 LED Bulb | Motion Sensor Light for Home | Motion and Amb",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-17T05:54:35.542583"
+        "timestamp": "2026-08-17T10:53:08.319599"
+      },
+      {
+        "title": "82% Off - Wipro Northwest Nowa 6A Bell Push, Silver Grey (pack of 10)",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T10:52:13.704198"
       },
       {
         "title": "66% Off : Lakme Matte Sunscreen (50ml) @170.",
@@ -137,12 +141,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T15:16:44.351354Z"
-      },
-      {
-        "title": "Atix Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:15:32.958509Z"
       }
     ]
   }

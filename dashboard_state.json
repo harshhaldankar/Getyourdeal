@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T10:40:00.154844Z",
+  "generated_at": "2026-08-20T15:42:21.544805Z",
   "session_health": {
     "pinterest": {
       "status": "EXPIRED",
@@ -45,10 +45,6 @@
       "Ultra-High": 4
     },
     "timeline": [
-      {
-        "date": "2026-08-06",
-        "count": 112
-      },
       {
         "date": "2026-08-07",
         "count": 193

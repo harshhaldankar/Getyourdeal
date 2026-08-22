@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T16:51:33.514600Z",
+  "generated_at": "2026-08-22T21:11:10.879077Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,66 +19,58 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 89,
-    "live": 2,
-    "fully_posted": 2,
-    "website_only": 0,
-    "skipped": 87,
-    "success_rate_pct": 2.25,
-    "last_run": "2026-08-22T16:49:17.472042",
+    "total_processed": 175,
+    "live": 7,
+    "fully_posted": 5,
+    "website_only": 2,
+    "skipped": 168,
+    "success_rate_pct": 4.0,
+    "last_run": "2026-08-22T21:11:10.542381",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 22,
-      "Discount Filter": 62,
-      "Already exists on website": 3
+      "No product URL found": 9,
+      "Discount Filter": 103,
+      "No Real Photo (Image Fetch/Validation Failed)": 50,
+      "Already exists on website": 6
     },
     "profit_tiers": {
-      "Unknown": 73,
-      "Low": 3,
-      "High": 12,
-      "Medium": 1
+      "Unknown": 145,
+      "Low": 6,
+      "High": 22,
+      "Medium": 2
     },
     "timeline": [
       {
         "date": "2026-08-22",
-        "count": 89
+        "count": 175
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 7,
-    "pinned": 0,
-    "not_pinned": 7,
-    "pin_rate_pct": 0.0,
+    "total_deals": 167,
+    "pinned": 106,
+    "not_pinned": 61,
+    "pin_rate_pct": 63.47,
     "total_pins": 0,
-    "last_run": "2026-08-22T16:49:46.681614",
+    "last_run": "2026-08-22T21:10:48.797608",
     "platforms": {
-      "Amazon": 5,
-      "Ajio": 2
+      "Amazon": 53,
+      "Ajio": 29,
+      "Flipkart": 61,
+      "Myntra": 18,
+      "Other": 6
     },
     "recent_deals": [
       {
-        "title": "87% Off - Lifelong Foam Cuppy Baby Safety & Protection Kit 2 in 1 | Long Safety Strip & 8 Large",
+        "title": "77% Off - Add2Cart Plastic Mini Round Ice Cube Tray",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-22T16:49:46.681614"
+        "timestamp": "2026-08-22T21:10:48.797608"
       },
       {
-        "title": "69% Off - Butyl Rubber Aluminium Foil Waterproof Tape \u2013 Super Strong Adhesive for Roof Water Le",
+        "title": "60% Off - Zeiss Carl Zeiss Batis 2.8/18 Super Wide-Angle Camera Lens for Sony E-Mount Mirrorles",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-22T16:49:17.473053"
-      },
-      {
-        "title": "58% Off - Royal Fragrance EDP Perfume And Deodorant Combo Premium Long Lasting Fragrance Eau de",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-22T16:45:10.941064"
-      },
-      {
-        "title": "72% Off - 100% Natural Mehndi/Henna Powder for All Types of Hair | Triple Filtered Microfine He",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-22T16:43:27.105514"
+        "timestamp": "2026-08-22T20:52:30.822608"
       },
       {
         "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
@@ -97,6 +89,36 @@
         "platform": "Ajio",
         "pinned": false,
         "timestamp": "2026-08-22T15:09:35.131750"
+      },
+      {
+        "title": "59% Off - Dollar Solid Men's Shorts | All-Over Print | One Side Zipper Pocket with Label Brandi",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-18T10:49:30.949372"
+      },
+      {
+        "title": "72% Off - Kratos Tune V7 C Type Earphones Wired, Deep Bass Drivers Earphone, Inline Control Typ",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-18T05:49:39.012570"
+      },
+      {
+        "title": "59% Off : Dabur Vatika Long & Black Shampoo 640ml @237",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T20:47:25.881356"
+      },
+      {
+        "title": "53% Off : Maybelline New York Tattoo Liner Gel Pencil @235",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T19:08:06.918460"
+      },
+      {
+        "title": "82% Off - Wipro Northwest Nowa 6A Bell Push, Silver Grey (pack of 10)",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T10:52:13.704198"
       }
     ]
   },

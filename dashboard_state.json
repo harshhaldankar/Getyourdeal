@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T15:34:54.145686Z",
+  "generated_at": "2026-08-22T15:51:40.789465Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,37 +19,72 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 1,
-    "live": 0,
-    "fully_posted": 0,
+    "total_processed": 42,
+    "live": 2,
+    "fully_posted": 2,
     "website_only": 0,
-    "skipped": 1,
-    "success_rate_pct": 0.0,
-    "last_run": "2026-08-22T15:09:35.131414",
+    "skipped": 40,
+    "success_rate_pct": 4.76,
+    "last_run": "2026-08-22T15:49:44.615711",
     "skip_reasons": {
-      "Discount Filter": 1
+      "Discount Filter": 39,
+      "Already exists on website": 1
     },
     "profit_tiers": {
-      "Unknown": 1
+      "Unknown": 28,
+      "Low": 3,
+      "High": 10,
+      "Medium": 1
     },
     "timeline": [
       {
         "date": "2026-08-22",
-        "count": 1
+        "count": 42
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 1,
+    "total_deals": 6,
     "pinned": 0,
-    "not_pinned": 1,
+    "not_pinned": 6,
     "pin_rate_pct": 0.0,
     "total_pins": 0,
-    "last_run": "2026-08-22T15:09:35.131750",
+    "last_run": "2026-08-22T15:50:26.319372",
     "platforms": {
-      "Ajio": 1
+      "Amazon": 3,
+      "Ajio": 3
     },
     "recent_deals": [
+      {
+        "title": "71% Off - SIMPARTE 360\u00b0 AirTight Kitchen Storage Container Set for Rice|Dal|Atta|Flour|Cereals|",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:50:26.319372"
+      },
+      {
+        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:50:05.988012"
+      },
+      {
+        "title": "82% Off - Razer Kishi V2 for iPhone,Mobile Gaming Controller,Lightning Connection,Console Level",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:49:45.249179"
+      },
+      {
+        "title": "AJIO: Festive Edit Upto 70% Off",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:48:33.018803"
+      },
+      {
+        "title": "AJIO LOOT: SUPERDRY Min 50% Off",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:48:09.847869"
+      },
       {
         "title": "AJIO Loot: Fashion Deals Starting Under \u20b9399",
         "platform": "Ajio",

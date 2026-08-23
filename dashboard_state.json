@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T11:11:07.371790Z",
+  "generated_at": "2026-08-22T15:39:22.957381Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,111 +19,26 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 315,
-    "live": 15,
-    "fully_posted": 10,
-    "website_only": 5,
-    "skipped": 300,
-    "success_rate_pct": 4.76,
-    "last_run": "2026-08-23T11:01:16.569188",
-    "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 63,
-      "Already exists on website": 17,
-      "Discount Filter": 220
-    },
-    "profit_tiers": {
-      "Unknown": 241,
-      "Medium": 6,
-      "High": 53,
-      "Low": 15
-    },
-    "timeline": [
-      {
-        "date": "2026-08-22",
-        "count": 125
-      },
-      {
-        "date": "2026-08-23",
-        "count": 190
-      }
-    ]
+    "total_processed": 0,
+    "live": 0,
+    "fully_posted": 0,
+    "website_only": 0,
+    "skipped": 0,
+    "success_rate_pct": 0.0,
+    "last_run": null,
+    "skip_reasons": {},
+    "profit_tiers": {},
+    "timeline": []
   },
   "pipeline2": {
-    "total_deals": 171,
-    "pinned": 106,
-    "not_pinned": 65,
-    "pin_rate_pct": 61.99,
+    "total_deals": 0,
+    "pinned": 0,
+    "not_pinned": 0,
+    "pin_rate_pct": 0.0,
     "total_pins": 0,
-    "last_run": "2026-08-23T11:00:26.801371",
-    "platforms": {
-      "Amazon": 57,
-      "Ajio": 29,
-      "Flipkart": 61,
-      "Myntra": 18,
-      "Other": 6
-    },
-    "recent_deals": [
-      {
-        "title": "82% Off - Amazon Brand - Symbol Men's Stretchable Regular fit Jogger Pants | Chinos | Casual Tr",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T11:00:26.801371"
-      },
-      {
-        "title": "64% Off - Lakme 9to5 Hya Matte, Beach Edit Cushion Foundation, C 390-Cool Cocoa, Matte Finish, ",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:59:32.480975"
-      },
-      {
-        "title": "87% Off - Lifelong Foam Cuppy Baby Safety & Protection Kit 2 in 1 | Long Safety Strip & 8 Large",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:59:06.753578"
-      },
-      {
-        "title": "70% Off - Puma Mens Zenith V1 Sneaker",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:57:10.075423"
-      },
-      {
-        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:54:21.710740"
-      },
-      {
-        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T05:57:59.562588"
-      },
-      {
-        "title": "79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable ",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T02:13:24.041710"
-      },
-      {
-        "title": "60% Off - Zeiss Carl Zeiss Batis 2.8/18 Super Wide-Angle Camera Lens for Sony E-Mount Mirrorles",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-22T20:52:30.822608"
-      },
-      {
-        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-22T16:38:23.844326"
-      },
-      {
-        "title": "AJIO LOOT: SUPERDRY Min 50% Off",
-        "platform": "Ajio",
-        "pinned": false,
-        "timestamp": "2026-08-22T15:48:09.847869"
-      }
-    ]
+    "last_run": null,
+    "platforms": {},
+    "recent_deals": []
   },
   "instagram_stats": {
     "posts_today": 0,
@@ -131,247 +46,187 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1787456483.4883747,
+    "timestamp": 1787066466.8782907,
     "trends": [
       {
-        "keyword": "party wear gown for women",
+        "keyword": "watch men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904670+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501096+00:00"
       },
       {
-        "keyword": "formal shirt pant combination for men",
+        "keyword": "winter jacket sons of the forest",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750934+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262783+00:00"
       },
       {
-        "keyword": "skincare routines vs acne care",
+        "keyword": "winter jackets",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824671+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262754+00:00"
       },
       {
-        "keyword": "party wear dresses for women",
+        "keyword": "kurta men embroidery",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904382+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681458+00:00"
       },
       {
-        "keyword": "party wear sarees",
+        "keyword": "watchmen movie",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904654+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501324+00:00"
       },
       {
-        "keyword": "face wash west portland",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099229+00:00"
-      },
-      {
-        "keyword": "cargo pants for girls",
+        "keyword": "winter jackets buying guide",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974444+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262780+00:00"
       },
       {
-        "keyword": "cargo pants for men with pockets",
+        "keyword": "kurta men fashion",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974446+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681449+00:00"
       },
       {
-        "keyword": "formal shirt",
+        "keyword": "winter jackets for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750914+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262772+00:00"
       },
       {
-        "keyword": "cargo pants for boys",
+        "keyword": "kurta men style",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974441+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681455+00:00"
       },
       {
-        "keyword": "cargo pants",
+        "keyword": "winter jackets for men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974409+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262769+00:00"
       },
       {
-        "keyword": "cargo pants for hiking",
+        "keyword": "watch men's hockey olympics",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974449+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501331+00:00"
       },
       {
-        "keyword": "denim jacket",
+        "keyword": "saree",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.172471+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402499+00:00"
       },
       {
-        "keyword": "cargo pants for men",
+        "keyword": "winter jackets for kids",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974435+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262778+00:00"
       },
       {
-        "keyword": "face wash pearl district",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099233+00:00"
-      },
-      {
-        "keyword": "party wear tops for women",
+        "keyword": "saree center",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904664+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402517+00:00"
       },
       {
-        "keyword": "face wash",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099213+00:00"
-      },
-      {
-        "keyword": "skincare routines product layering",
+        "keyword": "saree room",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824673+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402524+00:00"
       },
       {
-        "keyword": "party wear for men",
+        "keyword": "watch men gift pack",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904386+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501327+00:00"
       },
       {
-        "keyword": "cargo pants baggy",
+        "keyword": "watch men's olympic hockey",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974438+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501319+00:00"
       },
       {
-        "keyword": "face wash for oily skin",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099244+00:00"
-      },
-      {
-        "keyword": "skincare routines",
+        "keyword": "watch mentalist",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824647+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501329+00:00"
       },
       {
-        "keyword": "formal shirts for women",
+        "keyword": "sarees for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750917+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402519+00:00"
       },
       {
-        "keyword": "face wash for women",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099236+00:00"
-      },
-      {
-        "keyword": "skincare routines comparison",
+        "keyword": "kurta men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824667+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681429+00:00"
       },
       {
-        "keyword": "formal shirt dresses for women",
+        "keyword": "watch men in black",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750920+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501113+00:00"
       },
       {
-        "keyword": "cargo pants women",
+        "keyword": "sareee",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.974431+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402514+00:00"
       },
       {
-        "keyword": "skincare routines personal grooming",
+        "keyword": "saree for farewell",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824669+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402526+00:00"
       },
       {
-        "keyword": "face wash for acne",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099241+00:00"
-      },
-      {
-        "keyword": "party wear suits for women",
+        "keyword": "kurta men design",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904667+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681461+00:00"
       },
       {
-        "keyword": "party wear",
+        "keyword": "winter jacket sale",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904367+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262775+00:00"
       },
       {
-        "keyword": "formal shirts for men",
+        "keyword": "sareena singh md",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750897+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402528+00:00"
       },
       {
-        "keyword": "face wash for dry skin",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099246+00:00"
-      },
-      {
-        "keyword": "party wear for women",
+        "keyword": "winter jackets comparison",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.904661+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262789+00:00"
       },
       {
-        "keyword": "skincare routines for beginners",
+        "keyword": "kurta men cloth",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824664+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681446+00:00"
       },
       {
-        "keyword": "formal shirts printed",
+        "keyword": "saree dress",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750941+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402521+00:00"
       },
       {
-        "keyword": "skincare routines for oily skin",
+        "keyword": "kurta men set",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.824676+00:00"
-      },
-      {
-        "keyword": "formal shirt price in bd",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750929+00:00"
-      },
-      {
-        "keyword": "formal shirt png",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:22.750931+00:00"
-      },
-      {
-        "keyword": "face wash for men",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-23T03:41:23.099239+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681452+00:00"
       }
     ]
   }

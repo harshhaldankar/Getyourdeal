@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T15:39:22.957381Z",
+  "generated_at": "2026-08-23T20:33:31.872285Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,26 +19,111 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 0,
-    "live": 0,
-    "fully_posted": 0,
+    "total_processed": 353,
+    "live": 12,
+    "fully_posted": 12,
     "website_only": 0,
-    "skipped": 0,
-    "success_rate_pct": 0.0,
-    "last_run": null,
-    "skip_reasons": {},
-    "profit_tiers": {},
-    "timeline": []
+    "skipped": 341,
+    "success_rate_pct": 3.4,
+    "last_run": "2026-08-23T15:52:08.189014",
+    "skip_reasons": {
+      "No Real Photo (Image Fetch/Validation Failed)": 69,
+      "Already exists on website": 21,
+      "Discount Filter": 251
+    },
+    "profit_tiers": {
+      "Unknown": 268,
+      "Low": 18,
+      "High": 61,
+      "Medium": 6
+    },
+    "timeline": [
+      {
+        "date": "2026-08-22",
+        "count": 125
+      },
+      {
+        "date": "2026-08-23",
+        "count": 228
+      }
+    ]
   },
   "pipeline2": {
-    "total_deals": 0,
-    "pinned": 0,
-    "not_pinned": 0,
-    "pin_rate_pct": 0.0,
+    "total_deals": 166,
+    "pinned": 105,
+    "not_pinned": 61,
+    "pin_rate_pct": 63.25,
     "total_pins": 0,
-    "last_run": null,
-    "platforms": {},
-    "recent_deals": []
+    "last_run": "2026-08-23T15:52:08.191177",
+    "platforms": {
+      "Amazon": 52,
+      "Ajio": 29,
+      "Flipkart": 61,
+      "Myntra": 18,
+      "Other": 6
+    },
+    "recent_deals": [
+      {
+        "title": "70% Off - Puma Mens Zenith V1 Sneaker",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-23T15:52:08.191177"
+      },
+      {
+        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-23T10:54:21.710740"
+      },
+      {
+        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-23T05:57:59.562588"
+      },
+      {
+        "title": "79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable ",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-23T02:13:24.041710"
+      },
+      {
+        "title": "60% Off - Zeiss Carl Zeiss Batis 2.8/18 Super Wide-Angle Camera Lens for Sony E-Mount Mirrorles",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-22T20:52:30.822608"
+      },
+      {
+        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-22T16:38:23.844326"
+      },
+      {
+        "title": "AJIO LOOT: SUPERDRY Min 50% Off",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:48:09.847869"
+      },
+      {
+        "title": "AJIO Loot: Fashion Deals Starting Under \u20b9399",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:09:35.131750"
+      },
+      {
+        "title": "59% Off - Dollar Solid Men's Shorts | All-Over Print | One Side Zipper Pocket with Label Brandi",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-18T10:49:30.949372"
+      },
+      {
+        "title": "72% Off - Kratos Tune V7 C Type Earphones Wired, Deep Bass Drivers Earphone, Inline Control Typ",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-18T05:49:39.012570"
+      }
+    ]
   },
   "instagram_stats": {
     "posts_today": 0,
@@ -46,187 +131,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1787066466.8782907,
+    "timestamp": 1787497920.7901065,
     "trends": [
       {
-        "keyword": "watch men",
+        "keyword": "sneakers for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501096+00:00"
+        "scraped_at": "2026-08-23T15:11:59.987786+00:00"
       },
       {
-        "keyword": "winter jacket sons of the forest",
-        "category": "fashion",
+        "keyword": "face wash university",
+        "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262783+00:00"
-      },
-      {
-        "keyword": "winter jackets",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262754+00:00"
-      },
-      {
-        "keyword": "kurta men embroidery",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681458+00:00"
-      },
-      {
-        "keyword": "watchmen movie",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501324+00:00"
-      },
-      {
-        "keyword": "winter jackets buying guide",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262780+00:00"
-      },
-      {
-        "keyword": "kurta men fashion",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681449+00:00"
-      },
-      {
-        "keyword": "winter jackets for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262772+00:00"
-      },
-      {
-        "keyword": "kurta men style",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681455+00:00"
-      },
-      {
-        "keyword": "winter jackets for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262769+00:00"
-      },
-      {
-        "keyword": "watch men's hockey olympics",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501331+00:00"
-      },
-      {
-        "keyword": "saree",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402499+00:00"
-      },
-      {
-        "keyword": "winter jackets for kids",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262778+00:00"
-      },
-      {
-        "keyword": "saree center",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402517+00:00"
-      },
-      {
-        "keyword": "saree room",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402524+00:00"
-      },
-      {
-        "keyword": "watch men gift pack",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501327+00:00"
+        "scraped_at": "2026-08-23T15:11:59.909904+00:00"
       },
       {
         "keyword": "watch men's olympic hockey",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501319+00:00"
-      },
-      {
-        "keyword": "watch mentalist",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501329+00:00"
-      },
-      {
-        "keyword": "sarees for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402519+00:00"
-      },
-      {
-        "keyword": "kurta men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681429+00:00"
-      },
-      {
-        "keyword": "watch men in black",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501113+00:00"
-      },
-      {
-        "keyword": "sareee",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402514+00:00"
-      },
-      {
-        "keyword": "saree for farewell",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402526+00:00"
-      },
-      {
-        "keyword": "kurta men design",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681461+00:00"
-      },
-      {
-        "keyword": "winter jacket sale",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262775+00:00"
-      },
-      {
-        "keyword": "sareena singh md",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402528+00:00"
-      },
-      {
-        "keyword": "winter jackets comparison",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262789+00:00"
-      },
-      {
-        "keyword": "kurta men cloth",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681446+00:00"
+        "scraped_at": "2026-08-23T15:12:00.156253+00:00"
       },
       {
         "keyword": "saree dress",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402521+00:00"
+        "scraped_at": "2026-08-23T15:12:00.075216+00:00"
+      },
+      {
+        "keyword": "face wash for oily skin",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909921+00:00"
+      },
+      {
+        "keyword": "saree for farewell",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075221+00:00"
+      },
+      {
+        "keyword": "sneakers movie",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987800+00:00"
+      },
+      {
+        "keyword": "watch men gift pack",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.156258+00:00"
+      },
+      {
+        "keyword": "face wash kabrich crescent",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909900+00:00"
+      },
+      {
+        "keyword": "face wash for women",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909907+00:00"
+      },
+      {
+        "keyword": "face wash for men",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909915+00:00"
+      },
+      {
+        "keyword": "kurta men fashion",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238020+00:00"
+      },
+      {
+        "keyword": "face wash for dry skin",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909928+00:00"
+      },
+      {
+        "keyword": "sareena singh md",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075223+00:00"
+      },
+      {
+        "keyword": "kurta men style",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238027+00:00"
       },
       {
         "keyword": "kurta men set",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681452+00:00"
+        "scraped_at": "2026-08-23T15:12:00.238024+00:00"
+      },
+      {
+        "keyword": "sneakers at meadowview",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987792+00:00"
+      },
+      {
+        "keyword": "watch men in black",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.156249+00:00"
+      },
+      {
+        "keyword": "kurta men embroidery",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238030+00:00"
+      },
+      {
+        "keyword": "sneakers for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987783+00:00"
+      },
+      {
+        "keyword": "watch men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.156234+00:00"
+      },
+      {
+        "keyword": "saree room",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075219+00:00"
+      },
+      {
+        "keyword": "saree center",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075214+00:00"
+      },
+      {
+        "keyword": "kurta men collection",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238034+00:00"
+      },
+      {
+        "keyword": "home decor",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.316383+00:00"
+      },
+      {
+        "keyword": "kurta men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238001+00:00"
+      },
+      {
+        "keyword": "kurta men design",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238032+00:00"
+      },
+      {
+        "keyword": "face wash for acne",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909918+00:00"
+      },
+      {
+        "keyword": "watch men's hockey olympics",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.156263+00:00"
+      },
+      {
+        "keyword": "face wash",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.909887+00:00"
+      },
+      {
+        "keyword": "watchmen movie",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.156256+00:00"
+      },
+      {
+        "keyword": "sneakers o'toole",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987789+00:00"
+      },
+      {
+        "keyword": "saree",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075013+00:00"
+      },
+      {
+        "keyword": "watch mentalist",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.156261+00:00"
+      },
+      {
+        "keyword": "sneakers",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987768+00:00"
+      },
+      {
+        "keyword": "sneakersnstuff",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987797+00:00"
+      },
+      {
+        "keyword": "kurta men cloth",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.238016+00:00"
+      },
+      {
+        "keyword": "sareee",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075210+00:00"
+      },
+      {
+        "keyword": "sarees for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:12:00.075030+00:00"
+      },
+      {
+        "keyword": "sneakers at clinton",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T15:11:59.987794+00:00"
       }
     ]
   }

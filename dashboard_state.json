@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T02:29:46.031614Z",
+  "generated_at": "2026-08-23T06:18:39.249269Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,23 +19,23 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 205,
-    "live": 11,
-    "fully_posted": 6,
+    "total_processed": 268,
+    "live": 13,
+    "fully_posted": 8,
     "website_only": 5,
-    "skipped": 194,
-    "success_rate_pct": 5.37,
-    "last_run": "2026-08-23T02:20:08.487469",
+    "skipped": 255,
+    "success_rate_pct": 4.85,
+    "last_run": "2026-08-23T06:08:41.910006",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 42,
-      "Already exists on website": 10,
-      "Discount Filter": 142
+      "No Real Photo (Image Fetch/Validation Failed)": 57,
+      "Already exists on website": 14,
+      "Discount Filter": 184
     },
     "profit_tiers": {
-      "Unknown": 160,
-      "Medium": 4,
-      "Low": 9,
-      "High": 32
+      "Medium": 5,
+      "Unknown": 208,
+      "High": 43,
+      "Low": 12
     },
     "timeline": [
       {
@@ -44,19 +44,19 @@
       },
       {
         "date": "2026-08-23",
-        "count": 80
+        "count": 143
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 170,
+    "total_deals": 171,
     "pinned": 106,
-    "not_pinned": 64,
-    "pin_rate_pct": 62.35,
+    "not_pinned": 65,
+    "pin_rate_pct": 61.99,
     "total_pins": 0,
-    "last_run": "2026-08-23T02:19:49.151105",
+    "last_run": "2026-08-23T06:08:03.540276",
     "platforms": {
-      "Amazon": 56,
+      "Amazon": 57,
       "Ajio": 29,
       "Flipkart": 61,
       "Myntra": 18,
@@ -64,28 +64,34 @@
     },
     "recent_deals": [
       {
-        "title": "88% Off - Kratos 51W Dual Port Car Charger (PD + QC)",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T02:19:49.151105"
-      },
-      {
         "title": "80% Off - pTron Tangentbeat in Ear Bluetooth Wireless Headphones with Mic, Punchy Bass, 10mm Dr",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-23T02:18:02.917935"
+        "timestamp": "2026-08-23T06:08:03.540276"
+      },
+      {
+        "title": "64% Off - Punch Hole Pliers: Metal Hand Tool with Revolving Heavy-Duty Puncher for Leather Craf",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-23T06:06:57.501862"
       },
       {
         "title": "82% Off - Amazon Brand - Symbol Men's Stretchable Regular fit Jogger Pants | Chinos | Casual Tr",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-23T02:16:36.511477"
+        "timestamp": "2026-08-23T06:06:14.308998"
       },
       {
-        "title": "69% Off - Butyl Rubber Aluminium Foil Waterproof Tape \u2013 Super Strong Adhesive for Roof Water Le",
+        "title": "72% Off - 100% Natural Mehndi/Henna Powder for All Types of Hair | Triple Filtered Microfine He",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-23T02:14:45.167008"
+        "timestamp": "2026-08-23T05:59:37.227425"
+      },
+      {
+        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-23T05:57:59.562588"
       },
       {
         "title": "79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable ",
@@ -116,12 +122,6 @@
         "platform": "Ajio",
         "pinned": false,
         "timestamp": "2026-08-22T15:09:35.131750"
-      },
-      {
-        "title": "59% Off - Dollar Solid Men's Shorts | All-Over Print | One Side Zipper Pocket with Label Brandi",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-18T10:49:30.949372"
       }
     ]
   },
@@ -131,247 +131,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1787411431.8465776,
+    "timestamp": 1787456483.4883747,
     "trends": [
       {
-        "keyword": "denim jackets for women",
+        "keyword": "party wear gown for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.096022+00:00"
+        "scraped_at": "2026-08-23T03:41:22.904670+00:00"
       },
       {
-        "keyword": "serum vs plasma",
+        "keyword": "formal shirt pant combination for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.750934+00:00"
+      },
+      {
+        "keyword": "skincare routines vs acne care",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.824671+00:00"
+      },
+      {
+        "keyword": "party wear dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904382+00:00"
+      },
+      {
+        "keyword": "party wear sarees",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904654+00:00"
+      },
+      {
+        "keyword": "face wash west portland",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188519+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099229+00:00"
       },
       {
-        "keyword": "ethnic wear brands",
+        "keyword": "cargo pants for girls",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869383+00:00"
+        "scraped_at": "2026-08-23T03:41:22.974444+00:00"
       },
       {
-        "keyword": "ethnic wear meaning",
+        "keyword": "cargo pants for men with pockets",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869378+00:00"
+        "scraped_at": "2026-08-23T03:41:22.974446+00:00"
       },
       {
-        "keyword": "serum separator tube",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188524+00:00"
-      },
-      {
-        "keyword": "hair oil in bedford-stuyvesant",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299937+00:00"
-      },
-      {
-        "keyword": "saree for farewell",
+        "keyword": "formal shirt",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954340+00:00"
+        "scraped_at": "2026-08-23T03:41:22.750914+00:00"
       },
       {
-        "keyword": "ethnic wear for women",
+        "keyword": "cargo pants for boys",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869367+00:00"
+        "scraped_at": "2026-08-23T03:41:22.974441+00:00"
+      },
+      {
+        "keyword": "cargo pants",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.974409+00:00"
+      },
+      {
+        "keyword": "cargo pants for hiking",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.974449+00:00"
       },
       {
         "keyword": "denim jacket",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.095810+00:00"
+        "scraped_at": "2026-08-23T03:41:23.172471+00:00"
       },
       {
-        "keyword": "hair oil for men",
+        "keyword": "cargo pants for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.974435+00:00"
+      },
+      {
+        "keyword": "face wash pearl district",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299932+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099233+00:00"
       },
       {
-        "keyword": "serum sickness",
+        "keyword": "party wear tops for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904664+00:00"
+      },
+      {
+        "keyword": "face wash",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188517+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099213+00:00"
       },
       {
-        "keyword": "denim jacket outfit",
+        "keyword": "skincare routines product layering",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.096057+00:00"
+        "scraped_at": "2026-08-23T03:41:22.824673+00:00"
       },
       {
-        "keyword": "hair oil",
+        "keyword": "party wear for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904386+00:00"
+      },
+      {
+        "keyword": "cargo pants baggy",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.974438+00:00"
+      },
+      {
+        "keyword": "face wash for oily skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299910+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099244+00:00"
       },
       {
-        "keyword": "ethnic wear for men",
+        "keyword": "skincare routines",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869370+00:00"
+        "scraped_at": "2026-08-23T03:41:22.824647+00:00"
       },
       {
-        "keyword": "serum creatinine",
+        "keyword": "formal shirts for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.750917+00:00"
+      },
+      {
+        "keyword": "face wash for women",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188526+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099236+00:00"
       },
       {
-        "keyword": "ethnic wear near me",
+        "keyword": "skincare routines comparison",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869363+00:00"
+        "scraped_at": "2026-08-23T03:41:22.824667+00:00"
       },
       {
-        "keyword": "denim jacket for girls",
+        "keyword": "formal shirt dresses for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.096061+00:00"
+        "scraped_at": "2026-08-23T03:41:22.750920+00:00"
       },
       {
-        "keyword": "serum protein electrophoresis",
+        "keyword": "cargo pants women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.974431+00:00"
+      },
+      {
+        "keyword": "skincare routines personal grooming",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.824669+00:00"
+      },
+      {
+        "keyword": "face wash for acne",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188528+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099241+00:00"
       },
       {
-        "keyword": "hair oil for curly hair",
+        "keyword": "party wear suits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904667+00:00"
+      },
+      {
+        "keyword": "party wear",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904367+00:00"
+      },
+      {
+        "keyword": "formal shirts for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.750897+00:00"
+      },
+      {
+        "keyword": "face wash for dry skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299940+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099246+00:00"
       },
       {
-        "keyword": "hair oil for growth",
+        "keyword": "party wear for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.904661+00:00"
+      },
+      {
+        "keyword": "skincare routines for beginners",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.824664+00:00"
+      },
+      {
+        "keyword": "formal shirts printed",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.750941+00:00"
+      },
+      {
+        "keyword": "skincare routines for oily skin",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.824676+00:00"
+      },
+      {
+        "keyword": "formal shirt price in bd",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.750929+00:00"
+      },
+      {
+        "keyword": "formal shirt png",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-23T03:41:22.750931+00:00"
+      },
+      {
+        "keyword": "face wash for men",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299925+00:00"
-      },
-      {
-        "keyword": "serum osmolality",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188498+00:00"
-      },
-      {
-        "keyword": "sarees for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954326+00:00"
-      },
-      {
-        "keyword": "ethnic wear",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869344+00:00"
-      },
-      {
-        "keyword": "ethnic wear for girls",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869381+00:00"
-      },
-      {
-        "keyword": "hair oil for women",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299942+00:00"
-      },
-      {
-        "keyword": "saree dress",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954336+00:00"
-      },
-      {
-        "keyword": "hair oil for dry hair",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299929+00:00"
-      },
-      {
-        "keyword": "ethnic wear for boys",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.869389+00:00"
-      },
-      {
-        "keyword": "denim jacket oversized",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.096064+00:00"
-      },
-      {
-        "keyword": "saree",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954307+00:00"
-      },
-      {
-        "keyword": "denim jacket short set",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.096052+00:00"
-      },
-      {
-        "keyword": "saree room",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954338+00:00"
-      },
-      {
-        "keyword": "denim jacket men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.095827+00:00"
-      },
-      {
-        "keyword": "serum 2",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188522+00:00"
-      },
-      {
-        "keyword": "hair oil in clinton hill",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.299935+00:00"
-      },
-      {
-        "keyword": "saree center",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954333+00:00"
-      },
-      {
-        "keyword": "denim jackets for older women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.096068+00:00"
-      },
-      {
-        "keyword": "serum",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:31.188513+00:00"
-      },
-      {
-        "keyword": "sareena singh md",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954343+00:00"
-      },
-      {
-        "keyword": "sareee",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-22T15:10:30.954330+00:00"
+        "scraped_at": "2026-08-23T03:41:23.099239+00:00"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T17:28:41.747645Z",
+  "generated_at": "2026-08-30T19:59:27.086432Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,25 +19,25 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 403,
-    "live": 21,
-    "fully_posted": 16,
-    "website_only": 5,
-    "skipped": 382,
-    "success_rate_pct": 5.21,
-    "last_run": "2026-08-30T17:28:41.368716",
+    "total_processed": 488,
+    "live": 22,
+    "fully_posted": 18,
+    "website_only": 4,
+    "skipped": 466,
+    "success_rate_pct": 4.51,
+    "last_run": "2026-08-30T19:59:26.800938",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 85,
-      "Already exists on website": 22,
-      "Discount Filter": 274,
-      "No product URL found": 1
+      "No product URL found": 10,
+      "Discount Filter": 287,
+      "No Real Photo (Image Fetch/Validation Failed)": 144,
+      "Already exists on website": 25
     },
     "profit_tiers": {
-      "Unknown": 310,
-      "High": 64,
+      "Unknown": 394,
+      "Low": 20,
       "Medium": 9,
-      "Ultra-High": 1,
-      "Low": 19
+      "High": 64,
+      "Ultra-High": 1
     },
     "timeline": [
       {
@@ -50,48 +50,48 @@
       },
       {
         "date": "2026-08-30",
-        "count": 50
+        "count": 135
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 168,
-    "pinned": 104,
+    "total_deals": 166,
+    "pinned": 102,
     "not_pinned": 64,
-    "pin_rate_pct": 61.9,
+    "pin_rate_pct": 61.45,
     "total_pins": 0,
-    "last_run": "2026-08-30T17:28:25.110097",
+    "last_run": "2026-08-30T19:51:05.295051",
     "platforms": {
-      "Amazon": 54,
+      "Amazon": 53,
       "Ajio": 29,
-      "Flipkart": 61,
+      "Flipkart": 60,
       "Myntra": 18,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "82% Off - Amazon Brand - Symbol Men's Cotton Rich Solid Polo Tshirt",
+        "title": "73% Off - Aristocrat Hype 17 Inch Compatible Laptop Backpack 33L",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T17:28:25.110097"
+        "timestamp": "2026-08-30T19:51:05.295051"
       },
       {
-        "title": "72% Off - Govo Gosurround 945 Pro Home Theatre Soundbar, 260W,",
+        "title": "73% Off - 2-in-1 Potty Training Scooter",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T17:26:36.740073"
+        "timestamp": "2026-08-30T19:41:23.079852"
       },
       {
-        "title": "51% Off - Daniel Hechter Paris Orsay Collection Multifunctional Watch for Men",
+        "title": "70% Off - Boldfit Sneakers for Man Lightweight Shoes",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T17:24:55.391744"
+        "timestamp": "2026-08-30T19:09:26.587180"
       },
       {
-        "title": "72% Off - 1 Pack Multifunctional Vegetable Peeler for Kitchen 3 in 1 Stainless Steel",
+        "title": "23% Off - Nike Fission Deodorant for Women, 200ml",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T17:22:27.749737"
+        "timestamp": "2026-08-30T18:58:48.439547"
       },
       {
         "title": "80% Off - Midazzle Dual Side Foot Filer with Organic Loofah, Heart Shape, Set of 2",

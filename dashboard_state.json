@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T16:48:18.158124Z",
+  "generated_at": "2026-08-31T18:14:29.019544Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,24 +19,24 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 464,
-    "live": 28,
-    "fully_posted": 23,
+    "total_processed": 470,
+    "live": 30,
+    "fully_posted": 25,
     "website_only": 5,
-    "skipped": 436,
-    "success_rate_pct": 6.03,
-    "last_run": "2026-08-31T16:48:17.749085",
+    "skipped": 440,
+    "success_rate_pct": 6.38,
+    "last_run": "2026-08-31T18:14:28.735824",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 114,
-      "Discount Filter": 296,
+      "No Real Photo (Image Fetch/Validation Failed)": 109,
+      "Discount Filter": 305,
       "Already exists on website": 25,
       "No product URL found": 1
     },
     "profit_tiers": {
-      "Medium": 9,
-      "Unknown": 367,
-      "Low": 21,
-      "High": 66,
+      "Unknown": 371,
+      "High": 70,
+      "Low": 20,
+      "Medium": 8,
       "Ultra-High": 1
     },
     "timeline": [
@@ -54,7 +54,7 @@
       },
       {
         "date": "2026-08-31",
-        "count": 42
+        "count": 48
       }
     ]
   },
@@ -64,7 +64,7 @@
     "not_pinned": 65,
     "pin_rate_pct": 61.08,
     "total_pins": 0,
-    "last_run": "2026-08-31T16:48:03.604445",
+    "last_run": "2026-08-31T18:14:14.609181",
     "platforms": {
       "Amazon": 54,
       "Ajio": 29,
@@ -74,28 +74,34 @@
     },
     "recent_deals": [
       {
-        "title": "73% Off - Aristocrat Hype 17 Inch Compatible Laptop Backpack 33L",
+        "title": "62% Off - Vivela All-in-One Home Care Set with Wiper",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-31T16:48:03.604445"
+        "timestamp": "2026-08-31T18:14:14.609181"
       },
       {
-        "title": "73% Off - 2-in-1 Potty Training Scooter",
+        "title": "80% Off - Aqueria 200ml De-Tan & Brightening Vitamin C Face Wash",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-31T16:38:47.026251"
+        "timestamp": "2026-08-31T18:11:39.498996"
       },
       {
-        "title": "79% Off - Livpure Smart Ortho Duos Topper",
+        "title": "55% Off - Florance Premium Flip Dual Comfort Mattress with Pain Relief Technology, 3 Layers",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-31T16:38:29.638099"
+        "timestamp": "2026-08-31T18:08:55.202908"
       },
       {
-        "title": "70% Off - Rechargeable Hover Football Soccer Ball",
+        "title": "50% Off - Bikano Royal Rasgulla | Authentic Indian Sweet dish | Pack of 1 kg",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-31T16:37:06.380915"
+        "timestamp": "2026-08-31T18:08:35.520401"
+      },
+      {
+        "title": "47% Off : Vivel Aloe Vera Bathing Soap,(150gx4) @149.",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-31T18:07:39.784705"
       },
       {
         "title": "91% Off - Oakcraft Multipurpose Single Cube Storage Organizer Unit Bed Side Table Type",
@@ -126,12 +132,6 @@
         "platform": "Amazon",
         "pinned": false,
         "timestamp": "2026-08-30T17:19:49.809070"
-      },
-      {
-        "title": "72% Off - Kerok Portable Auto Travel Umbrella",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-30T15:06:55.785004"
       }
     ]
   },

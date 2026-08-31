@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T23:12:30.573787Z",
+  "generated_at": "2026-08-31T05:37:56.942891Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,25 +19,25 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 430,
-    "live": 25,
-    "fully_posted": 20,
+    "total_processed": 446,
+    "live": 27,
+    "fully_posted": 22,
     "website_only": 5,
-    "skipped": 405,
-    "success_rate_pct": 5.81,
-    "last_run": "2026-08-30T23:12:30.351636",
+    "skipped": 419,
+    "success_rate_pct": 6.05,
+    "last_run": "2026-08-31T05:37:56.716087",
     "skip_reasons": {
-      "Already exists on website": 26,
-      "No Real Photo (Image Fetch/Validation Failed)": 97,
-      "Discount Filter": 281,
+      "No Real Photo (Image Fetch/Validation Failed)": 100,
+      "Discount Filter": 293,
+      "Already exists on website": 25,
       "No product URL found": 1
     },
     "profit_tiers": {
-      "Unknown": 339,
-      "High": 63,
+      "Unknown": 353,
+      "High": 64,
+      "Low": 20,
       "Medium": 8,
-      "Ultra-High": 1,
-      "Low": 19
+      "Ultra-High": 1
     },
     "timeline": [
       {
@@ -50,19 +50,23 @@
       },
       {
         "date": "2026-08-30",
-        "count": 77
+        "count": 69
+      },
+      {
+        "date": "2026-08-31",
+        "count": 24
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 168,
+    "total_deals": 166,
     "pinned": 102,
-    "not_pinned": 66,
-    "pin_rate_pct": 60.71,
+    "not_pinned": 64,
+    "pin_rate_pct": 61.45,
     "total_pins": 0,
-    "last_run": "2026-08-30T23:11:14.427796",
+    "last_run": "2026-08-31T05:36:44.819805",
     "platforms": {
-      "Amazon": 55,
+      "Amazon": 53,
       "Ajio": 29,
       "Flipkart": 60,
       "Myntra": 18,
@@ -70,28 +74,34 @@
     },
     "recent_deals": [
       {
-        "title": "81% Off - Kratos Grip X2 car Mobile Holder for Dashboard with 360 Degree Rotation Phone Holder",
+        "title": "60% Off - AWG ALL WEATHER GEAR Jackets for Men",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T23:11:14.427796"
+        "timestamp": "2026-08-31T05:36:44.819805"
       },
       {
-        "title": "60% Off - Havells 50W High Wattage Led Bulb",
+        "title": "66% Off - TEMPERIA (1pc) Hair Accessories For Women's & Girls",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T23:09:57.957349"
+        "timestamp": "2026-08-31T05:36:30.999840"
       },
       {
-        "title": "68% Off - DABUR Herb'L Activated Charcoal Toothpaste 480G (120G x4, Pack of 4)",
+        "title": "47% Off - Pee Safe Underarm Sweat Pads for Men & Women",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T23:08:41.982639"
+        "timestamp": "2026-08-31T05:33:03.663201"
       },
       {
-        "title": "64% Off - CG AeroSwift Ceiling Fan | 1200mm",
+        "title": "90% Off - SOJANYA Men's Cotton Regular Fit Paisley Regular Kurta",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-30T23:05:48.935046"
+        "timestamp": "2026-08-31T05:29:31.814531"
+      },
+      {
+        "title": "61% Off : L'Oreal Paris Infallible 24H Cushion Foundation @482",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-31T05:25:40.769638"
       },
       {
         "title": "62% Off - Crompton 5 Meter Strip Light Pink 300 LEDs (Pack of 4)",
@@ -122,12 +132,6 @@
         "platform": "Amazon",
         "pinned": false,
         "timestamp": "2026-08-23T15:52:08.191177"
-      },
-      {
-        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:54:21.710740"
       }
     ]
   },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T15:17:14.652421Z",
+  "generated_at": "2026-09-01T19:25:53.922820Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,25 +19,25 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 509,
-    "live": 35,
-    "fully_posted": 30,
-    "website_only": 5,
-    "skipped": 474,
-    "success_rate_pct": 6.88,
-    "last_run": "2026-09-01T15:17:14.334804",
+    "total_processed": 433,
+    "live": 17,
+    "fully_posted": 17,
+    "website_only": 0,
+    "skipped": 416,
+    "success_rate_pct": 3.93,
+    "last_run": "2026-09-01T19:25:53.538111",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 125,
-      "Discount Filter": 323,
-      "Already exists on website": 25,
-      "No product URL found": 1
+      "No product URL found": 10,
+      "Discount Filter": 272,
+      "No Real Photo (Image Fetch/Validation Failed)": 113,
+      "Already exists on website": 21
     },
     "profit_tiers": {
-      "Unknown": 399,
-      "High": 81,
-      "Low": 20,
-      "Medium": 8,
-      "Ultra-High": 1
+      "Unknown": 343,
+      "High": 63,
+      "Medium": 7,
+      "Ultra-High": 1,
+      "Low": 19
     },
     "timeline": [
       {
@@ -50,92 +50,88 @@
       },
       {
         "date": "2026-08-30",
-        "count": 69
-      },
-      {
-        "date": "2026-08-31",
-        "count": 40
+        "count": 20
       },
       {
         "date": "2026-09-01",
-        "count": 47
+        "count": 60
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 166,
-    "pinned": 101,
-    "not_pinned": 65,
-    "pin_rate_pct": 60.84,
+    "total_deals": 164,
+    "pinned": 104,
+    "not_pinned": 60,
+    "pin_rate_pct": 63.41,
     "total_pins": 0,
-    "last_run": "2026-09-01T15:16:58.531665",
+    "last_run": "2026-08-30T15:06:55.785004",
     "platforms": {
-      "Amazon": 53,
+      "Amazon": 50,
       "Ajio": 29,
-      "Flipkart": 60,
+      "Flipkart": 61,
       "Myntra": 18,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "85% Off - Tokyo Talkies Women's Three-Quarter Sleeves Round Neck",
+        "title": "72% Off - Kerok Portable Auto Travel Umbrella",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T15:16:58.531665"
+        "timestamp": "2026-08-30T15:06:55.785004"
       },
       {
-        "title": "87% Off - Tokyo Talkies Women's Three-Quarter Sleeves Boat Neck Printed Dresses",
+        "title": "70% Off - Puma Mens Zenith V1 Sneaker",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T15:16:39.628148"
+        "timestamp": "2026-08-23T15:52:08.191177"
       },
       {
-        "title": "83% Off - Noy Liquid Matte Lipstick Bold Matte Pigment for a Sleek",
+        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T15:04:13.086767"
+        "timestamp": "2026-08-23T10:54:21.710740"
       },
       {
-        "title": "85% Off - AWG ALL WEATHER GEAR Jackets for Men",
+        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T15:00:30.694448"
+        "timestamp": "2026-08-23T05:57:59.562588"
       },
       {
-        "title": "58% Off - Parachute Advansed Soft Touch Body Lotion for Women & Men",
+        "title": "79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable ",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T14:58:22.180900"
+        "timestamp": "2026-08-23T02:13:24.041710"
       },
       {
-        "title": "50% Off - Bikano Royal Rasgulla | Authentic Indian Sweet dish | Pack of 1 kg",
+        "title": "60% Off - Zeiss Carl Zeiss Batis 2.8/18 Super Wide-Angle Camera Lens for Sony E-Mount Mirrorles",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T05:19:20.201189"
+        "timestamp": "2026-08-22T20:52:30.822608"
       },
       {
-        "title": "80% Off - Aqueria 200ml De-Tan & Brightening Vitamin C Face Wash",
+        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T00:25:21.697278"
+        "timestamp": "2026-08-22T16:38:23.844326"
       },
       {
-        "title": "47% Off : Vivel Aloe Vera Bathing Soap,(150gx4) @149.",
-        "platform": "Amazon",
+        "title": "AJIO LOOT: SUPERDRY Min 50% Off",
+        "platform": "Ajio",
         "pinned": false,
-        "timestamp": "2026-08-31T18:07:39.784705"
+        "timestamp": "2026-08-22T15:48:09.847869"
       },
       {
-        "title": "91% Off - Oakcraft Multipurpose Single Cube Storage Organizer Unit Bed Side Table Type",
-        "platform": "Amazon",
+        "title": "AJIO Loot: Fashion Deals Starting Under \u20b9399",
+        "platform": "Ajio",
         "pinned": false,
-        "timestamp": "2026-08-31T16:36:41.731224"
+        "timestamp": "2026-08-22T15:09:35.131750"
       },
       {
-        "title": "61% Off : L'Oreal Paris Infallible 24H Cushion Foundation @482",
+        "title": "72% Off - Kratos Tune V7 C Type Earphones Wired, Deep Bass Drivers Earphone, Inline Control Typ",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-31T05:25:40.769638"
+        "timestamp": "2026-08-18T05:49:39.012570"
       }
     ]
   },
@@ -145,247 +141,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1788249900.4586875,
+    "timestamp": 1788285792.5989776,
     "trends": [
       {
-        "keyword": "cargo pants women baggy",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922094+00:00"
-      },
-      {
-        "keyword": "hair oil for men",
+        "keyword": "face wash for dry skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689381+00:00"
+        "scraped_at": "2026-09-01T18:03:11.495035+00:00"
       },
       {
-        "keyword": "denim jacket short set",
+        "keyword": "ethnic dress for girls",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591418+00:00"
-      },
-      {
-        "keyword": "denim jacket men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591409+00:00"
+        "scraped_at": "2026-09-01T18:03:11.875185+00:00"
       },
       {
         "keyword": "lipstick shades for brown skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473921+00:00"
+        "scraped_at": "2026-09-01T18:03:11.621994+00:00"
       },
       {
-        "keyword": "denim jackets for older women",
+        "keyword": "saree",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591416+00:00"
+        "scraped_at": "2026-09-01T18:03:11.750971+00:00"
       },
       {
-        "keyword": "cargo pants baggy",
+        "keyword": "sareena singh md",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922084+00:00"
+        "scraped_at": "2026-09-01T18:03:11.751001+00:00"
       },
       {
-        "keyword": "lipstick shades",
+        "keyword": "saree draping",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.750995+00:00"
+      },
+      {
+        "keyword": "face wash for women",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473885+00:00"
+        "scraped_at": "2026-09-01T18:03:11.495022+00:00"
       },
       {
-        "keyword": "home decor",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:05:00.030401+00:00"
-      },
-      {
-        "keyword": "lipstick shade for warm skin tone",
+        "keyword": "face wash",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473928+00:00"
+        "scraped_at": "2026-09-01T18:03:11.494996+00:00"
       },
       {
-        "keyword": "denim jacket black",
+        "keyword": "ethnic dress",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591425+00:00"
+        "scraped_at": "2026-09-01T18:03:11.875155+00:00"
       },
       {
-        "keyword": "watch men's olympic hockey",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805052+00:00"
-      },
-      {
-        "keyword": "lipstick shades trending",
+        "keyword": "face wash for oily skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473916+00:00"
+        "scraped_at": "2026-09-01T18:03:11.495032+00:00"
       },
       {
-        "keyword": "watch men gift pack",
+        "keyword": "sneakers chocolat",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805054+00:00"
+        "scraped_at": "2026-09-01T18:03:11.370604+00:00"
       },
       {
-        "keyword": "watch mentalist online free",
+        "keyword": "sarees for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805047+00:00"
+        "scraped_at": "2026-09-01T18:03:11.750990+00:00"
       },
       {
-        "keyword": "cargo pants women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922081+00:00"
-      },
-      {
-        "keyword": "watch men in black",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805043+00:00"
-      },
-      {
-        "keyword": "cargo pants for boys",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922087+00:00"
-      },
-      {
-        "keyword": "cargo pants for men with pockets",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922091+00:00"
-      },
-      {
-        "keyword": "hair oil",
+        "keyword": "face wash southgate",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689183+00:00"
-      },
-      {
-        "keyword": "watch men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805029+00:00"
-      },
-      {
-        "keyword": "hair oil applicator",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689389+00:00"
-      },
-      {
-        "keyword": "cargo pants for girls",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922089+00:00"
-      },
-      {
-        "keyword": "hair oil for dry hair",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689377+00:00"
-      },
-      {
-        "keyword": "hair oil kerastase",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689391+00:00"
-      },
-      {
-        "keyword": "watch men's hockey",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805056+00:00"
-      },
-      {
-        "keyword": "hair oil for curly hair",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689384+00:00"
-      },
-      {
-        "keyword": "cargo pants",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922062+00:00"
-      },
-      {
-        "keyword": "cargo pants for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.922077+00:00"
-      },
-      {
-        "keyword": "denim jacket",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591394+00:00"
-      },
-      {
-        "keyword": "denim jacket outfit",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591420+00:00"
-      },
-      {
-        "keyword": "watchmen movie",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.805049+00:00"
-      },
-      {
-        "keyword": "lipstick shade finder",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473905+00:00"
+        "scraped_at": "2026-09-01T18:03:11.495014+00:00"
       },
       {
         "keyword": "lipstick shades names",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473908+00:00"
+        "scraped_at": "2026-09-01T18:03:11.621986+00:00"
       },
       {
-        "keyword": "hair oil for women",
+        "keyword": "face wash for men",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689386+00:00"
+        "scraped_at": "2026-09-01T18:03:11.495025+00:00"
+      },
+      {
+        "keyword": "face wash for acne",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.495029+00:00"
+      },
+      {
+        "keyword": "sneakers movie",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.370577+00:00"
+      },
+      {
+        "keyword": "ethnic dress styles",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.875187+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.875171+00:00"
       },
       {
         "keyword": "lipstick shades for office wear",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473919+00:00"
+        "scraped_at": "2026-09-01T18:03:11.621991+00:00"
+      },
+      {
+        "keyword": "sneakers",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.370564+00:00"
+      },
+      {
+        "keyword": "saree center",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.750986+00:00"
+      },
+      {
+        "keyword": "ethnic dress code",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.875180+00:00"
+      },
+      {
+        "keyword": "lipstick shades",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.621725+00:00"
+      },
+      {
+        "keyword": "lipstick shade for warm skin tone",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.621996+00:00"
+      },
+      {
+        "keyword": "ethnic dress jean",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.875175+00:00"
       },
       {
         "keyword": "lipstick shades for indian skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.473901+00:00"
+        "scraped_at": "2026-09-01T18:03:11.621742+00:00"
       },
       {
-        "keyword": "hair oil for growth",
+        "keyword": "saree ke fall sa song",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.750999+00:00"
+      },
+      {
+        "keyword": "lipstick shades trending",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.689198+00:00"
+        "scraped_at": "2026-09-01T18:03:11.621989+00:00"
       },
       {
-        "keyword": "denim jacket for girls",
+        "keyword": "ethnic dresses for ladies stores near me",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591423+00:00"
+        "scraped_at": "2026-09-01T18:03:11.875182+00:00"
       },
       {
-        "keyword": "denim jacket for women",
+        "keyword": "sneakers at santa clara el camino",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-01T08:04:59.591413+00:00"
+        "scraped_at": "2026-09-01T18:03:11.370595+00:00"
+      },
+      {
+        "keyword": "sneakers app",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.370598+00:00"
+      },
+      {
+        "keyword": "face wash moran prairie",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.495019+00:00"
+      },
+      {
+        "keyword": "lipstick shade finder",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.621981+00:00"
+      },
+      {
+        "keyword": "ethnic dress for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.875178+00:00"
+      },
+      {
+        "keyword": "sneakers o'toole",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.370581+00:00"
+      },
+      {
+        "keyword": "sneakers at lincoln bellomy",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.370592+00:00"
+      },
+      {
+        "keyword": "sneakers for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.370584+00:00"
+      },
+      {
+        "keyword": "saree room",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.750997+00:00"
+      },
+      {
+        "keyword": "saree dress",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-01T18:03:11.750993+00:00"
       }
     ]
   }

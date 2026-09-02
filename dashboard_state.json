@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T09:58:55.443779Z",
+  "generated_at": "2026-09-02T14:44:51.406992Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -21,20 +21,20 @@
   "pipeline1": {
     "total_processed": 444,
     "live": 24,
-    "fully_posted": 21,
-    "website_only": 3,
+    "fully_posted": 22,
+    "website_only": 2,
     "skipped": 420,
     "success_rate_pct": 5.41,
-    "last_run": "2026-09-02T09:58:55.243834",
+    "last_run": "2026-09-02T14:44:50.857039",
     "skip_reasons": {
       "No product URL found": 10,
-      "Discount Filter": 296,
-      "No Real Photo (Image Fetch/Validation Failed)": 92,
+      "Discount Filter": 298,
+      "No Real Photo (Image Fetch/Validation Failed)": 90,
       "Already exists on website": 22
     },
     "profit_tiers": {
-      "Unknown": 352,
-      "Medium": 9,
+      "Unknown": 353,
+      "Medium": 8,
       "High": 63,
       "Ultra-High": 1,
       "Low": 19
@@ -63,14 +63,14 @@
     ]
   },
   "pipeline2": {
-    "total_deals": 164,
-    "pinned": 103,
+    "total_deals": 163,
+    "pinned": 102,
     "not_pinned": 61,
-    "pin_rate_pct": 62.8,
+    "pin_rate_pct": 62.58,
     "total_pins": 0,
-    "last_run": "2026-09-02T09:53:47.287492",
+    "last_run": "2026-09-02T14:37:29.403766",
     "platforms": {
-      "Amazon": 50,
+      "Amazon": 49,
       "Myntra": 19,
       "Ajio": 29,
       "Flipkart": 60,
@@ -78,16 +78,16 @@
     },
     "recent_deals": [
       {
-        "title": "90% Off - POPWINGS Casual Printed Top and Joggers Set for Women",
+        "title": "74% Off - Lifelong Carbon Steel (Iron) Fry Pan 24cm",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-02T09:53:47.287492"
+        "timestamp": "2026-09-02T14:37:29.403766"
       },
       {
-        "title": "66% Off - Halonix Decorer Waterfall 10x10 Bright Led String Light | Diwali Light",
+        "title": "81% Off - ADISA Laptop Messenger Office Bag",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-02T09:50:47.884661"
+        "timestamp": "2026-09-02T14:34:54.114008"
       },
       {
         "title": "Upto 90% Off On HRX Mens Sliders.",

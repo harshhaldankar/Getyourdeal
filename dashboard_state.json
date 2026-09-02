@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T23:22:22.560942Z",
+  "generated_at": "2026-09-02T05:05:31.890526Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,23 +19,23 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 419,
-    "live": 21,
-    "fully_posted": 16,
+    "total_processed": 436,
+    "live": 23,
+    "fully_posted": 18,
     "website_only": 5,
-    "skipped": 398,
-    "success_rate_pct": 5.01,
-    "last_run": "2026-09-01T23:22:22.214158",
+    "skipped": 413,
+    "success_rate_pct": 5.28,
+    "last_run": "2026-09-02T05:05:31.533940",
     "skip_reasons": {
-      "No Real Photo (Image Fetch/Validation Failed)": 100,
-      "Discount Filter": 276,
-      "No product URL found": 1,
-      "Already exists on website": 21
+      "No Real Photo (Image Fetch/Validation Failed)": 108,
+      "Already exists on website": 22,
+      "Discount Filter": 282,
+      "No product URL found": 1
     },
     "profit_tiers": {
-      "Unknown": 330,
+      "Medium": 9,
+      "Unknown": 345,
       "High": 62,
-      "Medium": 7,
       "Ultra-High": 1,
       "Low": 19
     },
@@ -54,48 +54,58 @@
       },
       {
         "date": "2026-09-01",
+        "count": 17
+      },
+      {
+        "date": "2026-09-02",
         "count": 46
       }
     ]
   },
   "pipeline2": {
     "total_deals": 167,
-    "pinned": 104,
-    "not_pinned": 63,
-    "pin_rate_pct": 62.28,
+    "pinned": 103,
+    "not_pinned": 64,
+    "pin_rate_pct": 61.68,
     "total_pins": 0,
-    "last_run": "2026-09-01T23:22:05.515008",
+    "last_run": "2026-09-02T05:04:34.207161",
     "platforms": {
-      "Amazon": 53,
+      "Amazon": 54,
       "Ajio": 29,
-      "Flipkart": 61,
+      "Flipkart": 60,
       "Myntra": 18,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "71% Off - Lifelong LLGM109 Percussion Massage",
+        "title": "81% Off - ADISA Laptop Messenger Office Bag",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T23:22:05.515008"
+        "timestamp": "2026-09-02T05:04:34.207161"
       },
       {
-        "title": "81% Off - Lifelong Bathroom Shelf | Mild Steel Wall Mounted Organizer Rack",
+        "title": "70% Off - Noise Buds N1 Pro Truly Wireless Earbuds",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T23:20:36.759900"
+        "timestamp": "2026-09-02T04:47:31.952732"
       },
       {
-        "title": "80% Off - truke New Launch BTG Crystal True Wireless in Ear Buds",
+        "title": "75% Off - Metal Keychain with Carabiner Clip | Portable Key Ring Holder | Heavy Duty Key chain",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T23:12:28.381049"
+        "timestamp": "2026-09-02T04:42:49.245442"
       },
       {
-        "title": "85% Off - Tokyo Talkies Women's Three-Quarter Sleeves Round Neck",
+        "title": "81% Off - Amazon Brand - Symbol Women Rayon Fit and Flare One Piece Knee Length",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-09-01T23:12:10.112698"
+        "timestamp": "2026-09-02T04:39:58.130952"
+      },
+      {
+        "title": "65% Off - Reebok Mens Persona Wanderer Sneaker",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-09-02T04:35:03.011155"
       },
       {
         "title": "85% Off - Amazon Basics Nylon Knee Support",
@@ -126,12 +136,6 @@
         "platform": "Amazon",
         "pinned": false,
         "timestamp": "2026-08-23T02:13:24.041710"
-      },
-      {
-        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-22T16:38:23.844326"
       }
     ]
   },

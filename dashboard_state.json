@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T14:44:51.406992Z",
+  "generated_at": "2026-09-02T19:10:35.609459Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,25 +19,25 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 444,
-    "live": 24,
+    "total_processed": 436,
+    "live": 22,
     "fully_posted": 22,
-    "website_only": 2,
-    "skipped": 420,
-    "success_rate_pct": 5.41,
-    "last_run": "2026-09-02T14:44:50.857039",
+    "website_only": 0,
+    "skipped": 414,
+    "success_rate_pct": 5.05,
+    "last_run": "2026-09-02T19:10:35.319357",
     "skip_reasons": {
       "No product URL found": 10,
-      "Discount Filter": 298,
-      "No Real Photo (Image Fetch/Validation Failed)": 90,
+      "Discount Filter": 289,
+      "No Real Photo (Image Fetch/Validation Failed)": 93,
       "Already exists on website": 22
     },
     "profit_tiers": {
-      "Unknown": 353,
-      "Medium": 8,
-      "High": 63,
-      "Ultra-High": 1,
-      "Low": 19
+      "Unknown": 343,
+      "Low": 20,
+      "High": 65,
+      "Medium": 7,
+      "Ultra-High": 1
     },
     "timeline": [
       {
@@ -58,37 +58,25 @@
       },
       {
         "date": "2026-09-02",
-        "count": 54
+        "count": 46
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 163,
-    "pinned": 102,
-    "not_pinned": 61,
-    "pin_rate_pct": 62.58,
+    "total_deals": 160,
+    "pinned": 103,
+    "not_pinned": 57,
+    "pin_rate_pct": 64.38,
     "total_pins": 0,
-    "last_run": "2026-09-02T14:37:29.403766",
+    "last_run": "2026-09-02T09:49:18.818625",
     "platforms": {
-      "Amazon": 49,
       "Myntra": 19,
+      "Amazon": 46,
       "Ajio": 29,
       "Flipkart": 60,
       "Other": 6
     },
     "recent_deals": [
-      {
-        "title": "74% Off - Lifelong Carbon Steel (Iron) Fry Pan 24cm",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-09-02T14:37:29.403766"
-      },
-      {
-        "title": "81% Off - ADISA Laptop Messenger Office Bag",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-09-02T14:34:54.114008"
-      },
       {
         "title": "Upto 90% Off On HRX Mens Sliders.",
         "platform": "Myntra",
@@ -132,10 +120,22 @@
         "timestamp": "2026-08-23T02:13:24.041710"
       },
       {
-        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
+        "title": "AJIO LOOT: SUPERDRY Min 50% Off",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:48:09.847869"
+      },
+      {
+        "title": "AJIO Loot: Fashion Deals Starting Under \u20b9399",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:09:35.131750"
+      },
+      {
+        "title": "59% Off : Dabur Vatika Long & Black Shampoo 640ml @237",
         "platform": "Amazon",
         "pinned": false,
-        "timestamp": "2026-08-22T16:38:23.844326"
+        "timestamp": "2026-08-17T20:47:25.881356"
       }
     ]
   },
@@ -145,247 +145,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1788333883.525794,
+    "timestamp": 1788372822.0753148,
     "trends": [
       {
-        "keyword": "kurta men",
+        "keyword": "formal shirts",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718436+00:00"
+        "scraped_at": "2026-09-02T18:13:41.665628+00:00"
       },
       {
-        "keyword": "serum 2",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078781+00:00"
-      },
-      {
-        "keyword": "ethnic dress code",
+        "keyword": "formal shirt dresses for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979955+00:00"
+        "scraped_at": "2026-09-02T18:13:41.665633+00:00"
       },
       {
-        "keyword": "home decor south station",
+        "keyword": "formal shirt and pant for men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788939+00:00"
-      },
-      {
-        "keyword": "kurta men design",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718484+00:00"
-      },
-      {
-        "keyword": "home decorators collection",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788956+00:00"
-      },
-      {
-        "keyword": "home decor near me",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788960+00:00"
-      },
-      {
-        "keyword": "kurta men set",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718465+00:00"
-      },
-      {
-        "keyword": "home decor group",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788953+00:00"
-      },
-      {
-        "keyword": "ethnic dress styles",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979962+00:00"
-      },
-      {
-        "keyword": "ethnic dresses for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979947+00:00"
-      },
-      {
-        "keyword": "home decor stores",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788950+00:00"
-      },
-      {
-        "keyword": "kurta men collection",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718478+00:00"
-      },
-      {
-        "keyword": "serum osmolality",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078769+00:00"
-      },
-      {
-        "keyword": "face wash for oily skin",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890690+00:00"
-      },
-      {
-        "keyword": "face wash prospect hill",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890440+00:00"
-      },
-      {
-        "keyword": "kurta men style",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718473+00:00"
-      },
-      {
-        "keyword": "home decor downtown",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788947+00:00"
-      },
-      {
-        "keyword": "serum separator tube",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078783+00:00"
-      },
-      {
-        "keyword": "ethnic dress jean",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979951+00:00"
-      },
-      {
-        "keyword": "serum creatinine",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078779+00:00"
-      },
-      {
-        "keyword": "face wash for men",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890682+00:00"
-      },
-      {
-        "keyword": "kurta men embroidery",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718475+00:00"
-      },
-      {
-        "keyword": "face wash ward two",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890676+00:00"
+        "scraped_at": "2026-09-02T18:13:41.665639+00:00"
       },
       {
         "keyword": "kurta men fashion",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718463+00:00"
+        "scraped_at": "2026-09-02T18:13:41.145515+00:00"
       },
       {
-        "keyword": "serum",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078752+00:00"
-      },
-      {
-        "keyword": "home decor",
+        "keyword": "winter jacket sale",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788924+00:00"
+        "scraped_at": "2026-09-02T18:13:40.947834+00:00"
       },
       {
-        "keyword": "ethnic dress",
+        "keyword": "winter jackets comparison",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979932+00:00"
+        "scraped_at": "2026-09-02T18:13:40.947839+00:00"
       },
       {
-        "keyword": "serum protein electrophoresis",
-        "category": "beauty",
+        "keyword": "festival outfits",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078785+00:00"
+        "scraped_at": "2026-09-02T18:13:41.500544+00:00"
       },
       {
-        "keyword": "face wash for women",
-        "category": "beauty",
+        "keyword": "gym accessories shop",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890685+00:00"
+        "scraped_at": "2026-09-02T18:13:41.331691+00:00"
       },
       {
-        "keyword": "face wash for dry skin",
-        "category": "beauty",
+        "keyword": "formal shirt pant combination for men",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890692+00:00"
+        "scraped_at": "2026-09-02T18:13:41.665635+00:00"
+      },
+      {
+        "keyword": "gym accessories",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.331524+00:00"
+      },
+      {
+        "keyword": "gym accessories shop near me",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.331697+00:00"
+      },
+      {
+        "keyword": "kurta men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.145496+00:00"
+      },
+      {
+        "keyword": "festival outfits ideas",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.500567+00:00"
+      },
+      {
+        "keyword": "kurta men set",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.145518+00:00"
+      },
+      {
+        "keyword": "winter jackets for kids",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:40.947828+00:00"
+      },
+      {
+        "keyword": "festival outfits 2026",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.500565+00:00"
+      },
+      {
+        "keyword": "festival outfits pinterest",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.500572+00:00"
+      },
+      {
+        "keyword": "gym accessories for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.331541+00:00"
+      },
+      {
+        "keyword": "formal shirts for men uk",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.665637+00:00"
+      },
+      {
+        "keyword": "festival outfits uk",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.500570+00:00"
+      },
+      {
+        "keyword": "gym accessories daraz",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.331696+00:00"
+      },
+      {
+        "keyword": "festival outfits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.500560+00:00"
+      },
+      {
+        "keyword": "winter jacket sons of the forest",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:40.947844+00:00"
       },
       {
         "keyword": "kurta men cloth",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.718459+00:00"
+        "scraped_at": "2026-09-02T18:13:41.145512+00:00"
       },
       {
-        "keyword": "ethnic dress for men",
+        "keyword": "formal shirts for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979953+00:00"
+        "scraped_at": "2026-09-02T18:13:41.665631+00:00"
       },
       {
-        "keyword": "home decor ideas",
+        "keyword": "kurta men collection",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.788958+00:00"
+        "scraped_at": "2026-09-02T18:13:41.145523+00:00"
       },
       {
-        "keyword": "ethnic dress for girls",
+        "keyword": "winter jackets buying guide",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979960+00:00"
+        "scraped_at": "2026-09-02T18:13:40.947837+00:00"
       },
       {
-        "keyword": "serum vs plasma",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078776+00:00"
-      },
-      {
-        "keyword": "ethnic dresses for ladies stores near me",
+        "keyword": "festival outfits for men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.979958+00:00"
+        "scraped_at": "2026-09-02T18:13:41.500563+00:00"
       },
       {
-        "keyword": "serum sickness",
-        "category": "beauty",
+        "keyword": "gym accessories bd",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:43.078773+00:00"
+        "scraped_at": "2026-09-02T18:13:41.331699+00:00"
       },
       {
-        "keyword": "face wash",
-        "category": "beauty",
+        "keyword": "formal shirts for men",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890424+00:00"
+        "scraped_at": "2026-09-02T18:13:41.665612+00:00"
       },
       {
-        "keyword": "face wash for acne",
-        "category": "beauty",
+        "keyword": "kurta men style",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-02T07:24:42.890688+00:00"
+        "scraped_at": "2026-09-02T18:13:41.145519+00:00"
+      },
+      {
+        "keyword": "winter jackets",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:40.947807+00:00"
+      },
+      {
+        "keyword": "kurta men embroidery",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.145521+00:00"
+      },
+      {
+        "keyword": "gym accessories for men gloves",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.331701+00:00"
+      },
+      {
+        "keyword": "winter jackets for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:40.947826+00:00"
+      },
+      {
+        "keyword": "kurta men design",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.145525+00:00"
+      },
+      {
+        "keyword": "festival outfits for summer",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.500569+00:00"
+      },
+      {
+        "keyword": "formal shirts for men online",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.665641+00:00"
+      },
+      {
+        "keyword": "winter jackets for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:40.947823+00:00"
+      },
+      {
+        "keyword": "gym accessories for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-02T18:13:41.331694+00:00"
       }
     ]
   }

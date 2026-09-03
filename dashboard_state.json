@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T18:56:42.698898Z",
+  "generated_at": "2026-09-03T22:55:21.600672Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,21 +19,21 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 429,
+    "total_processed": 428,
     "live": 22,
     "fully_posted": 22,
     "website_only": 0,
-    "skipped": 407,
-    "success_rate_pct": 5.13,
-    "last_run": "2026-09-03T18:56:42.468359",
+    "skipped": 406,
+    "success_rate_pct": 5.14,
+    "last_run": "2026-09-03T22:55:21.391299",
     "skip_reasons": {
       "No product URL found": 11,
-      "Discount Filter": 289,
+      "Discount Filter": 288,
       "No Real Photo (Image Fetch/Validation Failed)": 85,
       "Already exists on website": 22
     },
     "profit_tiers": {
-      "Unknown": 339,
+      "Unknown": 338,
       "High": 63,
       "Medium": 7,
       "Ultra-High": 1,
@@ -62,22 +62,22 @@
       },
       {
         "date": "2026-09-03",
-        "count": 19
+        "count": 18
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 159,
-    "pinned": 102,
-    "not_pinned": 57,
-    "pin_rate_pct": 64.15,
+    "total_deals": 156,
+    "pinned": 101,
+    "not_pinned": 55,
+    "pin_rate_pct": 64.74,
     "total_pins": 0,
     "last_run": "2026-09-03T14:35:07.795077",
     "platforms": {
       "Ajio": 30,
       "Myntra": 19,
-      "Amazon": 44,
-      "Flipkart": 60,
+      "Amazon": 42,
+      "Flipkart": 59,
       "Other": 6
     },
     "recent_deals": [
@@ -112,22 +112,10 @@
         "timestamp": "2026-08-30T15:06:55.785004"
       },
       {
-        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:54:21.710740"
-      },
-      {
         "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
         "platform": "Amazon",
         "pinned": false,
         "timestamp": "2026-08-23T05:57:59.562588"
-      },
-      {
-        "title": "79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable ",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T02:13:24.041710"
       },
       {
         "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
@@ -140,6 +128,18 @@
         "platform": "Ajio",
         "pinned": false,
         "timestamp": "2026-08-22T15:48:09.847869"
+      },
+      {
+        "title": "AJIO Loot: Fashion Deals Starting Under \u20b9399",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-08-22T15:09:35.131750"
+      },
+      {
+        "title": "59% Off : Dabur Vatika Long & Black Shampoo 640ml @237",
+        "platform": "Amazon",
+        "pinned": false,
+        "timestamp": "2026-08-17T20:47:25.881356"
       }
     ]
   },

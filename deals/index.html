@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GetYourDeal &mdash; Curated Drops &amp; Verified Deals</title>
+  <title>Get Your Deal &mdash; Curated Drops &amp; Verified Deals</title>
   <meta name="description" content="Discover India's biggest curated discounts on Amazon, Flipkart, Myntra, Ajio &amp; more."/>
   <link rel="stylesheet" href="deals.css"/>
   <!-- GA4_PLACEHOLDER -->
+  <script>
+    (function() {
+      var hash = window.location.hash || "";
+      if (hash.indexOf("#deal_") === 0) {
+        window.location.replace("./" + hash.substring(1) + "/");
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -14,61 +22,72 @@
     ⚡ India's Curated Fashion & Tech Drops &bull; Verified Discount Deals
   </div>
 
-  <!-- Dribbble Header -->
+  <!-- Header: Burger on Left, Centered Get Your Deal Logo, Empty Spacer on Right -->
   <header class="site-header">
     <div class="header-inner">
       <div class="header-left">
-        <button class="menu-btn" aria-label="Menu">
+        <button class="menu-btn" id="burgerMenuBtn" aria-label="Open Categories Menu">
           <span></span><span></span><span></span>
         </button>
-        <div class="nav-pill-dropdown">Categories ▾</div>
-        <div class="nav-pill active">New Drops</div>
-        <div class="nav-pill">Flash Sale</div>
-        <div class="header-search">
-          <input type="text" id="dealSearchInput" placeholder="Search deals..."/>
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </div>
       </div>
 
       <div class="header-center">
-        <a href="./" class="brand-logo">Wiñk<span>.</span></a>
+        <a href="./" class="brand-logo">Get Your <span>Deal.</span></a>
       </div>
 
-      <div class="header-right">
-        <div class="category-chips" id="categoryChips">
-          <button class="cat-chip active" data-filter="all">All</button>
-          <button class="cat-chip" data-filter="Fashion &amp; Bags">Fashion</button>
-          <button class="cat-chip" data-filter="Electronics &amp; Tech">Tech</button>
-          <button class="cat-chip" data-filter="Beauty &amp; Health">Beauty</button>
-          <button class="cat-chip" data-filter="Loot Deals">Loot</button>
-        </div>
-        <div class="header-icons">
-          <div class="icon-btn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-            <span class="badge-dot"></span>
-          </div>
-          <div class="icon-btn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-          </div>
-        </div>
-      </div>
+      <div class="header-right"></div>
     </div>
   </header>
 
-  <!-- More All You Needs Section -->
-  <main class="catalog-section" style="margin-top: 40px;">
+  <!-- Slide-out Category Drawer -->
+  <div class="drawer-overlay" id="categoryDrawerOverlay"></div>
+  <aside class="category-drawer" id="categoryDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title">Categories</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close">&times;</button>
+    </div>
+    <div class="drawer-categories">
+      <button class="drawer-cat-item active" data-filter="all">
+        <span class="cat-icon">🏷️</span> All Deals
+      </button>
+      <button class="drawer-cat-item" data-filter="Fashion & Bags">
+        <span class="cat-icon">👗</span> Fashion &amp; Bags
+      </button>
+      <button class="drawer-cat-item" data-filter="Electronics & Tech">
+        <span class="cat-icon">⚡</span> Electronics &amp; Tech
+      </button>
+      <button class="drawer-cat-item" data-filter="Beauty & Health">
+        <span class="cat-icon">✨</span> Beauty &amp; Health
+      </button>
+      <button class="drawer-cat-item" data-filter="Shoes & Sneaker">
+        <span class="cat-icon">👟</span> Shoes &amp; Footwear
+      </button>
+      <button class="drawer-cat-item" data-filter="Home & Kitchen">
+        <span class="cat-icon">🏠</span> Home &amp; Kitchen
+      </button>
+      <button class="drawer-cat-item" data-filter="Loot Deals">
+        <span class="cat-icon">🔥</span> Loot Deals
+      </button>
+    </div>
+    <div class="drawer-footer">
+      <p>Hand-picked discounts verified daily across top Indian stores.</p>
+    </div>
+  </aside>
+
+  <!-- Catalog Main Page -->
+  <main class="catalog-section">
     <div class="catalog-header">
-      <h1 class="catalog-title">More All You Needs.</h1>
+      <h1 class="catalog-title" id="catalogHeading">More All You Needs.</h1>
       <span style="color:var(--text-muted);font-weight:600;font-size:0.95rem;">80 Active Deals</span>
     </div>
 
     <div class="deals-grid-dribbble" id="dealsGrid">
       
-      <a href="./deal_20260903_143507795077/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260903_143507795077/" id="deal_20260903_143507795077" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260903_143507.jpg" alt="AJIO | Jeans & Shorts Under ₹499" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
-          <span class="card-freshness-tag"><span class="badge-fresh">⚡ 4h ago</span></span>
+          <span class="card-freshness-tag"><span class="badge-fresh">📦 Today</span></span>
         </div>
         <div class="card-content-box">
           <div class="card-meta-row">
@@ -85,7 +104,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260902_094918818625/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260902_094918818625/" id="deal_20260902_094918818625" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260902_094917.jpg" alt="Upto 90% Off On HRX Mens Sliders." loading="lazy"/>
           <span class="card-discount-tag">UPTO 90% OFF</span>
@@ -106,7 +125,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260902_043503011155/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260902_043503011155/" id="deal_20260902_043503011155" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260902_043506.jpg" alt="65% Off - Reebok Mens Persona Wanderer Sneaker" loading="lazy"/>
           <span class="card-discount-tag">65% OFF</span>
@@ -127,7 +146,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260901_225352305803/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260901_225352305803/" id="deal_20260901_225352305803" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260901_225354.jpg" alt="85% Off - Amazon Basics Nylon Knee Support" loading="lazy"/>
           <span class="card-discount-tag">85% OFF</span>
@@ -148,7 +167,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260830_150655785004/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260830_150655785004/" id="deal_20260830_150655785004" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260830_150658.jpg" alt="72% Off - Kerok Portable Auto Travel Umbrella" loading="lazy"/>
           <span class="card-discount-tag">72% OFF</span>
@@ -169,28 +188,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260823_105421710740/" class="deal-card-dribbble" data-category="Electronics & Tech">
-        <div class="card-image-wrapper">
-          <img src="images/fallback_20260823_105424.jpg" alt="92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5" loading="lazy"/>
-          <span class="card-discount-tag">92% OFF</span>
-          
-        </div>
-        <div class="card-content-box">
-          <div class="card-meta-row">
-            <span class="card-brand-label">Hot Deal</span>
-            <span class="card-category-label">Electronics & Tech</span>
-          </div>
-          <h3 class="card-deal-title">92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5</h3>
-          <div class="card-bottom-row">
-            <div class="card-price-stack">
-              <span class="card-current-price">See Price</span>
-              
-            </div>
-            <div class="card-arrow-circle">&rarr;</div>
-          </div>
-        </div>
-      </a>
-      <a href="./deal_20260823_055759562588/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260823_055759562588/" id="deal_20260823_055759562588" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260823_055801.jpg" alt="50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No" loading="lazy"/>
           <span class="card-discount-tag">50% OFF</span>
@@ -211,28 +209,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260823_021324041710/" class="deal-card-dribbble" data-category="Electronics & Tech">
-        <div class="card-image-wrapper">
-          <img src="images/fallback_20260823_021326.jpg" alt="79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable" loading="lazy"/>
-          <span class="card-discount-tag">79% OFF</span>
-          
-        </div>
-        <div class="card-content-box">
-          <div class="card-meta-row">
-            <span class="card-brand-label">Hot Deal</span>
-            <span class="card-category-label">Electronics & Tech</span>
-          </div>
-          <h3 class="card-deal-title">79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable</h3>
-          <div class="card-bottom-row">
-            <div class="card-price-stack">
-              <span class="card-current-price">See Price</span>
-              
-            </div>
-            <div class="card-arrow-circle">&rarr;</div>
-          </div>
-        </div>
-      </a>
-      <a href="./deal_20260822_163823844326/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260822_163823844326/" id="deal_20260822_163823844326" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260822_163826.jpg" alt="45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont" loading="lazy"/>
           <span class="card-discount-tag">45% OFF</span>
@@ -253,7 +230,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260822_154809847869/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260822_154809847869/" id="deal_20260822_154809847869" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260822_154815.jpg" alt="AJIO LOOT: SUPERDRY Min 50% Off" loading="lazy"/>
           <span class="card-discount-tag">MIN 50% OFF</span>
@@ -274,7 +251,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260822_150935131750/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260822_150935131750/" id="deal_20260822_150935131750" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260822_150941.jpg" alt="AJIO Loot: Fashion Deals Starting Under ₹399" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -295,7 +272,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260817_204725881356/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260817_204725881356/" id="deal_20260817_204725881356" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260817_204726.jpg" alt="59% Off : Dabur Vatika Long & Black Shampoo 640ml @237" loading="lazy"/>
           <span class="card-discount-tag">59% OFF</span>
@@ -316,7 +293,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_204502998911/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260816_204502998911/" id="deal_20260816_204502998911" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260816_204536.jpg" alt="GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ ₹6,199" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -337,7 +314,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_154139332515/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260816_154139332515/" id="deal_20260816_154139332515" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260816_154145.jpg" alt="Ajio Loot : Upto 80% Off On Buda Jeans Co Clothing." loading="lazy"/>
           <span class="card-discount-tag">UPTO 80% OFF</span>
@@ -358,7 +335,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_151644351354Z/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260816_151644351354Z/" id="deal_20260816_151644351354Z" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/p2_overlay_pin_flipkart_Talgo_Fanc_7049323807014487863.jpg" alt="Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra..." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -379,7 +356,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_151532958509Z/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260816_151532958509Z/" id="deal_20260816_151532958509Z" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/p2_overlay_pin_flipkart_Atix_Fancy_8896002269106008440.jpg" alt="Atix Fancy Design Stylish ALPHABET N Dial Brown Leather Stra..." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -400,7 +377,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_151348928047Z/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260816_151348928047Z/" id="deal_20260816_151348928047Z" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/p2_overlay_pin_flipkart_Spinner_Ro_-5820771718500185822.jpg" alt="Spinner Roatating | Gyro | Spinner | Analog Watch  - For Men SP..." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -421,7 +398,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_133303108613/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260816_133303108613/" id="deal_20260816_133303108613" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260816_133322.jpg" alt="PRICE DROP ALERTS – Limited Time Deals" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -442,7 +419,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_130118288444Z/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260816_130118288444Z/" id="deal_20260816_130118288444Z" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/p2_overlay_pin_flipkart_house_of_c_-3432859302624709.jpg" alt="house of common Analog Watch  - For Men HOC656-Black Mahavev Photo PU A..." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -463,7 +440,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260816_125900594610Z/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260816_125900594610Z/" id="deal_20260816_125900594610Z" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/p2_overlay_pin_flipkart_Tarido_Ana_-2336437209522606731.jpg" alt="Tarido Analog Watch Analog Watch  - For Men TD-4605SL01 NEW PU..." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -484,7 +461,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260807_171312512626/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260807_171312512626/" id="deal_20260807_171312512626" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260807_171312.jpg" alt="Loot : Best Deals On Personal Care." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -505,7 +482,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260807_063351472448/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260807_063351472448/" id="deal_20260807_063351472448" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260807_063410.jpg" alt="Price Drop: Samsung Galaxy Watch9 Starting @32,999" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -526,7 +503,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260805_171610453012/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260805_171610453012/" id="deal_20260805_171610453012" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260805_171631.jpg" alt="Oakcraft Matrix Ergonomic Mesh Office Chair (3 Years Warranty) @14,399" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -547,7 +524,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260805_124412580741/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260805_124412580741/" id="deal_20260805_124412580741" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260805_124413.jpg" alt="Lowest: Cureveda Liposomal Vitamin K2 MK-7 (120 Tablets) @499" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -568,7 +545,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260805_083805973014/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260805_083805973014/" id="deal_20260805_083805973014" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260805_083805.jpg" alt="Myntra : Upto 90% Off On Tokyo Talkies Women Clothing." loading="lazy"/>
           <span class="card-discount-tag">UPTO 90% OFF</span>
@@ -589,7 +566,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260804_174537698879/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260804_174537698879/" id="deal_20260804_174537698879" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260804_174537.jpg" alt="AJIO : Upto 90% Off : Red Tape Clothing." loading="lazy"/>
           <span class="card-discount-tag">UPTO 90% OFF</span>
@@ -610,7 +587,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260804_125512666829/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260804_125512666829/" id="deal_20260804_125512666829" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260804_125512.jpg" alt="Ajio : Upto 85% Off : Buda Jeans Co Clothing." loading="lazy"/>
           <span class="card-discount-tag">UPTO 85% OFF</span>
@@ -631,7 +608,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260804_080006092554/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260804_080006092554/" id="deal_20260804_080006092554" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260804_080011.jpg" alt="AJIO: Cargo Pants Starts @150" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -652,7 +629,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_220316978766/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260803_220316978766/" id="deal_20260803_220316978766" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_220317.jpg" alt="Larah by Borosil Dinner Set 27Pcs @1325" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -673,28 +650,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_202948070838Z/" class="deal-card-dribbble" data-category="Fashion & Bags">
-        <div class="card-image-wrapper">
-          <img src="images/p2_overlay_pin_flipkart_WOMANLACE__2933837337440306945.jpg" alt="WOMANLACE Boys & Girls Wide Leg Mid Rise Black Jeans" loading="lazy"/>
-          <span class="card-discount-tag">DEAL</span>
-          
-        </div>
-        <div class="card-content-box">
-          <div class="card-meta-row">
-            <span class="card-brand-label">Hot Deal</span>
-            <span class="card-category-label">Fashion & Bags</span>
-          </div>
-          <h3 class="card-deal-title">WOMANLACE Boys & Girls Wide Leg Mid Rise Black Jeans</h3>
-          <div class="card-bottom-row">
-            <div class="card-price-stack">
-              <span class="card-current-price">See Price</span>
-              
-            </div>
-            <div class="card-arrow-circle">&rarr;</div>
-          </div>
-        </div>
-      </a>
-      <a href="./deal_20260803_202833455056Z/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260803_202833455056Z/" id="deal_20260803_202833455056Z" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/p2_overlay_pin_flipkart_WOMANLACE__2192000831297968960.jpg" alt="WOMANLACE Boys & Girls Wide Leg Mid Rise Light Blue Jeans" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -715,7 +671,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_195143674201Z/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260803_195143674201Z/" id="deal_20260803_195143674201Z" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/p2_flipkart_Ruchika_So_pin.jpg" alt="Ruchika Solid Women Raincoat" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -736,7 +692,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_184817124879Z/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260803_184817124879Z/" id="deal_20260803_184817124879Z" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/p2_flipkart_Shrutika_W_pin.jpg" alt="Shrutika Women Regular High Rise Black Jeans" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -757,7 +713,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_182253701604/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260803_182253701604/" id="deal_20260803_182253701604" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_182254.jpg" alt="Loot : Nike Deodorant (Pack Of 3) @ ₹249." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -778,7 +734,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_175620337809/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260803_175620337809/" id="deal_20260803_175620337809" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_175651.jpg" alt="Lowest: Kapiva Virgin Cold-Pressed 1Ltr @507" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -799,7 +755,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_175551486900/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260803_175551486900/" id="deal_20260803_175551486900" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260803_175551.jpg" alt="Loot: Bevzilla Instant Coffee Powder Combo- (200g× 2) @555" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -820,7 +776,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_140814120872/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260803_140814120872/" id="deal_20260803_140814120872" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_140814.jpg" alt="Acer Chromebook, Intel Celeron Laptop @14900" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -841,7 +797,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_135151013943/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260803_135151013943/" id="deal_20260803_135151013943" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_135222.jpg" alt="Soap (Pack Of 4) @236/238." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -862,7 +818,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_094311858691/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260803_094311858691/" id="deal_20260803_094311858691" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_094312.jpg" alt="Sugar Free Gold, 100 Sachets (Pack Of 2) @149" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -883,7 +839,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_093224148285/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260803_093224148285/" id="deal_20260803_093224148285" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_093225.jpg" alt="Casio Enticer Men Analog Watch @1647." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -904,7 +860,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_041750808063/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260803_041750808063/" id="deal_20260803_041750808063" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_041819.jpg" alt="Detan Brightening Soap (Pack of 4) @214" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -925,7 +881,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260803_041344047191/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260803_041344047191/" id="deal_20260803_041344047191" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260803_041412.jpg" alt="Lowest: boAt Aavante Octave Plus 80 W @ Rs.2,499" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -946,7 +902,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_220827286848/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_220827286848/" id="deal_20260802_220827286848" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_220828.jpg" alt="Cello H2O Unbreakable Bottle, 1 Ltr, Set Of 3 @274." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -967,7 +923,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_220503521513/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_220503521513/" id="deal_20260802_220503521513" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_220504.jpg" alt="GRAB : 2-in-1 Paper Foil, 1 Kg @349" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -988,7 +944,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_170625240244/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_170625240244/" id="deal_20260802_170625240244" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_170626.jpg" alt="Big loot deal: MIX DRY FRUITS @369 1Kg" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1009,7 +965,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_170457494321/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260802_170457494321/" id="deal_20260802_170457494321" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_170457.jpg" alt="Vaseline Cocoa Glow Body Lotion 600 ml @305" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1030,7 +986,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_165833744396/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260802_165833744396/" id="deal_20260802_165833744396" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_165833.jpg" alt="Blue Heaven Makeup kit @ ₹319" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1051,7 +1007,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_122155573151/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260802_122155573151/" id="deal_20260802_122155573151" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_122155.jpg" alt="Puma Sneaker for ₹1,775" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1072,7 +1028,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_122112263516/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260802_122112263516/" id="deal_20260802_122112263516" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_122112.jpg" alt="Red Tape Sneaker" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1093,7 +1049,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_121446621197/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260802_121446621197/" id="deal_20260802_121446621197" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_121446.jpg" alt="Comet Shoe Flat 400 off" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1114,7 +1070,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_082840471368/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_082840471368/" id="deal_20260802_082840471368" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_082841.jpg" alt="Pigeon Stainless Steel Electric Kettle, 1.8L @529" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1135,7 +1091,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_082422198351/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260802_082422198351/" id="deal_20260802_082422198351" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_082419.jpg" alt="Bata Sneakers For Men @323" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1156,7 +1112,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_081944092757/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_081944092757/" id="deal_20260802_081944092757" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_081952.jpg" alt="Lifelong 3 HP Walking Pad @7999." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1177,7 +1133,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_081313074631/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_081313074631/" id="deal_20260802_081313074631" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_081312.jpg" alt="Premium Facial Tissue Paper (Pack of 4) @ ₹269" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1198,7 +1154,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_041824239459/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_041824239459/" id="deal_20260802_041824239459" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_041811.jpg" alt="Fast 896" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1219,7 +1175,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_041715882559/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260802_041715882559/" id="deal_20260802_041715882559" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260802_041715.jpg" alt="Travel Cosmetic Bag - 3pcs @ ₹161" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1240,7 +1196,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_041247311351/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260802_041247311351/" id="deal_20260802_041247311351" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_041254.jpg" alt="Loot : Urbn 20000 mAh 70 W Laptop Powerbank @ ₹2499." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1261,7 +1217,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260802_041151096191/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260802_041151096191/" id="deal_20260802_041151096191" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260802_041201.jpg" alt="Haldiram&Navrattan Namkeen (1500 g) @ ₹225" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1282,7 +1238,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_173713476066/" class="deal-card-dribbble" data-category="Automotive">
+      <a href="./deal_20260801_173713476066/" id="deal_20260801_173713476066" class="deal-card-dribbble" data-category="Automotive">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_173732.jpg" alt="STUDDS Helmet (XL) @836." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1303,7 +1259,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_173510665434/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_173510665434/" id="deal_20260801_173510665434" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_173529.jpg" alt="689 size 10" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1324,7 +1280,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_173036233140/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_173036233140/" id="deal_20260801_173036233140" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_173106.jpg" alt="Loot 759" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1345,7 +1301,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_172912870083/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260801_172912870083/" id="deal_20260801_172912870083" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_172932.jpg" alt="Vivel Body Wash 1.3L @ ₹227" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1366,7 +1322,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_172708245262/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_172708245262/" id="deal_20260801_172708245262" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_172726.jpg" alt="Loot: Sirona Soft Cotton XL Sanitary Pads (Pack of 30) @135" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1387,7 +1343,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_141455700831/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260801_141455700831/" id="deal_20260801_141455700831" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_141456.jpg" alt="Timex Analog Women's Watch @2066." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1408,7 +1364,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_134328493439/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260801_134328493439/" id="deal_20260801_134328493439" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260801_134328.jpg" alt="AJIO : Upto 80% Off : Men's Footwear" loading="lazy"/>
           <span class="card-discount-tag">UPTO 80% OFF</span>
@@ -1429,7 +1385,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_134215981585/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260801_134215981585/" id="deal_20260801_134215981585" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260801_134215.jpg" alt="AJIO : Upto 82% Off : Lee Cooper Mens Clothing" loading="lazy"/>
           <span class="card-discount-tag">UPTO 82% OFF</span>
@@ -1450,7 +1406,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_104039924904/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_104039924904/" id="deal_20260801_104039924904" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260801_104039.jpg" alt="Atomberg Renesa Fan For ₹2,887." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1471,7 +1427,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_103835640396/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_103835640396/" id="deal_20260801_103835640396" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_103836.jpg" alt="73% Off : Rexona Underarm Roll-On (Pack of 2) @102" loading="lazy"/>
           <span class="card-discount-tag">73% OFF</span>
@@ -1492,7 +1448,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_103002944669/" class="deal-card-dribbble" data-category="Electronics & Tech">
+      <a href="./deal_20260801_103002944669/" id="deal_20260801_103002944669" class="deal-card-dribbble" data-category="Electronics & Tech">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_103009.jpg" alt="Loot: Urbn Laptop Powerbank @ just 2499" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1513,7 +1469,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_075631793447/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_075631793447/" id="deal_20260801_075631793447" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260801_075631.jpg" alt="GRAB : Kid's Co-ords Sets Starts @354." loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1534,7 +1490,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_064758575085/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260801_064758575085/" id="deal_20260801_064758575085" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260801_064804.jpg" alt="AJIO Loot : Topwear Clothing Under ₹199" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1555,7 +1511,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_031234507189/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260801_031234507189/" id="deal_20260801_031234507189" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260801_031233.jpg" alt="Myntra Loot : Upto 86% Off On Jack & Jones Clothing." loading="lazy"/>
           <span class="card-discount-tag">UPTO 86% OFF</span>
@@ -1576,7 +1532,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260801_025525044226/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260801_025525044226/" id="deal_20260801_025525044226" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260801_025523.jpg" alt="Jompers Nehru Jackets Upto 85% Off" loading="lazy"/>
           <span class="card-discount-tag">UPTO 85% OFF</span>
@@ -1597,7 +1553,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_213041369152/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260731_213041369152/" id="deal_20260731_213041369152" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260731_213042.jpg" alt="65% Off : Olay 7in1 Ultra-light Face Serum 30ml @279." loading="lazy"/>
           <span class="card-discount-tag">65% OFF</span>
@@ -1618,7 +1574,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_182913950981/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260731_182913950981/" id="deal_20260731_182913950981" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260731_182913.jpg" alt="Puma Dezhyphr Sneaker @ ₹2262" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1639,7 +1595,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_145132543817/" class="deal-card-dribbble" data-category="Beauty & Health">
+      <a href="./deal_20260731_145132543817/" id="deal_20260731_145132543817" class="deal-card-dribbble" data-category="Beauty & Health">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260731_145133.jpg" alt="60% Off : Vaseline Sun Protect SPF 50 PA++++ Lotion, 400ml @319." loading="lazy"/>
           <span class="card-discount-tag">60% OFF</span>
@@ -1660,7 +1616,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_110344242686/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260731_110344242686/" id="deal_20260731_110344242686" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260731_110343.jpg" alt="AJIO : Shein Premium Clothing from @99" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1681,7 +1637,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_072140851976/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260731_072140851976/" id="deal_20260731_072140851976" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/fallback_20260731_072142.jpg" alt="Big loot deal: MIX DRY FRUITS @299 1Kg" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1702,7 +1658,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_071401606135/" class="deal-card-dribbble" data-category="Loot Deals">
+      <a href="./deal_20260731_071401606135/" id="deal_20260731_071401606135" class="deal-card-dribbble" data-category="Loot Deals">
         <div class="card-image-wrapper">
           <img src="images/deal_20260731_071401.jpg" alt="Lowest: LAVA Virat V1 5G (4GB 64GB) @11,890" loading="lazy"/>
           <span class="card-discount-tag">DEAL</span>
@@ -1723,7 +1679,7 @@
           </div>
         </div>
       </a>
-      <a href="./deal_20260731_071240364446/" class="deal-card-dribbble" data-category="Fashion & Bags">
+      <a href="./deal_20260731_071240364446/" id="deal_20260731_071240364446" class="deal-card-dribbble" data-category="Fashion & Bags">
         <div class="card-image-wrapper">
           <img src="images/deal_20260731_071240.jpg" alt="AJIO : Upto 85% Off On Mens Jeans" loading="lazy"/>
           <span class="card-discount-tag">UPTO 85% OFF</span>
@@ -1744,51 +1700,138 @@
           </div>
         </div>
       </a>
+      <a href="./deal_20260730_220825727785/" id="deal_20260730_220825727785" class="deal-card-dribbble" data-category="Loot Deals">
+        <div class="card-image-wrapper">
+          <img src="images/fallback_20260730_220826.jpg" alt="Park Avenue 7 in-1 Combo Grooming Kit at 327." loading="lazy"/>
+          <span class="card-discount-tag">DEAL</span>
+          
+        </div>
+        <div class="card-content-box">
+          <div class="card-meta-row">
+            <span class="card-brand-label">Hot Deal</span>
+            <span class="card-category-label">Loot Deals</span>
+          </div>
+          <h3 class="card-deal-title">Park Avenue 7 in-1 Combo Grooming Kit at 327.</h3>
+          <div class="card-bottom-row">
+            <div class="card-price-stack">
+              <span class="card-current-price">₹327</span>
+              
+            </div>
+            <div class="card-arrow-circle">&rarr;</div>
+          </div>
+        </div>
+      </a>
+      <a href="./deal_20260730_220639790843/" id="deal_20260730_220639790843" class="deal-card-dribbble" data-category="Loot Deals">
+        <div class="card-image-wrapper">
+          <img src="images/deal_20260730_220638.jpg" alt="Upto 90% Off : Stylecast x Kotty Men Clothing." loading="lazy"/>
+          <span class="card-discount-tag">UPTO 90% OFF</span>
+          
+        </div>
+        <div class="card-content-box">
+          <div class="card-meta-row">
+            <span class="card-brand-label">Hot Deal</span>
+            <span class="card-category-label">Loot Deals</span>
+          </div>
+          <h3 class="card-deal-title">Upto 90% Off : Stylecast x Kotty Men Clothing.</h3>
+          <div class="card-bottom-row">
+            <div class="card-price-stack">
+              <span class="card-current-price">See Price</span>
+              
+            </div>
+            <div class="card-arrow-circle">&rarr;</div>
+          </div>
+        </div>
+      </a>
+      <a href="./deal_20260730_185548168431/" id="deal_20260730_185548168431" class="deal-card-dribbble" data-category="Electronics & Tech">
+        <div class="card-image-wrapper">
+          <img src="images/fallback_20260730_185550.jpg" alt="70% Off - French Connection Analog Rose Gold Dial Women's Watch-FCN0001F" loading="lazy"/>
+          <span class="card-discount-tag">70% OFF</span>
+          
+        </div>
+        <div class="card-content-box">
+          <div class="card-meta-row">
+            <span class="card-brand-label">Hot Deal</span>
+            <span class="card-category-label">Electronics & Tech</span>
+          </div>
+          <h3 class="card-deal-title">70% Off - French Connection Analog Rose Gold Dial Women's Watch-FCN0001F</h3>
+          <div class="card-bottom-row">
+            <div class="card-price-stack">
+              <span class="card-current-price">See Price</span>
+              
+            </div>
+            <div class="card-arrow-circle">&rarr;</div>
+          </div>
+        </div>
+      </a>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-logo">Wiñk<span>.</span></div>
+      <div class="footer-logo">Get Your <span>Deal.</span></div>
       <p style="color:var(--text-muted);font-size:0.9rem;">India's Best Curated E-Commerce Deals &amp; Drops</p>
       <p class="footer-disclaimer">Affiliate Disclosure: When you purchase through our links, we may earn an affiliate commission at zero additional cost to you.</p>
     </div>
   </footer>
 
   <script>
-    const searchInput = document.getElementById('dealSearchInput');
+    const burgerBtn = document.getElementById('burgerMenuBtn');
+    const drawer = document.getElementById('categoryDrawer');
+    const overlay = document.getElementById('categoryDrawerOverlay');
+    const closeBtn = document.getElementById('closeDrawerBtn');
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+    }
+
+    if (burgerBtn) burgerBtn.addEventListener('click', openDrawer);
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (overlay) overlay.addEventListener('click', closeDrawer);
+
+    // Category Filtering via Drawer
+    const drawerItems = document.querySelectorAll('.drawer-cat-item');
     const cards = document.querySelectorAll('.deal-card-dribbble');
-    const chips = document.querySelectorAll('.cat-chip');
+    const catalogHeading = document.getElementById('catalogHeading');
 
-    let activeFilter = 'all';
+    drawerItems.forEach(item => {
+      item.addEventListener('click', () => {
+        drawerItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        const filter = item.getAttribute('data-filter') || 'all';
 
-    function filterDeals() {
-      const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
-      cards.forEach(card => {
-        const cat = card.getAttribute('data-category') || '';
-        const text = card.textContent.toLowerCase();
-        const matchesCat = (activeFilter === 'all' || cat.includes(activeFilter));
-        const matchesSearch = (!q || text.includes(q));
-        if (matchesCat && matchesSearch) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
+        cards.forEach(card => {
+          const cat = card.getAttribute('data-category') || '';
+          if (filter === 'all' || cat.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (catalogHeading) {
+          catalogHeading.textContent = filter === 'all' ? 'More All You Needs.' : filter + ' Drops.';
+        }
+        closeDrawer();
+      });
+    });
+
+    // URL parameter support (e.g. ?cat=Fashion)
+    const urlParams = new URLSearchParams(window.location.search);
+    const catParam = urlParams.get('cat') || urlParams.get('filter');
+    if (catParam) {
+      drawerItems.forEach(item => {
+        const filter = item.getAttribute('data-filter') || '';
+        if (filter.toLowerCase().includes(catParam.toLowerCase())) {
+          item.click();
         }
       });
     }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', filterDeals);
-    }
-
-    chips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        chips.forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        activeFilter = chip.getAttribute('data-filter') || 'all';
-        filterDeals();
-      });
-    });
   </script>
 
 </body>

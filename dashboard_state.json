@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T14:01:56.768424Z",
+  "generated_at": "2026-09-04T15:51:53.569994Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,24 +19,24 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 563,
+    "total_processed": 499,
     "live": 24,
-    "fully_posted": 19,
-    "website_only": 5,
-    "skipped": 539,
-    "success_rate_pct": 4.26,
-    "last_run": "2026-09-04T14:01:56.578568",
+    "fully_posted": 24,
+    "website_only": 0,
+    "skipped": 475,
+    "success_rate_pct": 4.81,
+    "last_run": "2026-09-04T15:51:53.346119",
     "skip_reasons": {
-      "Discount Filter": 366,
-      "No product URL found": 54,
-      "Already exists on website": 26,
-      "No Real Photo (Image Fetch/Validation Failed)": 93
+      "No product URL found": 37,
+      "Discount Filter": 325,
+      "Already exists on website": 24,
+      "No Real Photo (Image Fetch/Validation Failed)": 89
     },
     "profit_tiers": {
-      "High": 90,
-      "Unknown": 427,
-      "Medium": 10,
-      "Low": 35,
+      "High": 84,
+      "Unknown": 374,
+      "Low": 33,
+      "Medium": 7,
       "Ultra-High": 1
     },
     "timeline": [
@@ -66,54 +66,54 @@
       },
       {
         "date": "2026-09-04",
-        "count": 152
+        "count": 88
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 164,
-    "pinned": 164,
+    "total_deals": 162,
+    "pinned": 162,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-04T14:01:47.967170",
+    "last_run": "2026-09-04T15:50:19.856394",
     "platforms": {
-      "Myntra": 23,
-      "Ajio": 32,
-      "Amazon": 43,
-      "Flipkart": 60,
+      "Myntra": 22,
+      "Ajio": 33,
+      "Amazon": 42,
+      "Flipkart": 59,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "Myntra : Upto 74% Off On Adidas Shoes.",
+        "title": "Upto 90% Off On Kook N Keech Clothing.",
         "platform": "Myntra",
         "pinned": true,
-        "timestamp": "2026-09-04T14:01:47.967170"
+        "timestamp": "2026-09-04T15:50:19.856394"
       },
       {
-        "title": "Myntra : Upto 70% Off : RARE RABBIT Clothing.",
+        "title": "Myntra : Upto 70% Off On Top Branded Shoes.",
         "platform": "Myntra",
         "pinned": true,
-        "timestamp": "2026-09-04T14:01:38.205909"
+        "timestamp": "2026-09-04T15:50:01.813128"
       },
       {
-        "title": "Upto 90% Off On Tokyo Talkies",
-        "platform": "Myntra",
+        "title": "AJIO LOOT: Denim Fest Upto 70% Off",
+        "platform": "Ajio",
         "pinned": true,
-        "timestamp": "2026-09-04T12:58:00.789973"
+        "timestamp": "2026-09-04T15:49:52.340535"
       },
       {
         "title": "AJIO Loot : Upto 90% Off On Buda Jeans Co Clothing.",
         "platform": "Ajio",
         "pinned": true,
-        "timestamp": "2026-09-04T12:51:29.920728"
+        "timestamp": "2026-09-04T15:49:39.663790"
       },
       {
         "title": "Myntra  : Upto 89% Off : Roadster T-Shirts.",
         "platform": "Myntra",
         "pinned": true,
-        "timestamp": "2026-09-04T12:51:08.097867"
+        "timestamp": "2026-09-04T15:49:19.529461"
       },
       {
         "title": "AJIO: Up to 85% Off on Buda Jeans Co Clothing",

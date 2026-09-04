@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T15:39:22.957381Z",
+  "generated_at": "2026-09-04T14:01:56.768424Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,26 +19,133 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 0,
-    "live": 0,
-    "fully_posted": 0,
-    "website_only": 0,
-    "skipped": 0,
-    "success_rate_pct": 0.0,
-    "last_run": null,
-    "skip_reasons": {},
-    "profit_tiers": {},
-    "timeline": []
+    "total_processed": 563,
+    "live": 24,
+    "fully_posted": 19,
+    "website_only": 5,
+    "skipped": 539,
+    "success_rate_pct": 4.26,
+    "last_run": "2026-09-04T14:01:56.578568",
+    "skip_reasons": {
+      "Discount Filter": 366,
+      "No product URL found": 54,
+      "Already exists on website": 26,
+      "No Real Photo (Image Fetch/Validation Failed)": 93
+    },
+    "profit_tiers": {
+      "High": 90,
+      "Unknown": 427,
+      "Medium": 10,
+      "Low": 35,
+      "Ultra-High": 1
+    },
+    "timeline": [
+      {
+        "date": "2026-08-22",
+        "count": 125
+      },
+      {
+        "date": "2026-08-23",
+        "count": 228
+      },
+      {
+        "date": "2026-08-30",
+        "count": 20
+      },
+      {
+        "date": "2026-09-01",
+        "count": 17
+      },
+      {
+        "date": "2026-09-02",
+        "count": 20
+      },
+      {
+        "date": "2026-09-03",
+        "count": 1
+      },
+      {
+        "date": "2026-09-04",
+        "count": 152
+      }
+    ]
   },
   "pipeline2": {
-    "total_deals": 0,
-    "pinned": 0,
+    "total_deals": 164,
+    "pinned": 164,
     "not_pinned": 0,
-    "pin_rate_pct": 0.0,
+    "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": null,
-    "platforms": {},
-    "recent_deals": []
+    "last_run": "2026-09-04T14:01:47.967170",
+    "platforms": {
+      "Myntra": 23,
+      "Ajio": 32,
+      "Amazon": 43,
+      "Flipkart": 60,
+      "Other": 6
+    },
+    "recent_deals": [
+      {
+        "title": "Myntra : Upto 74% Off On Adidas Shoes.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-04T14:01:47.967170"
+      },
+      {
+        "title": "Myntra : Upto 70% Off : RARE RABBIT Clothing.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-04T14:01:38.205909"
+      },
+      {
+        "title": "Upto 90% Off On Tokyo Talkies",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-04T12:58:00.789973"
+      },
+      {
+        "title": "AJIO Loot : Upto 90% Off On Buda Jeans Co Clothing.",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-04T12:51:29.920728"
+      },
+      {
+        "title": "Myntra  : Upto 89% Off : Roadster T-Shirts.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-04T12:51:08.097867"
+      },
+      {
+        "title": "AJIO: Up to 85% Off on Buda Jeans Co Clothing",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-04T08:54:23.414118"
+      },
+      {
+        "title": "AJIO | Jeans & Shorts Under \u20b9499",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-03T14:35:07.795077"
+      },
+      {
+        "title": "Upto 90% Off On HRX Mens Sliders.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-02T09:49:18.818625"
+      },
+      {
+        "title": "65% Off - Reebok Mens Persona Wanderer Sneaker",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-09-02T04:35:03.011155"
+      },
+      {
+        "title": "85% Off - Amazon Basics Nylon Knee Support",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-09-01T22:53:52.305803"
+      }
+    ]
   },
   "instagram_stats": {
     "posts_today": 0,
@@ -46,187 +153,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1787066466.8782907,
+    "timestamp": 1788501515.1072166,
     "trends": [
       {
-        "keyword": "watch men",
+        "keyword": "skincare routines comparison",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501096+00:00"
+        "scraped_at": "2026-09-04T05:58:34.751324+00:00"
       },
       {
-        "keyword": "winter jacket sons of the forest",
+        "keyword": "skincare routines vs acne care",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262783+00:00"
+        "scraped_at": "2026-09-04T05:58:34.751335+00:00"
       },
       {
-        "keyword": "winter jackets",
+        "keyword": "sneakers o'toole",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262754+00:00"
+        "scraped_at": "2026-09-04T05:58:34.682742+00:00"
       },
       {
-        "keyword": "kurta men embroidery",
+        "keyword": "ethnic dresses for ladies stores near me",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681458+00:00"
+        "scraped_at": "2026-09-04T05:58:34.594868+00:00"
       },
       {
-        "keyword": "watchmen movie",
+        "keyword": "skincare routines vs moisturizer tips",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501324+00:00"
+        "scraped_at": "2026-09-04T05:58:34.751337+00:00"
       },
       {
-        "keyword": "winter jackets buying guide",
+        "keyword": "sneakers",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262780+00:00"
+        "scraped_at": "2026-09-04T05:58:34.682552+00:00"
       },
       {
-        "keyword": "kurta men fashion",
+        "keyword": "ethnic dress for men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681449+00:00"
+        "scraped_at": "2026-09-04T05:58:34.594863+00:00"
       },
       {
-        "keyword": "winter jackets for women",
+        "keyword": "ethnic dress jean",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262772+00:00"
+        "scraped_at": "2026-09-04T05:58:34.594860+00:00"
       },
       {
-        "keyword": "kurta men style",
+        "keyword": "home decor group",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681455+00:00"
+        "scraped_at": "2026-09-04T05:58:34.820386+00:00"
       },
       {
-        "keyword": "winter jackets for men",
+        "keyword": "skincare routines best practices",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262769+00:00"
+        "scraped_at": "2026-09-04T05:58:34.751330+00:00"
       },
       {
-        "keyword": "watch men's hockey olympics",
-        "category": "fashion",
+        "keyword": "serum",
+        "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501331+00:00"
+        "scraped_at": "2026-09-04T05:58:34.506273+00:00"
       },
       {
-        "keyword": "saree",
+        "keyword": "ethnic dress styles",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402499+00:00"
+        "scraped_at": "2026-09-04T05:58:34.594873+00:00"
       },
       {
-        "keyword": "winter jackets for kids",
+        "keyword": "sneakers at red cedar",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262778+00:00"
+        "scraped_at": "2026-09-04T05:58:34.682750+00:00"
       },
       {
-        "keyword": "saree center",
+        "keyword": "home decor near me",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402517+00:00"
+        "scraped_at": "2026-09-04T05:58:34.820395+00:00"
       },
       {
-        "keyword": "saree room",
+        "keyword": "home decor campello",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402524+00:00"
+        "scraped_at": "2026-09-04T05:58:34.820374+00:00"
       },
       {
-        "keyword": "watch men gift pack",
+        "keyword": "sneakers at ashbrook",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501327+00:00"
+        "scraped_at": "2026-09-04T05:58:34.682748+00:00"
       },
       {
-        "keyword": "watch men's olympic hockey",
+        "keyword": "home decor braintree highlands",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501319+00:00"
+        "scraped_at": "2026-09-04T05:58:34.820379+00:00"
       },
       {
-        "keyword": "watch mentalist",
+        "keyword": "home decor",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501329+00:00"
+        "scraped_at": "2026-09-04T05:58:34.820359+00:00"
       },
       {
-        "keyword": "sarees for women",
-        "category": "fashion",
+        "keyword": "serum vs plasma",
+        "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402519+00:00"
+        "scraped_at": "2026-09-04T05:58:34.506276+00:00"
       },
       {
-        "keyword": "kurta men",
+        "keyword": "cargo pants",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681429+00:00"
+        "scraped_at": "2026-09-04T05:58:34.934316+00:00"
       },
       {
-        "keyword": "watch men in black",
-        "category": "fashion",
+        "keyword": "serum creatinine",
+        "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.501113+00:00"
+        "scraped_at": "2026-09-04T05:58:34.506279+00:00"
       },
       {
-        "keyword": "sareee",
+        "keyword": "home decorators collection",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402514+00:00"
+        "scraped_at": "2026-09-04T05:58:34.820389+00:00"
       },
       {
-        "keyword": "saree for farewell",
+        "keyword": "ethnic dress",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402526+00:00"
+        "scraped_at": "2026-09-04T05:58:34.594841+00:00"
       },
       {
-        "keyword": "kurta men design",
+        "keyword": "ethnic dress code",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681461+00:00"
+        "scraped_at": "2026-09-04T05:58:34.594866+00:00"
       },
       {
-        "keyword": "winter jacket sale",
-        "category": "fashion",
+        "keyword": "serum sickness",
+        "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262775+00:00"
+        "scraped_at": "2026-09-04T05:58:34.506271+00:00"
       },
       {
-        "keyword": "sareena singh md",
+        "keyword": "skincare routines product layering",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402528+00:00"
+        "scraped_at": "2026-09-04T05:58:34.751328+00:00"
       },
       {
-        "keyword": "winter jackets comparison",
+        "keyword": "sneakers for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.262789+00:00"
+        "scraped_at": "2026-09-04T05:58:34.682564+00:00"
       },
       {
-        "keyword": "kurta men cloth",
+        "keyword": "sneakers movie",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681446+00:00"
+        "scraped_at": "2026-09-04T05:58:34.682746+00:00"
       },
       {
-        "keyword": "saree dress",
-        "category": "fashion",
+        "keyword": "serum 2 download",
+        "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.402521+00:00"
+        "scraped_at": "2026-09-04T05:58:34.506289+00:00"
       },
       {
-        "keyword": "kurta men set",
+        "keyword": "skincare routines best strategies",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-08-18T15:21:06.681452+00:00"
+        "scraped_at": "2026-09-04T05:58:34.751333+00:00"
+      },
+      {
+        "keyword": "sneakers for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.682753+00:00"
+      },
+      {
+        "keyword": "serum 2",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.506252+00:00"
+      },
+      {
+        "keyword": "sneakers app",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.682755+00:00"
+      },
+      {
+        "keyword": "home decor stores",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.820383+00:00"
+      },
+      {
+        "keyword": "serum vst",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.506282+00:00"
+      },
+      {
+        "keyword": "skincare routines",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.751313+00:00"
+      },
+      {
+        "keyword": "ethnic dress for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.594871+00:00"
+      },
+      {
+        "keyword": "serum osmolality",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.506267+00:00"
+      },
+      {
+        "keyword": "home decor ideas",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.820392+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-04T05:58:34.594857+00:00"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T06:14:55.722777Z",
+  "generated_at": "2026-08-22T15:39:22.957381Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,133 +19,26 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 425,
-    "live": 22,
-    "fully_posted": 22,
+    "total_processed": 0,
+    "live": 0,
+    "fully_posted": 0,
     "website_only": 0,
-    "skipped": 403,
-    "success_rate_pct": 5.18,
-    "last_run": "2026-09-04T06:14:55.507833",
-    "skip_reasons": {
-      "No product URL found": 11,
-      "Discount Filter": 285,
-      "No Real Photo (Image Fetch/Validation Failed)": 85,
-      "Already exists on website": 22
-    },
-    "profit_tiers": {
-      "Unknown": 334,
-      "High": 64,
-      "Medium": 7,
-      "Ultra-High": 1,
-      "Low": 19
-    },
-    "timeline": [
-      {
-        "date": "2026-08-22",
-        "count": 125
-      },
-      {
-        "date": "2026-08-23",
-        "count": 228
-      },
-      {
-        "date": "2026-08-30",
-        "count": 20
-      },
-      {
-        "date": "2026-09-01",
-        "count": 17
-      },
-      {
-        "date": "2026-09-02",
-        "count": 20
-      },
-      {
-        "date": "2026-09-03",
-        "count": 1
-      },
-      {
-        "date": "2026-09-04",
-        "count": 14
-      }
-    ]
+    "skipped": 0,
+    "success_rate_pct": 0.0,
+    "last_run": null,
+    "skip_reasons": {},
+    "profit_tiers": {},
+    "timeline": []
   },
   "pipeline2": {
-    "total_deals": 157,
-    "pinned": 101,
-    "not_pinned": 56,
-    "pin_rate_pct": 64.33,
+    "total_deals": 0,
+    "pinned": 0,
+    "not_pinned": 0,
+    "pin_rate_pct": 0.0,
     "total_pins": 0,
-    "last_run": "2026-09-03T14:35:07.795077",
-    "platforms": {
-      "Ajio": 30,
-      "Myntra": 19,
-      "Amazon": 43,
-      "Flipkart": 59,
-      "Other": 6
-    },
-    "recent_deals": [
-      {
-        "title": "AJIO | Jeans & Shorts Under \u20b9499",
-        "platform": "Ajio",
-        "pinned": false,
-        "timestamp": "2026-09-03T14:35:07.795077"
-      },
-      {
-        "title": "Upto 90% Off On HRX Mens Sliders.",
-        "platform": "Myntra",
-        "pinned": false,
-        "timestamp": "2026-09-02T09:49:18.818625"
-      },
-      {
-        "title": "65% Off - Reebok Mens Persona Wanderer Sneaker",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-09-02T04:35:03.011155"
-      },
-      {
-        "title": "85% Off - Amazon Basics Nylon Knee Support",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-09-01T22:53:52.305803"
-      },
-      {
-        "title": "72% Off - Kerok Portable Auto Travel Umbrella",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-30T15:06:55.785004"
-      },
-      {
-        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T10:54:21.710740"
-      },
-      {
-        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T05:57:59.562588"
-      },
-      {
-        "title": "79% Off - Ant Esports AEC6105 Cat6 Ethernet Cable 550MHZ HighSpeed UTP LAN Cable Network Cable ",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-23T02:13:24.041710"
-      },
-      {
-        "title": "45% Off - Bajaj MX 3 Neo Steam Iron | 1250 Watts Power For Faster Ironing | Vertical & Horizont",
-        "platform": "Amazon",
-        "pinned": false,
-        "timestamp": "2026-08-22T16:38:23.844326"
-      },
-      {
-        "title": "AJIO LOOT: SUPERDRY Min 50% Off",
-        "platform": "Ajio",
-        "pinned": false,
-        "timestamp": "2026-08-22T15:48:09.847869"
-      }
-    ]
+    "last_run": null,
+    "platforms": {},
+    "recent_deals": []
   },
   "instagram_stats": {
     "posts_today": 0,
@@ -153,247 +46,187 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1788459180.8839397,
+    "timestamp": 1787066466.8782907,
     "trends": [
       {
-        "keyword": "ethnic dresses for ladies stores near me",
+        "keyword": "watch men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445997+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501096+00:00"
       },
       {
-        "keyword": "cargo pants for boys",
+        "keyword": "winter jacket sons of the forest",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318875+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262783+00:00"
       },
       {
-        "keyword": "lipstick shades for office wear",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.204033+00:00"
-      },
-      {
-        "keyword": "kurta men fashion",
+        "keyword": "winter jackets",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926146+00:00"
-      },
-      {
-        "keyword": "cargo pants for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318868+00:00"
-      },
-      {
-        "keyword": "ethnic dresses for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445988+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262754+00:00"
       },
       {
         "keyword": "kurta men embroidery",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926153+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681458+00:00"
       },
       {
-        "keyword": "serum 2",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082138+00:00"
-      },
-      {
-        "keyword": "lipstick shades for indian skin",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.203858+00:00"
-      },
-      {
-        "keyword": "lipstick shades for brown skin",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.204035+00:00"
-      },
-      {
-        "keyword": "serum osmolality",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082157+00:00"
-      },
-      {
-        "keyword": "serum protein electrophoresis",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082165+00:00"
-      },
-      {
-        "keyword": "serum vst",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082167+00:00"
-      },
-      {
-        "keyword": "lipstick shade for warm skin tone",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.204037+00:00"
-      },
-      {
-        "keyword": "ethnic dress for girls",
+        "keyword": "watchmen movie",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445998+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501324+00:00"
       },
       {
-        "keyword": "serum creatinine",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082160+00:00"
-      },
-      {
-        "keyword": "ethnic dress code",
+        "keyword": "winter jackets buying guide",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445995+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262780+00:00"
       },
       {
-        "keyword": "lipstick shades",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.203842+00:00"
-      },
-      {
-        "keyword": "kurta men set",
+        "keyword": "kurta men fashion",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926148+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681449+00:00"
       },
       {
-        "keyword": "cargo pants women",
+        "keyword": "winter jackets for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318871+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262772+00:00"
       },
       {
         "keyword": "kurta men style",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926151+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681455+00:00"
       },
       {
-        "keyword": "cargo pants",
+        "keyword": "winter jackets for men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318852+00:00"
+        "scraped_at": "2026-08-18T15:21:06.262769+00:00"
       },
       {
-        "keyword": "serum",
-        "category": "beauty",
+        "keyword": "watch men's hockey olympics",
+        "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082162+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501331+00:00"
+      },
+      {
+        "keyword": "saree",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.402499+00:00"
+      },
+      {
+        "keyword": "winter jackets for kids",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.262778+00:00"
+      },
+      {
+        "keyword": "saree center",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.402517+00:00"
+      },
+      {
+        "keyword": "saree room",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.402524+00:00"
+      },
+      {
+        "keyword": "watch men gift pack",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.501327+00:00"
+      },
+      {
+        "keyword": "watch men's olympic hockey",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.501319+00:00"
+      },
+      {
+        "keyword": "watch mentalist",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.501329+00:00"
+      },
+      {
+        "keyword": "sarees for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.402519+00:00"
       },
       {
         "keyword": "kurta men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926126+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681429+00:00"
       },
       {
-        "keyword": "ethnic dress for men",
+        "keyword": "watch men in black",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445993+00:00"
+        "scraped_at": "2026-08-18T15:21:06.501113+00:00"
       },
       {
-        "keyword": "lipstick shade finder",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.204025+00:00"
-      },
-      {
-        "keyword": "lipstick shades names",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.204029+00:00"
-      },
-      {
-        "keyword": "lipstick shades trending",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.204031+00:00"
-      },
-      {
-        "keyword": "cargo pants baggy",
+        "keyword": "sareee",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318873+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402514+00:00"
       },
       {
-        "keyword": "cargo pants women baggy",
+        "keyword": "saree for farewell",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318880+00:00"
-      },
-      {
-        "keyword": "kurta men cloth",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926143+00:00"
-      },
-      {
-        "keyword": "ethnic dress styles",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.446000+00:00"
-      },
-      {
-        "keyword": "cargo pants for girls",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318876+00:00"
-      },
-      {
-        "keyword": "ethnic dress",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445972+00:00"
-      },
-      {
-        "keyword": "kurta men collection",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926154+00:00"
-      },
-      {
-        "keyword": "ethnic dress jean",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.445991+00:00"
-      },
-      {
-        "keyword": "serum vs plasma",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082163+00:00"
-      },
-      {
-        "keyword": "serum sickness",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.082154+00:00"
-      },
-      {
-        "keyword": "cargo pants for men with pockets",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:13:00.318878+00:00"
+        "scraped_at": "2026-08-18T15:21:06.402526+00:00"
       },
       {
         "keyword": "kurta men design",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-03T18:12:59.926160+00:00"
+        "scraped_at": "2026-08-18T15:21:06.681461+00:00"
+      },
+      {
+        "keyword": "winter jacket sale",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.262775+00:00"
+      },
+      {
+        "keyword": "sareena singh md",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.402528+00:00"
+      },
+      {
+        "keyword": "winter jackets comparison",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.262789+00:00"
+      },
+      {
+        "keyword": "kurta men cloth",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.681446+00:00"
+      },
+      {
+        "keyword": "saree dress",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.402521+00:00"
+      },
+      {
+        "keyword": "kurta men set",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-08-18T15:21:06.681452+00:00"
       }
     ]
   }

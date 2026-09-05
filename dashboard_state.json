@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T22:41:36.137331Z",
+  "generated_at": "2026-09-05T04:32:09.656370Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,24 +19,24 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 563,
+    "total_processed": 611,
     "live": 24,
     "fully_posted": 24,
     "website_only": 0,
-    "skipped": 539,
-    "success_rate_pct": 4.26,
-    "last_run": "2026-09-04T22:41:35.896244",
+    "skipped": 587,
+    "success_rate_pct": 3.93,
+    "last_run": "2026-09-05T04:32:09.435559",
     "skip_reasons": {
-      "Discount Filter": 363,
-      "No product URL found": 59,
-      "Already exists on website": 28,
-      "No Real Photo (Image Fetch/Validation Failed)": 89
+      "Discount Filter": 399,
+      "No Real Photo (Image Fetch/Validation Failed)": 91,
+      "No product URL found": 66,
+      "Already exists on website": 31
     },
     "profit_tiers": {
-      "High": 86,
-      "Unknown": 432,
+      "High": 91,
+      "Unknown": 472,
+      "Low": 38,
       "Medium": 9,
-      "Low": 35,
       "Ultra-High": 1
     },
     "timeline": [
@@ -66,48 +66,58 @@
       },
       {
         "date": "2026-09-04",
-        "count": 152
+        "count": 78
+      },
+      {
+        "date": "2026-09-05",
+        "count": 122
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 163,
-    "pinned": 163,
+    "total_deals": 164,
+    "pinned": 164,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-04T22:39:42.497475",
+    "last_run": "2026-09-05T04:32:00.724079",
     "platforms": {
-      "Myntra": 25,
-      "Ajio": 32,
+      "Ajio": 34,
+      "Myntra": 24,
       "Amazon": 41,
       "Flipkart": 59,
       "Other": 6
     },
     "recent_deals": [
       {
-        "title": "Myntra : Upto 62% Off On Michael Kors Watches + Bank Offer.",
-        "platform": "Myntra",
+        "title": "Ajio Loot : Upto 65% Off On Levi&Clothing",
+        "platform": "Ajio",
         "pinned": true,
-        "timestamp": "2026-09-04T22:39:42.497475"
+        "timestamp": "2026-09-05T04:32:00.724079"
       },
       {
-        "title": "Myntra : Upto 75% Off On H&M Clothing + Extra Off Using Coupon",
+        "title": "AJIO Loot : Upto 80% Off On Louis Philippe Clothing.",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-05T04:31:49.411881"
+      },
+      {
+        "title": "Myntra Loot : Upto 80% Off On Branded Clothing.",
         "platform": "Myntra",
         "pinned": true,
-        "timestamp": "2026-09-04T22:33:21.385423"
+        "timestamp": "2026-09-05T04:30:38.680052"
       },
       {
         "title": "Upto 90% Off On Tokyo Talkies",
         "platform": "Myntra",
         "pinned": true,
-        "timestamp": "2026-09-04T22:33:01.763991"
+        "timestamp": "2026-09-05T04:21:48.158014"
       },
       {
         "title": "Upto 90% Off On Kook N Keech Clothing.",
         "platform": "Myntra",
         "pinned": true,
-        "timestamp": "2026-09-04T22:32:06.158309"
+        "timestamp": "2026-09-05T04:18:59.366409"
       },
       {
         "title": "Myntra : Upto 70% Off On Top Branded Shoes.",
@@ -138,12 +148,6 @@
         "platform": "Ajio",
         "pinned": true,
         "timestamp": "2026-09-03T14:35:07.795077"
-      },
-      {
-        "title": "Upto 90% Off On HRX Mens Sliders.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-02T09:49:18.818625"
       }
     ]
   },

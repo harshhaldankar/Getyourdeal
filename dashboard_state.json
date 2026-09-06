@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T20:22:05.269164Z",
+  "generated_at": "2026-09-06T22:36:23.567871Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,22 +20,22 @@
   },
   "pipeline1": {
     "total_processed": 992,
-    "live": 19,
-    "fully_posted": 19,
+    "live": 20,
+    "fully_posted": 20,
     "website_only": 0,
-    "skipped": 973,
-    "success_rate_pct": 1.92,
-    "last_run": "2026-09-06T20:22:05.019622",
+    "skipped": 972,
+    "success_rate_pct": 2.02,
+    "last_run": "2026-09-06T22:36:23.365922",
     "skip_reasons": {
       "No product URL found": 272,
       "Discount Filter": 563,
-      "No Real Photo (Image Fetch/Validation Failed)": 95,
+      "No Real Photo (Image Fetch/Validation Failed)": 94,
       "Already exists on website": 43
     },
     "profit_tiers": {
-      "Unknown": 785,
+      "Unknown": 784,
       "Medium": 29,
-      "High": 112,
+      "High": 113,
       "Low": 63,
       "Ultra-High": 3
     },
@@ -71,20 +71,26 @@
     ]
   },
   "pipeline2": {
-    "total_deals": 163,
-    "pinned": 163,
+    "total_deals": 164,
+    "pinned": 164,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-06T13:54:18.922625",
+    "last_run": "2026-09-06T22:26:17.903966",
     "platforms": {
-      "Ajio": 35,
+      "Ajio": 36,
       "Myntra": 24,
       "Amazon": 41,
       "Flipkart": 57,
       "Other": 6
     },
     "recent_deals": [
+      {
+        "title": "Min. 60% Off On Raymond, Park Avenue & Parx Clothing.",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-06T22:26:17.903966"
+      },
       {
         "title": "Ajio Crazy Deals Min 50% Off On Top Brands",
         "platform": "Ajio",
@@ -138,12 +144,6 @@
         "platform": "Myntra",
         "pinned": true,
         "timestamp": "2026-09-04T15:49:19.529461"
-      },
-      {
-        "title": "AJIO: Up to 85% Off on Buda Jeans Co Clothing",
-        "platform": "Ajio",
-        "pinned": true,
-        "timestamp": "2026-09-04T08:54:23.414118"
       }
     ]
   },

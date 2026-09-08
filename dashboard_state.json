@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T19:33:24.670271Z",
+  "generated_at": "2026-09-08T01:01:48.813020Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,24 +20,24 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 16,
-    "fully_posted": 16,
+    "live": 10,
+    "fully_posted": 10,
     "website_only": 0,
-    "skipped": 984,
-    "success_rate_pct": 1.6,
-    "last_run": "2026-09-07T19:33:24.366348",
+    "skipped": 990,
+    "success_rate_pct": 1.0,
+    "last_run": "2026-09-08T01:01:48.535047",
     "skip_reasons": {
-      "No product URL found": 328,
-      "Discount Filter": 533,
-      "No Real Photo (Image Fetch/Validation Failed)": 79,
-      "Already exists on website": 44
+      "No product URL found": 387,
+      "Discount Filter": 517,
+      "Already exists on website": 44,
+      "No Real Photo (Image Fetch/Validation Failed)": 42
     },
     "profit_tiers": {
-      "Unknown": 792,
-      "High": 102,
-      "Medium": 26,
+      "Unknown": 806,
+      "High": 84,
+      "Medium": 27,
       "Low": 72,
-      "Ultra-High": 8
+      "Ultra-High": 11
     },
     "timeline": [
       {
@@ -70,25 +70,35 @@
       },
       {
         "date": "2026-09-07",
-        "count": 326
+        "count": 271
+      },
+      {
+        "date": "2026-09-08",
+        "count": 210
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 165,
-    "pinned": 165,
+    "total_deals": 166,
+    "pinned": 166,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-07T19:27:45.607625",
+    "last_run": "2026-09-08T00:55:20.199325",
     "platforms": {
-      "Myntra": 26,
+      "Myntra": 27,
       "Ajio": 36,
       "Amazon": 40,
       "Flipkart": 57,
       "Other": 6
     },
     "recent_deals": [
+      {
+        "title": "Upto 80% off Beardo Perfume Starts @79",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-08T00:55:20.199325"
+      },
       {
         "title": "Highlander Shirts min 80% off",
         "platform": "Myntra",
@@ -142,12 +152,6 @@
         "platform": "Myntra",
         "pinned": true,
         "timestamp": "2026-09-05T04:18:59.366409"
-      },
-      {
-        "title": "Myntra : Upto 70% Off On Top Branded Shoes.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-04T22:31:48.326106"
       }
     ]
   },

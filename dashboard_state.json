@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T12:54:37.955539Z",
+  "generated_at": "2026-09-09T17:49:42.530811Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,24 +20,24 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 0,
-    "fully_posted": 0,
+    "live": 1,
+    "fully_posted": 1,
     "website_only": 0,
-    "skipped": 1000,
-    "success_rate_pct": 0.0,
-    "last_run": "2026-09-09T12:54:37.737161",
+    "skipped": 999,
+    "success_rate_pct": 0.1,
+    "last_run": "2026-09-09T17:49:42.283474",
     "skip_reasons": {
-      "No product URL found": 428,
+      "No product URL found": 427,
       "Discount Filter": 527,
       "No Real Photo (Image Fetch/Validation Failed)": 9,
       "Already exists on website": 36
     },
     "profit_tiers": {
-      "Unknown": 808,
+      "Unknown": 811,
       "Medium": 29,
       "High": 78,
-      "Low": 73,
-      "Ultra-High": 12
+      "Low": 72,
+      "Ultra-High": 10
     },
     "timeline": [
       {
@@ -63,20 +63,26 @@
     ]
   },
   "pipeline2": {
-    "total_deals": 166,
-    "pinned": 166,
+    "total_deals": 168,
+    "pinned": 168,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-09T07:26:31.037783",
+    "last_run": "2026-09-09T17:42:45.350590",
     "platforms": {
-      "Myntra": 28,
+      "Myntra": 29,
       "Ajio": 36,
-      "Amazon": 39,
+      "Amazon": 40,
       "Flipkart": 57,
       "Other": 6
     },
     "recent_deals": [
+      {
+        "title": "Myntra : Upto 87% off on HRX Clothing.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-09T17:42:45.350590"
+      },
       {
         "title": "Upto 70% Off On Parachute Product.",
         "platform": "Myntra",
@@ -130,12 +136,6 @@
         "platform": "Ajio",
         "pinned": true,
         "timestamp": "2026-09-05T13:41:35.807380"
-      },
-      {
-        "title": "Upto 90% Off On Tokyo Talkies",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-05T09:09:48.089068"
       }
     ]
   },

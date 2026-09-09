@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T23:04:11.432561Z",
+  "generated_at": "2026-09-09T08:06:05.471097Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,23 +20,23 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 1,
-    "fully_posted": 1,
+    "live": 2,
+    "fully_posted": 2,
     "website_only": 0,
-    "skipped": 999,
-    "success_rate_pct": 0.1,
-    "last_run": "2026-09-08T23:04:11.186591",
+    "skipped": 998,
+    "success_rate_pct": 0.2,
+    "last_run": "2026-09-09T08:06:05.203863",
     "skip_reasons": {
-      "No product URL found": 431,
-      "Discount Filter": 509,
+      "No product URL found": 428,
+      "Discount Filter": 512,
       "No Real Photo (Image Fetch/Validation Failed)": 16,
-      "Already exists on website": 43
+      "Already exists on website": 42
     },
     "profit_tiers": {
-      "Unknown": 803,
-      "High": 86,
-      "Medium": 23,
-      "Low": 78,
+      "Unknown": 797,
+      "Medium": 27,
+      "High": 87,
+      "Low": 79,
       "Ultra-High": 10
     },
     "timeline": [
@@ -66,25 +66,35 @@
       },
       {
         "date": "2026-09-08",
-        "count": 316
+        "count": 66
+      },
+      {
+        "date": "2026-09-09",
+        "count": 250
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 166,
-    "pinned": 166,
+    "total_deals": 167,
+    "pinned": 167,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-08T00:55:20.199325",
+    "last_run": "2026-09-09T07:26:31.037783",
     "platforms": {
-      "Myntra": 27,
+      "Myntra": 28,
       "Ajio": 36,
       "Amazon": 40,
       "Flipkart": 57,
       "Other": 6
     },
     "recent_deals": [
+      {
+        "title": "Upto 70% Off On Parachute Product.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-09T07:26:31.037783"
+      },
       {
         "title": "Upto 80% off Beardo Perfume Starts @79",
         "platform": "Myntra",
@@ -138,12 +148,6 @@
         "platform": "Myntra",
         "pinned": true,
         "timestamp": "2026-09-05T09:09:48.089068"
-      },
-      {
-        "title": "Upto 90% Off On Kook N Keech Clothing.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-05T04:18:59.366409"
       }
     ]
   },

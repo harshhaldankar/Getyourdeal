@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T21:20:11.703539Z",
+  "generated_at": "2026-09-10T01:16:15.212386Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,16 +20,16 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 0,
-    "fully_posted": 0,
+    "live": 1,
+    "fully_posted": 1,
     "website_only": 0,
-    "skipped": 1000,
-    "success_rate_pct": 0.0,
-    "last_run": "2026-09-09T21:20:11.444742",
+    "skipped": 999,
+    "success_rate_pct": 0.1,
+    "last_run": "2026-09-10T01:16:14.993858",
     "skip_reasons": {
       "No product URL found": 435,
       "Discount Filter": 518,
-      "No Real Photo (Image Fetch/Validation Failed)": 12,
+      "No Real Photo (Image Fetch/Validation Failed)": 11,
       "Already exists on website": 35
     },
     "profit_tiers": {
@@ -54,25 +54,35 @@
       },
       {
         "date": "2026-09-09",
-        "count": 528
+        "count": 322
+      },
+      {
+        "date": "2026-09-10",
+        "count": 206
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 167,
-    "pinned": 167,
+    "total_deals": 169,
+    "pinned": 169,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-09T17:42:45.350590",
+    "last_run": "2026-09-10T01:08:02.225853",
     "platforms": {
-      "Myntra": 29,
+      "Myntra": 30,
       "Ajio": 36,
       "Amazon": 40,
       "Flipkart": 57,
-      "Other": 5
+      "Other": 6
     },
     "recent_deals": [
+      {
+        "title": "Upto 87% off HRX By Hrithik Roshan Clothing",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-10T01:08:02.225853"
+      },
       {
         "title": "Myntra : Upto 87% off on HRX Clothing.",
         "platform": "Myntra",
@@ -126,12 +136,6 @@
         "platform": "Ajio",
         "pinned": true,
         "timestamp": "2026-09-05T17:36:13.674691"
-      },
-      {
-        "title": "CALVIN KLEIN JEANS Jeans \u2014 Min 40% Off",
-        "platform": "Ajio",
-        "pinned": true,
-        "timestamp": "2026-09-05T13:41:35.807380"
       }
     ]
   },

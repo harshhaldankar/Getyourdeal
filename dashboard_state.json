@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T01:58:35.760127Z",
+  "generated_at": "2026-09-11T04:40:46.518601Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,37 +20,29 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 1,
-    "fully_posted": 1,
+    "live": 4,
+    "fully_posted": 4,
     "website_only": 0,
-    "skipped": 999,
-    "success_rate_pct": 0.1,
-    "last_run": "2026-09-11T01:58:35.503636",
+    "skipped": 996,
+    "success_rate_pct": 0.4,
+    "last_run": "2026-09-11T04:40:46.216186",
     "skip_reasons": {
-      "No product URL found": 437,
-      "Discount Filter": 510,
-      "No Real Photo (Image Fetch/Validation Failed)": 18,
-      "Already exists on website": 34
+      "No product URL found": 430,
+      "Discount Filter": 516,
+      "Already exists on website": 33,
+      "No Real Photo (Image Fetch/Validation Failed)": 17
     },
     "profit_tiers": {
-      "Unknown": 810,
-      "High": 82,
-      "Medium": 21,
-      "Ultra-High": 5,
-      "Low": 82
+      "Unknown": 806,
+      "High": 87,
+      "Medium": 20,
+      "Ultra-High": 2,
+      "Low": 85
     },
     "timeline": [
       {
-        "date": "2026-09-07",
-        "count": 64
-      },
-      {
-        "date": "2026-09-08",
-        "count": 66
-      },
-      {
         "date": "2026-09-09",
-        "count": 322
+        "count": 303
       },
       {
         "date": "2026-09-10",
@@ -58,25 +50,49 @@
       },
       {
         "date": "2026-09-11",
-        "count": 226
+        "count": 375
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 172,
-    "pinned": 172,
+    "total_deals": 176,
+    "pinned": 176,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-11T01:51:48.731194",
+    "last_run": "2026-09-11T04:35:07.659729",
     "platforms": {
-      "Myntra": 34,
-      "Ajio": 36,
+      "Myntra": 37,
+      "Ajio": 37,
       "Amazon": 39,
       "Flipkart": 57,
       "Other": 6
     },
     "recent_deals": [
+      {
+        "title": "Upto 80% Off On Converse Clothing.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T04:35:07.659729"
+      },
+      {
+        "title": "Myntra Loot : Upto 75% Off On H&M Clothing.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T04:34:12.243307"
+      },
+      {
+        "title": "Myntra: Branded Clothing Upto  70% Off",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T04:33:07.731523"
+      },
+      {
+        "title": "AJIO: Highlander Clothing Min 70% Off",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-11T04:31:41.312863"
+      },
       {
         "title": "Myntra | Min 80% Off On Baesd, Kalini",
         "platform": "Myntra",
@@ -112,30 +128,6 @@
         "platform": "Myntra",
         "pinned": true,
         "timestamp": "2026-09-09T17:42:45.350590"
-      },
-      {
-        "title": "Upto 70% Off On Parachute Product.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-09T07:26:31.037783"
-      },
-      {
-        "title": "Upto 80% off Beardo Perfume Starts @79",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-08T00:55:20.199325"
-      },
-      {
-        "title": "Highlander Shirts min 80% off",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-07T19:27:45.607625"
-      },
-      {
-        "title": "Upto 79% Off On Branded Clothing & Shoes.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-07T12:07:23.408199"
       }
     ]
   },

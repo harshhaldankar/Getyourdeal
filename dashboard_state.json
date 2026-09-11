@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T09:54:42.534210Z",
+  "generated_at": "2026-09-11T14:45:16.726706Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,29 +20,29 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 2,
-    "fully_posted": 2,
+    "live": 0,
+    "fully_posted": 0,
     "website_only": 0,
-    "skipped": 998,
-    "success_rate_pct": 0.2,
-    "last_run": "2026-09-11T09:54:42.292707",
+    "skipped": 1000,
+    "success_rate_pct": 0.0,
+    "last_run": "2026-09-11T14:45:15.701768",
     "skip_reasons": {
-      "No product URL found": 442,
-      "Discount Filter": 507,
-      "No Real Photo (Image Fetch/Validation Failed)": 21,
-      "Already exists on website": 28
+      "Discount Filter": 556,
+      "No product URL found": 390,
+      "No Real Photo (Image Fetch/Validation Failed)": 22,
+      "Already exists on website": 32
     },
     "profit_tiers": {
-      "Unknown": 803,
-      "Medium": 20,
-      "High": 89,
-      "Ultra-High": 2,
-      "Low": 86
+      "Unknown": 793,
+      "High": 88,
+      "Low": 104,
+      "Medium": 13,
+      "Ultra-High": 2
     },
     "timeline": [
       {
         "date": "2026-09-09",
-        "count": 266
+        "count": 315
       },
       {
         "date": "2026-09-10",
@@ -50,30 +50,24 @@
       },
       {
         "date": "2026-09-11",
-        "count": 412
+        "count": 363
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 107,
-    "pinned": 107,
+    "total_deals": 105,
+    "pinned": 105,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-11T09:48:53.755406",
+    "last_run": "2026-09-11T09:47:38.507520",
     "platforms": {
-      "Myntra": 10,
+      "Myntra": 9,
       "Flipkart": 57,
-      "Amazon": 39,
+      "Amazon": 38,
       "Ajio": 1
     },
     "recent_deals": [
-      {
-        "title": "70% Off : Smart and Handsome Face Wash, 150g @113.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-11T09:48:53.755406"
-      },
       {
         "title": "Myntra : Upto 70% Off On Hair Care.",
         "platform": "Myntra",
@@ -127,6 +121,12 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T13:01:18.288444Z"
+      },
+      {
+        "title": "Tarido Analog Watch Analog Watch  - For Men TD-4605SL01 NEW PU...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T12:59:00.594610Z"
       }
     ]
   },

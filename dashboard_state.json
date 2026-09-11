@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T14:45:16.726706Z",
+  "generated_at": "2026-09-11T18:31:01.306124Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -25,24 +25,24 @@
     "website_only": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-09-11T14:45:15.701768",
+    "last_run": "2026-09-11T18:31:01.147456",
     "skip_reasons": {
-      "Discount Filter": 556,
-      "No product URL found": 390,
-      "No Real Photo (Image Fetch/Validation Failed)": 22,
-      "Already exists on website": 32
+      "No product URL found": 435,
+      "Discount Filter": 520,
+      "Already exists on website": 22,
+      "No Real Photo (Image Fetch/Validation Failed)": 23
     },
     "profit_tiers": {
-      "Unknown": 793,
-      "High": 88,
-      "Low": 104,
-      "Medium": 13,
-      "Ultra-High": 2
+      "Unknown": 790,
+      "High": 98,
+      "Medium": 19,
+      "Ultra-High": 1,
+      "Low": 92
     },
     "timeline": [
       {
         "date": "2026-09-09",
-        "count": 315
+        "count": 5
       },
       {
         "date": "2026-09-10",
@@ -50,24 +50,29 @@
       },
       {
         "date": "2026-09-11",
-        "count": 363
+        "count": 673
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 105,
-    "pinned": 105,
+    "total_deals": 92,
+    "pinned": 92,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-11T09:47:38.507520",
+    "last_run": "2026-09-11T14:44:04.755880",
     "platforms": {
-      "Myntra": 9,
+      "Myntra": 2,
       "Flipkart": 57,
-      "Amazon": 38,
-      "Ajio": 1
+      "Amazon": 33
     },
     "recent_deals": [
+      {
+        "title": "70% Off : Smart and Handsome Face Wash, 150g @113.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T14:44:04.755880"
+      },
       {
         "title": "Myntra : Upto 70% Off On Hair Care.",
         "platform": "Myntra",
@@ -79,12 +84,6 @@
         "platform": "Amazon",
         "pinned": true,
         "timestamp": "2026-08-30T15:06:55.785004"
-      },
-      {
-        "title": "92% Off - Fire-Boltt Aero TWS Earbuds Custom EQ, Wireless Bluetooth 5.4, Music & App Support, 5",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-23T10:54:21.710740"
       },
       {
         "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T14:28:24.853600Z",
+  "generated_at": "2026-09-13T21:27:55.428439Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,40 +19,115 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 103,
-    "live": 1,
-    "fully_posted": 1,
+    "total_processed": 1000,
+    "live": 0,
+    "fully_posted": 0,
     "website_only": 0,
-    "skipped": 102,
-    "success_rate_pct": 0.97,
-    "last_run": "2026-09-13T14:28:24.684452",
+    "skipped": 1000,
+    "success_rate_pct": 0.0,
+    "last_run": "2026-09-13T21:27:55.222161",
     "skip_reasons": {
-      "No product URL found": 93,
-      "Discount Filter": 9
+      "No product URL found": 393,
+      "Discount Filter": 560,
+      "No Real Photo (Image Fetch/Validation Failed)": 32,
+      "Already exists on website": 15
     },
     "profit_tiers": {
-      "Unknown": 86,
-      "High": 6,
-      "Medium": 9,
-      "Ultra-High": 1,
-      "Low": 1
+      "Unknown": 788,
+      "High": 92,
+      "Medium": 23,
+      "Ultra-High": 2,
+      "Low": 95
     },
     "timeline": [
       {
+        "date": "2026-09-10",
+        "count": 174
+      },
+      {
+        "date": "2026-09-11",
+        "count": 423
+      },
+      {
         "date": "2026-09-13",
-        "count": 103
+        "count": 403
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 0,
-    "pinned": 0,
+    "total_deals": 94,
+    "pinned": 94,
     "not_pinned": 0,
-    "pin_rate_pct": 0.0,
+    "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": null,
-    "platforms": {},
-    "recent_deals": []
+    "last_run": "2026-09-13T10:59:08.419921",
+    "platforms": {
+      "Myntra": 3,
+      "Flipkart": 57,
+      "Amazon": 34
+    },
+    "recent_deals": [
+      {
+        "title": "Loot : Upto 82% Off On Men\u2019s Clothing.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-13T10:59:08.419921"
+      },
+      {
+        "title": "70% Off : Smart and Handsome Face Wash, 150g @113.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T14:44:04.755880"
+      },
+      {
+        "title": "Myntra : Upto 70% Off On Hair Care.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T09:47:38.507520"
+      },
+      {
+        "title": "72% Off - Kerok Portable Auto Travel Umbrella",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-08-30T15:06:55.785004"
+      },
+      {
+        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-08-23T05:57:59.562588"
+      },
+      {
+        "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T20:45:02.998911"
+      },
+      {
+        "title": "Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T15:16:44.351354Z"
+      },
+      {
+        "title": "Atix Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T15:15:32.958509Z"
+      },
+      {
+        "title": "PRICE DROP ALERTS \u2013 Limited Time Deals",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T13:33:03.108613"
+      },
+      {
+        "title": "house of common Analog Watch  - For Men HOC656-Black Mahavev Photo PU A...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T13:01:18.288444Z"
+      }
+    ]
   },
   "instagram_stats": {
     "posts_today": 0,
@@ -60,247 +135,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1789285461.9723654,
+    "timestamp": 1789321637.102721,
     "trends": [
       {
-        "keyword": "face wash for oily skin",
+        "keyword": "sneakers movie",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584247+00:00"
+      },
+      {
+        "keyword": "hair oil kerastase",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290438+00:00"
+        "scraped_at": "2026-09-13T17:47:16.807619+00:00"
       },
       {
-        "keyword": "winter jackets",
+        "keyword": "ethnic wear for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433093+00:00"
+        "scraped_at": "2026-09-13T17:47:16.734342+00:00"
       },
       {
-        "keyword": "kurta men embroidery",
+        "keyword": "denim jacket black",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230330+00:00"
-      },
-      {
-        "keyword": "winter jacket sale",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433110+00:00"
-      },
-      {
-        "keyword": "winter jackets buying guide",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433112+00:00"
-      },
-      {
-        "keyword": "winter jacket sons of the forest",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433116+00:00"
-      },
-      {
-        "keyword": "winter jackets for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433105+00:00"
-      },
-      {
-        "keyword": "kurta men collection",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230333+00:00"
-      },
-      {
-        "keyword": "formal shirt dresses for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519850+00:00"
-      },
-      {
-        "keyword": "cargo pants for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363658+00:00"
-      },
-      {
-        "keyword": "cargo pants for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363439+00:00"
-      },
-      {
-        "keyword": "winter jackets for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433102+00:00"
-      },
-      {
-        "keyword": "face wash arod",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290417+00:00"
-      },
-      {
-        "keyword": "formal shirts",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519844+00:00"
-      },
-      {
-        "keyword": "formal shirts for men online",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519859+00:00"
-      },
-      {
-        "keyword": "kurta men set",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230323+00:00"
-      },
-      {
-        "keyword": "formal shirts for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519835+00:00"
-      },
-      {
-        "keyword": "formal shirts for men uk",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519855+00:00"
-      },
-      {
-        "keyword": "face wash for acne",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290435+00:00"
-      },
-      {
-        "keyword": "face wash for women",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290431+00:00"
-      },
-      {
-        "keyword": "cargo pants baggy",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363661+00:00"
-      },
-      {
-        "keyword": "face wash west revere",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290424+00:00"
-      },
-      {
-        "keyword": "cargo pants for men with pockets",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363668+00:00"
-      },
-      {
-        "keyword": "face wash",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290363+00:00"
-      },
-      {
-        "keyword": "formal shirt pant combination for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519852+00:00"
-      },
-      {
-        "keyword": "formal shirts for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519847+00:00"
-      },
-      {
-        "keyword": "cargo pants for boys",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363663+00:00"
-      },
-      {
-        "keyword": "cargo pants",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363428+00:00"
-      },
-      {
-        "keyword": "kurta men fashion",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230320+00:00"
-      },
-      {
-        "keyword": "winter jackets comparison",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433114+00:00"
-      },
-      {
-        "keyword": "winter jackets for kids",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.433107+00:00"
-      },
-      {
-        "keyword": "kurta men cloth",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230316+00:00"
-      },
-      {
-        "keyword": "kurta men design",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230341+00:00"
-      },
-      {
-        "keyword": "formal shirt and pant for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.519857+00:00"
-      },
-      {
-        "keyword": "kurta men style",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230327+00:00"
+        "scraped_at": "2026-09-13T17:47:16.876844+00:00"
       },
       {
         "keyword": "face wash for dry skin",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290440+00:00"
+        "scraped_at": "2026-09-13T17:47:16.652344+00:00"
       },
       {
-        "keyword": "cargo pants for girls",
+        "keyword": "ethnic wear",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363666+00:00"
+        "scraped_at": "2026-09-13T17:47:16.734095+00:00"
+      },
+      {
+        "keyword": "hair oil for dry hair",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807607+00:00"
+      },
+      {
+        "keyword": "face wash for sensitive skin",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.652349+00:00"
+      },
+      {
+        "keyword": "hair oil applicator",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807617+00:00"
+      },
+      {
+        "keyword": "ethnic wear for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.734349+00:00"
+      },
+      {
+        "keyword": "sneakers o'toole",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584254+00:00"
+      },
+      {
+        "keyword": "sneakers movie 1992",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584273+00:00"
       },
       {
         "keyword": "face wash for men",
         "category": "beauty",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.290428+00:00"
+        "scraped_at": "2026-09-13T17:47:16.652336+00:00"
       },
       {
-        "keyword": "kurta men",
+        "keyword": "denim jacket short set",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.230304+00:00"
+        "scraped_at": "2026-09-13T17:47:16.876837+00:00"
       },
       {
-        "keyword": "cargo pants women baggy",
+        "keyword": "hair oil",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807590+00:00"
+      },
+      {
+        "keyword": "denim jacket outfit",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-13T07:44:21.363670+00:00"
+        "scraped_at": "2026-09-13T17:47:16.876839+00:00"
+      },
+      {
+        "keyword": "hair oil for women",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807614+00:00"
+      },
+      {
+        "keyword": "sneakers chocolat",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584264+00:00"
+      },
+      {
+        "keyword": "face wash",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.652318+00:00"
+      },
+      {
+        "keyword": "ethnic wear near me",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.734108+00:00"
+      },
+      {
+        "keyword": "denim jacket men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.876828+00:00"
+      },
+      {
+        "keyword": "ethnic wear for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.734356+00:00"
+      },
+      {
+        "keyword": "denim jacket for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.876832+00:00"
+      },
+      {
+        "keyword": "face wash for acne",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.652339+00:00"
+      },
+      {
+        "keyword": "ethnic wear for boys",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.734354+00:00"
+      },
+      {
+        "keyword": "denim jacket for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.876841+00:00"
+      },
+      {
+        "keyword": "hair oil for men",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807610+00:00"
+      },
+      {
+        "keyword": "face wash for women",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.652332+00:00"
+      },
+      {
+        "keyword": "ethnic wear meaning",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.734351+00:00"
+      },
+      {
+        "keyword": "sneakers for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584259+00:00"
+      },
+      {
+        "keyword": "ethnic wear stores near me",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.734358+00:00"
+      },
+      {
+        "keyword": "sneakers app",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584262+00:00"
+      },
+      {
+        "keyword": "face wash for oily skin",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.652342+00:00"
+      },
+      {
+        "keyword": "denim jackets for older women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.876835+00:00"
+      },
+      {
+        "keyword": "hair oil for growth",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807604+00:00"
+      },
+      {
+        "keyword": "sneakersnstuff",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584267+00:00"
+      },
+      {
+        "keyword": "face wash cerave",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.652347+00:00"
+      },
+      {
+        "keyword": "sneakers",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.584230+00:00"
+      },
+      {
+        "keyword": "hair oil for curly hair",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.807612+00:00"
+      },
+      {
+        "keyword": "denim jacket",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-13T17:47:16.876812+00:00"
       }
     ]
   }

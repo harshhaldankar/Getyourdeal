@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T21:27:55.428439Z",
+  "generated_at": "2026-09-13T22:43:51.162467Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,21 +20,21 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 0,
-    "fully_posted": 0,
+    "live": 2,
+    "fully_posted": 2,
     "website_only": 0,
-    "skipped": 1000,
-    "success_rate_pct": 0.0,
-    "last_run": "2026-09-13T21:27:55.222161",
+    "skipped": 998,
+    "success_rate_pct": 0.2,
+    "last_run": "2026-09-13T22:43:50.950139",
     "skip_reasons": {
       "No product URL found": 393,
       "Discount Filter": 560,
-      "No Real Photo (Image Fetch/Validation Failed)": 32,
+      "No Real Photo (Image Fetch/Validation Failed)": 30,
       "Already exists on website": 15
     },
     "profit_tiers": {
-      "Unknown": 788,
-      "High": 92,
+      "Unknown": 786,
+      "High": 94,
       "Medium": 23,
       "Ultra-High": 2,
       "Low": 95
@@ -55,18 +55,31 @@
     ]
   },
   "pipeline2": {
-    "total_deals": 94,
-    "pinned": 94,
+    "total_deals": 95,
+    "pinned": 95,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-13T10:59:08.419921",
+    "last_run": "2026-09-13T22:36:52.758003",
     "platforms": {
+      "Ajio": 2,
       "Myntra": 3,
       "Flipkart": 57,
-      "Amazon": 34
+      "Amazon": 33
     },
     "recent_deals": [
+      {
+        "title": "Ajio | Up to 75% OFF on UCB Clothing",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-13T22:36:52.758003"
+      },
+      {
+        "title": "Ajio Loot : Upto 70% Off On Levi's Clothing",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-13T22:36:30.588456"
+      },
       {
         "title": "Loot : Upto 82% Off On Men\u2019s Clothing.",
         "platform": "Myntra",
@@ -84,12 +97,6 @@
         "platform": "Myntra",
         "pinned": true,
         "timestamp": "2026-09-11T09:47:38.507520"
-      },
-      {
-        "title": "72% Off - Kerok Portable Auto Travel Umbrella",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-30T15:06:55.785004"
       },
       {
         "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
@@ -120,12 +127,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T13:33:03.108613"
-      },
-      {
-        "title": "house of common Analog Watch  - For Men HOC656-Black Mahavev Photo PU A...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T13:01:18.288444Z"
       }
     ]
   },

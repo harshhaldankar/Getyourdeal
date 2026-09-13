@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T11:05:39.314598Z",
+  "generated_at": "2026-09-13T14:28:24.853600Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,119 +19,40 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 1000,
+    "total_processed": 103,
     "live": 1,
     "fully_posted": 1,
     "website_only": 0,
-    "skipped": 999,
-    "success_rate_pct": 0.1,
-    "last_run": "2026-09-13T11:05:39.137557",
+    "skipped": 102,
+    "success_rate_pct": 0.97,
+    "last_run": "2026-09-13T14:28:24.684452",
     "skip_reasons": {
-      "No product URL found": 421,
-      "Discount Filter": 533,
-      "No Real Photo (Image Fetch/Validation Failed)": 25,
-      "Already exists on website": 20
+      "No product URL found": 93,
+      "Discount Filter": 9
     },
     "profit_tiers": {
-      "Unknown": 793,
-      "High": 89,
-      "Medium": 19,
+      "Unknown": 86,
+      "High": 6,
+      "Medium": 9,
       "Ultra-High": 1,
-      "Low": 98
+      "Low": 1
     },
     "timeline": [
       {
-        "date": "2026-09-09",
-        "count": 5
-      },
-      {
-        "date": "2026-09-10",
-        "count": 322
-      },
-      {
-        "date": "2026-09-11",
-        "count": 423
-      },
-      {
         "date": "2026-09-13",
-        "count": 250
+        "count": 103
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 94,
-    "pinned": 94,
+    "total_deals": 0,
+    "pinned": 0,
     "not_pinned": 0,
-    "pin_rate_pct": 100.0,
+    "pin_rate_pct": 0.0,
     "total_pins": 0,
-    "last_run": "2026-09-13T10:59:08.419921",
-    "platforms": {
-      "Myntra": 3,
-      "Flipkart": 57,
-      "Amazon": 34
-    },
-    "recent_deals": [
-      {
-        "title": "Loot : Upto 82% Off On Men\u2019s Clothing.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-13T10:59:08.419921"
-      },
-      {
-        "title": "70% Off : Smart and Handsome Face Wash, 150g @113.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-11T14:44:04.755880"
-      },
-      {
-        "title": "Myntra : Upto 70% Off On Hair Care.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-11T09:47:38.507520"
-      },
-      {
-        "title": "72% Off - Kerok Portable Auto Travel Umbrella",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-30T15:06:55.785004"
-      },
-      {
-        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-23T05:57:59.562588"
-      },
-      {
-        "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T20:45:02.998911"
-      },
-      {
-        "title": "Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:16:44.351354Z"
-      },
-      {
-        "title": "Atix Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:15:32.958509Z"
-      },
-      {
-        "title": "PRICE DROP ALERTS \u2013 Limited Time Deals",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T13:33:03.108613"
-      },
-      {
-        "title": "house of common Analog Watch  - For Men HOC656-Black Mahavev Photo PU A...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T13:01:18.288444Z"
-      }
-    ]
+    "last_run": null,
+    "platforms": {},
+    "recent_deals": []
   },
   "instagram_stats": {
     "posts_today": 0,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T22:43:51.162467Z",
+  "generated_at": "2026-09-14T05:01:23.299866Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,29 +20,29 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 2,
-    "fully_posted": 2,
+    "live": 1,
+    "fully_posted": 1,
     "website_only": 0,
-    "skipped": 998,
-    "success_rate_pct": 0.2,
-    "last_run": "2026-09-13T22:43:50.950139",
+    "skipped": 999,
+    "success_rate_pct": 0.1,
+    "last_run": "2026-09-14T05:01:23.072906",
     "skip_reasons": {
-      "No product URL found": 393,
-      "Discount Filter": 560,
-      "No Real Photo (Image Fetch/Validation Failed)": 30,
-      "Already exists on website": 15
+      "No product URL found": 385,
+      "Discount Filter": 569,
+      "No Real Photo (Image Fetch/Validation Failed)": 32,
+      "Already exists on website": 13
     },
     "profit_tiers": {
-      "Unknown": 786,
-      "High": 94,
-      "Medium": 23,
+      "Unknown": 774,
+      "High": 100,
+      "Medium": 24,
       "Ultra-High": 2,
-      "Low": 95
+      "Low": 100
     },
     "timeline": [
       {
         "date": "2026-09-10",
-        "count": 174
+        "count": 96
       },
       {
         "date": "2026-09-11",
@@ -50,7 +50,11 @@
       },
       {
         "date": "2026-09-13",
-        "count": 403
+        "count": 231
+      },
+      {
+        "date": "2026-09-14",
+        "count": 250
       }
     ]
   },
@@ -60,7 +64,7 @@
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-13T22:36:52.758003",
+    "last_run": "2026-09-14T04:53:44.847357",
     "platforms": {
       "Ajio": 2,
       "Myntra": 3,
@@ -72,7 +76,7 @@
         "title": "Ajio | Up to 75% OFF on UCB Clothing",
         "platform": "Ajio",
         "pinned": true,
-        "timestamp": "2026-09-13T22:36:52.758003"
+        "timestamp": "2026-09-14T04:53:44.847357"
       },
       {
         "title": "Ajio Loot : Upto 70% Off On Levi's Clothing",

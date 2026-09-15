@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T02:30:05.333723Z",
+  "generated_at": "2026-09-15T04:58:19.857247Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -25,7 +25,7 @@
     "website_only": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-09-15T02:30:05.147344",
+    "last_run": "2026-09-15T04:58:19.680631",
     "skip_reasons": {
       "No product URL found": 384,
       "Discount Filter": 569,
@@ -33,10 +33,10 @@
       "Already exists on website": 12
     },
     "profit_tiers": {
-      "Unknown": 762,
-      "Low": 111,
-      "Medium": 20,
-      "High": 107
+      "Unknown": 763,
+      "Low": 113,
+      "Medium": 19,
+      "High": 105
     },
     "timeline": [
       {
@@ -53,11 +53,11 @@
       },
       {
         "date": "2026-09-14",
-        "count": 93
+        "count": 77
       },
       {
         "date": "2026-09-15",
-        "count": 234
+        "count": 250
       }
     ]
   },

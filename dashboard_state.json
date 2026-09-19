@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T23:16:32.101011Z",
+  "generated_at": "2026-09-19T03:40:18.233579Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -25,7 +25,7 @@
     "website_only": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-09-18T23:16:31.985791",
+    "last_run": "2026-09-19T03:40:18.073363",
     "skip_reasons": {
       "No product URL found": 396,
       "Discount Filter": 560,
@@ -57,13 +57,17 @@
       },
       {
         "date": "2026-09-18",
-        "count": 250
+        "count": 9
+      },
+      {
+        "date": "2026-09-19",
+        "count": 241
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 95,
-    "pinned": 95,
+    "total_deals": 94,
+    "pinned": 94,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
@@ -72,7 +76,7 @@
       "Ajio": 2,
       "Myntra": 3,
       "Flipkart": 57,
-      "Amazon": 33
+      "Amazon": 32
     },
     "recent_deals": [
       {

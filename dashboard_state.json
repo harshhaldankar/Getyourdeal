@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T17:59:45.166015Z",
+  "generated_at": "2026-09-20T22:03:35.077662Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,23 +20,24 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 0,
-    "fully_posted": 0,
+    "live": 1,
+    "fully_posted": 1,
     "website_only": 0,
-    "skipped": 1000,
-    "success_rate_pct": 0.0,
-    "last_run": "2026-09-20T17:59:45.034372",
+    "skipped": 999,
+    "success_rate_pct": 0.1,
+    "last_run": "2026-09-20T22:03:34.887110",
     "skip_reasons": {
-      "No product URL found": 402,
+      "No product URL found": 401,
       "Discount Filter": 554,
       "No Real Photo (Image Fetch/Validation Failed)": 34,
       "Already exists on website": 10
     },
     "profit_tiers": {
-      "Unknown": 772,
-      "High": 104,
+      "Unknown": 769,
+      "High": 105,
       "Low": 106,
-      "Medium": 18
+      "Medium": 19,
+      "Ultra-High": 1
     },
     "timeline": [
       {
@@ -62,19 +63,25 @@
     ]
   },
   "pipeline2": {
-    "total_deals": 95,
-    "pinned": 95,
+    "total_deals": 96,
+    "pinned": 96,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-14T04:53:44.847357",
+    "last_run": "2026-09-20T21:58:12.133562",
     "platforms": {
+      "Myntra": 4,
       "Ajio": 2,
-      "Myntra": 3,
       "Flipkart": 57,
       "Amazon": 33
     },
     "recent_deals": [
+      {
+        "title": "Myntra Loot : 5 Litre Body Wash Worth 2400+ @ Just \u20b9535! \ud83e\udd2f",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-20T21:58:12.133562"
+      },
       {
         "title": "Ajio | Up to 75% OFF on UCB Clothing",
         "platform": "Ajio",
@@ -128,12 +135,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T15:15:32.958509Z"
-      },
-      {
-        "title": "PRICE DROP ALERTS \u2013 Limited Time Deals",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T13:33:03.108613"
       }
     ]
   },
@@ -143,247 +144,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1789891289.3702133,
+    "timestamp": 1789926454.4087873,
     "trends": [
-      {
-        "keyword": "ethnic wear stores near me",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702492+00:00"
-      },
-      {
-        "keyword": "cargo pants for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635660+00:00"
-      },
-      {
-        "keyword": "cargo pants black",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635672+00:00"
-      },
-      {
-        "keyword": "ethnic wear for girls",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702488+00:00"
-      },
-      {
-        "keyword": "gym accessories shop",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787849+00:00"
-      },
-      {
-        "keyword": "cargo pants for men with pockets",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635680+00:00"
-      },
-      {
-        "keyword": "gym accessories for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787854+00:00"
-      },
-      {
-        "keyword": "watch mentalist online free",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853891+00:00"
-      },
-      {
-        "keyword": "watch men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853879+00:00"
-      },
-      {
-        "keyword": "cargo pants for girls",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635674+00:00"
-      },
-      {
-        "keyword": "ethnic wear for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702483+00:00"
-      },
       {
         "keyword": "kurta men set",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.001993+00:00"
-      },
-      {
-        "keyword": "kurta men collection",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.002005+00:00"
-      },
-      {
-        "keyword": "kurta men cloth",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.001990+00:00"
-      },
-      {
-        "keyword": "cargo pants baggy",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635666+00:00"
-      },
-      {
-        "keyword": "gym accessories shop near me",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787861+00:00"
-      },
-      {
-        "keyword": "cargo pants for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635664+00:00"
-      },
-      {
-        "keyword": "ethnic wear near me",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702477+00:00"
-      },
-      {
-        "keyword": "serum",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.123529+00:00"
-      },
-      {
-        "keyword": "kurta men style",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.001996+00:00"
-      },
-      {
-        "keyword": "ethnic wear",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702469+00:00"
-      },
-      {
-        "keyword": "gym accessories bd",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787859+00:00"
-      },
-      {
-        "keyword": "gym accessories",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787643+00:00"
-      },
-      {
-        "keyword": "watchmen movie",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853894+00:00"
-      },
-      {
-        "keyword": "kurta men design",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.002003+00:00"
-      },
-      {
-        "keyword": "kurta men embroidery",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.002001+00:00"
-      },
-      {
-        "keyword": "ethnic wear for boys",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702490+00:00"
-      },
-      {
-        "keyword": "watch men's olympic hockey",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853898+00:00"
-      },
-      {
-        "keyword": "gym accessories equipment",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787863+00:00"
-      },
-      {
-        "keyword": "kurta men fashion",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.001999+00:00"
-      },
-      {
-        "keyword": "cargo pants",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635651+00:00"
-      },
-      {
-        "keyword": "ethnic wear for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702480+00:00"
+        "scraped_at": "2026-09-20T17:47:33.669371+00:00"
       },
       {
         "keyword": "kurta men",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:29.001981+00:00"
+        "scraped_at": "2026-09-20T17:47:33.669348+00:00"
       },
       {
-        "keyword": "gym accessories for men",
+        "keyword": "ethnic dress jean",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787652+00:00"
+        "scraped_at": "2026-09-20T17:47:33.282555+00:00"
+      },
+      {
+        "keyword": "cargo pants for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.414862+00:00"
+      },
+      {
+        "keyword": "festival outfits on a budget",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.807601+00:00"
+      },
+      {
+        "keyword": "cargo pants black",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.414859+00:00"
+      },
+      {
+        "keyword": "festival outfits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.807580+00:00"
+      },
+      {
+        "keyword": "kurta men fashion",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.669378+00:00"
+      },
+      {
+        "keyword": "ethnic dress for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282559+00:00"
+      },
+      {
+        "keyword": "ethnic dress",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282532+00:00"
+      },
+      {
+        "keyword": "formal shirts for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.538861+00:00"
+      },
+      {
+        "keyword": "cargo pants for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.414845+00:00"
+      },
+      {
+        "keyword": "formal shirts",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.538878+00:00"
+      },
+      {
+        "keyword": "festival outfits uk",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.807598+00:00"
+      },
+      {
+        "keyword": "festival outfits for summer",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.807595+00:00"
+      },
+      {
+        "keyword": "formal shirt and pant for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.539201+00:00"
+      },
+      {
+        "keyword": "kurta men embroidery",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.669381+00:00"
+      },
+      {
+        "keyword": "ethnic dress code",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282563+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282551+00:00"
+      },
+      {
+        "keyword": "formal shirts for women office wear",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.539212+00:00"
+      },
+      {
+        "keyword": "cargo pants baggy",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.414853+00:00"
+      },
+      {
+        "keyword": "ethnic dress meaning",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282566+00:00"
+      },
+      {
+        "keyword": "festival outfits for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.807585+00:00"
+      },
+      {
+        "keyword": "cargo pants for men with pockets",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.414865+00:00"
+      },
+      {
+        "keyword": "formal shirt pant combination for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.539206+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for ladies stores near me",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282569+00:00"
+      },
+      {
+        "keyword": "cargo pants women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.414849+00:00"
+      },
+      {
+        "keyword": "festival outfits 2026",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.807589+00:00"
+      },
+      {
+        "keyword": "formal shirt dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.539203+00:00"
+      },
+      {
+        "keyword": "formal shirts for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.539193+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.282576+00:00"
+      },
+      {
+        "keyword": "kurta men collection",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.669387+00:00"
+      },
+      {
+        "keyword": "kurta men cloth",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.669366+00:00"
+      },
+      {
+        "keyword": "kurta men design",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.669384+00:00"
+      },
+      {
+        "keyword": "formal shirts for men uk",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-20T17:47:33.539209+00:00"
       },
       {
         "keyword": "cargo pants for boys",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.635669+00:00"
+        "scraped_at": "2026-09-20T17:47:33.414856+00:00"
       },
       {
-        "keyword": "ethnic wear meaning",
+        "keyword": "festival outfits",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.702485+00:00"
+        "scraped_at": "2026-09-20T17:47:33.807563+00:00"
       },
       {
-        "keyword": "watch men gift pack",
+        "keyword": "festival outfits ideas",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853900+00:00"
+        "scraped_at": "2026-09-20T17:47:33.807592+00:00"
       },
       {
-        "keyword": "watch mentalist",
+        "keyword": "kurta men style",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853896+00:00"
+        "scraped_at": "2026-09-20T17:47:33.669375+00:00"
       },
       {
-        "keyword": "watch men in black",
+        "keyword": "cargo pants",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.853887+00:00"
-      },
-      {
-        "keyword": "gym accessories daraz",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-20T08:01:28.787856+00:00"
+        "scraped_at": "2026-09-20T17:47:33.414827+00:00"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T21:46:32.137844Z",
+  "generated_at": "2026-09-20T02:13:18.772568Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -25,7 +25,7 @@
     "website_only": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-09-19T21:46:31.950365",
+    "last_run": "2026-09-20T02:13:18.599728",
     "skip_reasons": {
       "No product URL found": 402,
       "Discount Filter": 556,
@@ -57,7 +57,11 @@
       },
       {
         "date": "2026-09-19",
-        "count": 250
+        "count": 22
+      },
+      {
+        "date": "2026-09-20",
+        "count": 228
       }
     ]
   },

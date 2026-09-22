@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T08:40:13.754552Z",
+  "generated_at": "2026-09-22T13:39:22.306375Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,23 +20,23 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 0,
-    "fully_posted": 0,
+    "live": 1,
+    "fully_posted": 1,
     "website_only": 0,
-    "skipped": 1000,
-    "success_rate_pct": 0.0,
-    "last_run": "2026-09-22T08:40:13.569915",
+    "skipped": 999,
+    "success_rate_pct": 0.1,
+    "last_run": "2026-09-22T13:39:22.147582",
     "skip_reasons": {
-      "No product URL found": 407,
-      "Discount Filter": 553,
+      "No product URL found": 403,
+      "Discount Filter": 556,
       "No Real Photo (Image Fetch/Validation Failed)": 35,
       "Already exists on website": 5
     },
     "profit_tiers": {
-      "Unknown": 770,
-      "Medium": 13,
-      "Low": 94,
-      "High": 122,
+      "Unknown": 769,
+      "Medium": 14,
+      "Low": 92,
+      "High": 124,
       "Ultra-High": 1
     },
     "timeline": [
@@ -67,19 +67,25 @@
     ]
   },
   "pipeline2": {
-    "total_deals": 97,
-    "pinned": 97,
+    "total_deals": 98,
+    "pinned": 98,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-21T23:22:50.553686",
+    "last_run": "2026-09-22T11:46:44.709530",
     "platforms": {
+      "Ajio": 3,
       "Myntra": 5,
-      "Ajio": 2,
       "Flipkart": 57,
       "Amazon": 33
     },
     "recent_deals": [
+      {
+        "title": "Ajio | Upto 70% Off On Premium Brands Clothing",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-22T11:46:44.709530"
+      },
       {
         "title": "Upto 80% Off On Branded Backpacks.",
         "platform": "Myntra",
@@ -133,12 +139,6 @@
         "platform": "Flipkart",
         "pinned": true,
         "timestamp": "2026-08-16T20:45:02.998911"
-      },
-      {
-        "title": "Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:16:44.351354Z"
       }
     ]
   },
@@ -148,247 +148,247 @@
   },
   "api_quotas": {},
   "trending_keywords": {
-    "timestamp": 1790020147.0524178,
+    "timestamp": 1790064166.8749702,
     "trends": [
       {
-        "keyword": "serum",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.397910+00:00"
-      },
-      {
-        "keyword": "kurta men design",
+        "keyword": "ethnic dress meaning",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663871+00:00"
+        "scraped_at": "2026-09-22T08:02:46.307647+00:00"
       },
       {
-        "keyword": "serum creatinine",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.398140+00:00"
-      },
-      {
-        "keyword": "party wear dresses for women",
+        "keyword": "denim jacket pattern drafting",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055269+00:00"
-      },
-      {
-        "keyword": "party wear for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055278+00:00"
-      },
-      {
-        "keyword": "sneakersnstuff",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296927+00:00"
-      },
-      {
-        "keyword": "skincare routines simples",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519570+00:00"
-      },
-      {
-        "keyword": "skincare routines alternatives tutorial",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519582+00:00"
-      },
-      {
-        "keyword": "party wear",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055246+00:00"
-      },
-      {
-        "keyword": "serum 2",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.398142+00:00"
-      },
-      {
-        "keyword": "kurta men fashion",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663867+00:00"
-      },
-      {
-        "keyword": "party wear sarees",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055273+00:00"
-      },
-      {
-        "keyword": "party wear suits for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055283+00:00"
-      },
-      {
-        "keyword": "skincare routines for oily skin",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519576+00:00"
-      },
-      {
-        "keyword": "serum osmolality",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.398133+00:00"
-      },
-      {
-        "keyword": "kurta men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663841+00:00"
-      },
-      {
-        "keyword": "sneakers movie",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296916+00:00"
-      },
-      {
-        "keyword": "sneakers o'toole",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296919+00:00"
-      },
-      {
-        "keyword": "serum protein electrophoresis",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.398146+00:00"
+        "scraped_at": "2026-09-22T08:02:46.487542+00:00"
       },
       {
         "keyword": "party wear tops for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055281+00:00"
+        "scraped_at": "2026-09-22T08:02:46.410539+00:00"
       },
       {
-        "keyword": "kurta men cloth",
+        "keyword": "festival outfits uk",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663860+00:00"
-      },
-      {
-        "keyword": "sneakers",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296898+00:00"
-      },
-      {
-        "keyword": "skincare routines for dry skin",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519580+00:00"
-      },
-      {
-        "keyword": "serum sickness",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.397928+00:00"
-      },
-      {
-        "keyword": "kurta men collection",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663873+00:00"
-      },
-      {
-        "keyword": "party wear for men",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055275+00:00"
-      },
-      {
-        "keyword": "sneakers for women",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296923+00:00"
-      },
-      {
-        "keyword": "serum vs plasma",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.398144+00:00"
-      },
-      {
-        "keyword": "serum vst",
-        "category": "beauty",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.398148+00:00"
-      },
-      {
-        "keyword": "skincare routines for beginners",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519574+00:00"
-      },
-      {
-        "keyword": "sneakers chocolat",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296925+00:00"
-      },
-      {
-        "keyword": "sneakers app",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296921+00:00"
-      },
-      {
-        "keyword": "sneaker shouts",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.296929+00:00"
-      },
-      {
-        "keyword": "skincare routines naturelles",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519578+00:00"
-      },
-      {
-        "keyword": "kurta men style",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663865+00:00"
-      },
-      {
-        "keyword": "kurta men embroidery",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663869+00:00"
-      },
-      {
-        "keyword": "skincare routines efficaces",
-        "category": "fashion",
-        "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519572+00:00"
+        "scraped_at": "2026-09-22T08:02:46.604208+00:00"
       },
       {
         "keyword": "party wear gown for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.055291+00:00"
+        "scraped_at": "2026-09-22T08:02:46.410544+00:00"
       },
       {
-        "keyword": "kurta men set",
+        "keyword": "denim jacket for women",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.663863+00:00"
+        "scraped_at": "2026-09-22T08:02:46.487540+00:00"
       },
       {
-        "keyword": "skincare routines",
+        "keyword": "watch men in black",
         "category": "fashion",
         "source_url": "https://duckduckgo.com/ac/",
-        "scraped_at": "2026-09-21T19:49:06.519552+00:00"
+        "scraped_at": "2026-09-22T08:02:46.222835+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for ladies stores near me",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307649+00:00"
+      },
+      {
+        "keyword": "festival outfits for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604199+00:00"
+      },
+      {
+        "keyword": "denim jacket outfit",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.487549+00:00"
+      },
+      {
+        "keyword": "watchmen movie",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.222841+00:00"
+      },
+      {
+        "keyword": "festival outfits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604195+00:00"
+      },
+      {
+        "keyword": "ethnic dress code",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307644+00:00"
+      },
+      {
+        "keyword": "festival outfits on a budget",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604210+00:00"
+      },
+      {
+        "keyword": "watch men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.222825+00:00"
+      },
+      {
+        "keyword": "party wear sarees",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.410308+00:00"
+      },
+      {
+        "keyword": "festival outfits ideas",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604204+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307652+00:00"
+      },
+      {
+        "keyword": "serum 2",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.682062+00:00"
+      },
+      {
+        "keyword": "festival outfits",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604184+00:00"
+      },
+      {
+        "keyword": "party wear for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.410536+00:00"
+      },
+      {
+        "keyword": "ethnic dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307633+00:00"
+      },
+      {
+        "keyword": "watch mentalist online free",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.222838+00:00"
+      },
+      {
+        "keyword": "ethnic dress jean",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307638+00:00"
+      },
+      {
+        "keyword": "denim jacket for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.487551+00:00"
+      },
+      {
+        "keyword": "party wear dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.410304+00:00"
+      },
+      {
+        "keyword": "denim jackets for older women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.487544+00:00"
+      },
+      {
+        "keyword": "festival outfits 2026",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604202+00:00"
+      },
+      {
+        "keyword": "party wear",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.410290+00:00"
+      },
+      {
+        "keyword": "ethnic dress",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307619+00:00"
+      },
+      {
+        "keyword": "denim jacket",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.487520+00:00"
+      },
+      {
+        "keyword": "denim jacket men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.487537+00:00"
+      },
+      {
+        "keyword": "watch men's olympic hockey",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.222846+00:00"
+      },
+      {
+        "keyword": "party wear suits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.410542+00:00"
+      },
+      {
+        "keyword": "denim jacket short set",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.487546+00:00"
+      },
+      {
+        "keyword": "festival outfits for summer",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.604206+00:00"
+      },
+      {
+        "keyword": "party wear for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.410529+00:00"
+      },
+      {
+        "keyword": "ethnic dress for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.307641+00:00"
+      },
+      {
+        "keyword": "watch mentalist",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.222844+00:00"
+      },
+      {
+        "keyword": "watch men gift pack",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-09-22T08:02:46.222848+00:00"
       }
     ]
   }

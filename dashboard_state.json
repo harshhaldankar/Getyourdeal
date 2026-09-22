@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T00:00:08.378879Z",
+  "generated_at": "2026-09-22T04:02:46.480101Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,128 +19,40 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 1000,
+    "total_processed": 106,
     "live": 1,
     "fully_posted": 1,
     "website_only": 0,
-    "skipped": 999,
-    "success_rate_pct": 0.1,
-    "last_run": "2026-09-22T00:00:08.150676",
+    "skipped": 105,
+    "success_rate_pct": 0.94,
+    "last_run": "2026-09-22T04:02:46.212810",
     "skip_reasons": {
-      "No product URL found": 411,
-      "Discount Filter": 544,
-      "No Real Photo (Image Fetch/Validation Failed)": 36,
-      "Already exists on website": 8
+      "No product URL found": 91,
+      "Discount Filter": 13,
+      "No Real Photo (Image Fetch/Validation Failed)": 1
     },
     "profit_tiers": {
-      "Unknown": 769,
-      "Medium": 18,
-      "High": 111,
-      "Low": 101,
-      "Ultra-High": 1
+      "Unknown": 86,
+      "Medium": 8,
+      "High": 9,
+      "Low": 3
     },
     "timeline": [
       {
-        "date": "2026-09-11",
-        "count": 309
-      },
-      {
-        "date": "2026-09-13",
-        "count": 231
-      },
-      {
-        "date": "2026-09-14",
-        "count": 77
-      },
-      {
-        "date": "2026-09-20",
-        "count": 133
-      },
-      {
-        "date": "2026-09-21",
-        "count": 238
-      },
-      {
         "date": "2026-09-22",
-        "count": 12
+        "count": 106
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 97,
-    "pinned": 97,
+    "total_deals": 0,
+    "pinned": 0,
     "not_pinned": 0,
-    "pin_rate_pct": 100.0,
+    "pin_rate_pct": 0.0,
     "total_pins": 0,
-    "last_run": "2026-09-21T23:22:50.553686",
-    "platforms": {
-      "Myntra": 5,
-      "Ajio": 2,
-      "Flipkart": 57,
-      "Amazon": 33
-    },
-    "recent_deals": [
-      {
-        "title": "Upto 80% Off On Branded Backpacks.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-21T23:22:50.553686"
-      },
-      {
-        "title": "Myntra Loot : 5 Litre Body Wash Worth 2400+ @ Just \u20b9535! \ud83e\udd2f",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-20T21:58:12.133562"
-      },
-      {
-        "title": "Ajio | Up to 75% OFF on UCB Clothing",
-        "platform": "Ajio",
-        "pinned": true,
-        "timestamp": "2026-09-14T04:53:44.847357"
-      },
-      {
-        "title": "Ajio Loot : Upto 70% Off On Levi's Clothing",
-        "platform": "Ajio",
-        "pinned": true,
-        "timestamp": "2026-09-13T22:36:30.588456"
-      },
-      {
-        "title": "Loot : Upto 82% Off On Men\u2019s Clothing.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-13T10:59:08.419921"
-      },
-      {
-        "title": "70% Off : Smart and Handsome Face Wash, 150g @113.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-11T14:44:04.755880"
-      },
-      {
-        "title": "Myntra : Upto 70% Off On Hair Care.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-11T09:47:38.507520"
-      },
-      {
-        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
-        "platform": "Amazon",
-        "pinned": true,
-        "timestamp": "2026-08-23T05:57:59.562588"
-      },
-      {
-        "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T20:45:02.998911"
-      },
-      {
-        "title": "Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
-        "platform": "Flipkart",
-        "pinned": true,
-        "timestamp": "2026-08-16T15:16:44.351354Z"
-      }
-    ]
+    "last_run": null,
+    "platforms": {},
+    "recent_deals": []
   },
   "instagram_stats": {
     "posts_today": 0,

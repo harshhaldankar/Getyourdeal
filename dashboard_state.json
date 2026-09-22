@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T04:02:46.480101Z",
+  "generated_at": "2026-09-22T08:40:13.754552Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -19,40 +19,128 @@
     "Beauty & Skincare": 0
   },
   "pipeline1": {
-    "total_processed": 106,
-    "live": 1,
-    "fully_posted": 1,
+    "total_processed": 1000,
+    "live": 0,
+    "fully_posted": 0,
     "website_only": 0,
-    "skipped": 105,
-    "success_rate_pct": 0.94,
-    "last_run": "2026-09-22T04:02:46.212810",
+    "skipped": 1000,
+    "success_rate_pct": 0.0,
+    "last_run": "2026-09-22T08:40:13.569915",
     "skip_reasons": {
-      "No product URL found": 91,
-      "Discount Filter": 13,
-      "No Real Photo (Image Fetch/Validation Failed)": 1
+      "No product URL found": 407,
+      "Discount Filter": 553,
+      "No Real Photo (Image Fetch/Validation Failed)": 35,
+      "Already exists on website": 5
     },
     "profit_tiers": {
-      "Unknown": 86,
-      "Medium": 8,
-      "High": 9,
-      "Low": 3
+      "Unknown": 770,
+      "Medium": 13,
+      "Low": 94,
+      "High": 122,
+      "Ultra-High": 1
     },
     "timeline": [
       {
+        "date": "2026-09-11",
+        "count": 165
+      },
+      {
+        "date": "2026-09-13",
+        "count": 231
+      },
+      {
+        "date": "2026-09-14",
+        "count": 77
+      },
+      {
+        "date": "2026-09-20",
+        "count": 133
+      },
+      {
+        "date": "2026-09-21",
+        "count": 144
+      },
+      {
         "date": "2026-09-22",
-        "count": 106
+        "count": 250
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 0,
-    "pinned": 0,
+    "total_deals": 97,
+    "pinned": 97,
     "not_pinned": 0,
-    "pin_rate_pct": 0.0,
+    "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": null,
-    "platforms": {},
-    "recent_deals": []
+    "last_run": "2026-09-21T23:22:50.553686",
+    "platforms": {
+      "Myntra": 5,
+      "Ajio": 2,
+      "Flipkart": 57,
+      "Amazon": 33
+    },
+    "recent_deals": [
+      {
+        "title": "Upto 80% Off On Branded Backpacks.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-21T23:22:50.553686"
+      },
+      {
+        "title": "Myntra Loot : 5 Litre Body Wash Worth 2400+ @ Just \u20b9535! \ud83e\udd2f",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-20T21:58:12.133562"
+      },
+      {
+        "title": "Ajio | Up to 75% OFF on UCB Clothing",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-14T04:53:44.847357"
+      },
+      {
+        "title": "Ajio Loot : Upto 70% Off On Levi's Clothing",
+        "platform": "Ajio",
+        "pinned": true,
+        "timestamp": "2026-09-13T22:36:30.588456"
+      },
+      {
+        "title": "Loot : Upto 82% Off On Men\u2019s Clothing.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-13T10:59:08.419921"
+      },
+      {
+        "title": "70% Off : Smart and Handsome Face Wash, 150g @113.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T14:44:04.755880"
+      },
+      {
+        "title": "Myntra : Upto 70% Off On Hair Care.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-11T09:47:38.507520"
+      },
+      {
+        "title": "50% Off - Santoor PureGlo Glycerine Soap with Almond Oil and Glycerine, 125g (Pack of 6) for No",
+        "platform": "Amazon",
+        "pinned": true,
+        "timestamp": "2026-08-23T05:57:59.562588"
+      },
+      {
+        "title": "GRAB: Optimum Nutrition (ON) Gold Standard 100% Whey Protein 1.7kg @ \u20b96,199",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T20:45:02.998911"
+      },
+      {
+        "title": "Talgo Fancy Design Stylish ALPHABET N Dial Brown Leather Stra...",
+        "platform": "Flipkart",
+        "pinned": true,
+        "timestamp": "2026-08-16T15:16:44.351354Z"
+      }
+    ]
   },
   "instagram_stats": {
     "posts_today": 0,

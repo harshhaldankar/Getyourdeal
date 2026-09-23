@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T13:03:22.729739Z",
+  "generated_at": "2026-09-23T17:52:21.862467Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -25,24 +25,24 @@
     "website_only": 0,
     "skipped": 999,
     "success_rate_pct": 0.1,
-    "last_run": "2026-09-23T13:03:22.481518",
+    "last_run": "2026-09-23T17:52:21.634458",
     "skip_reasons": {
-      "No product URL found": 405,
-      "Discount Filter": 554,
-      "Already exists on website": 8,
-      "No Real Photo (Image Fetch/Validation Failed)": 32
+      "No product URL found": 415,
+      "Discount Filter": 543,
+      "Already exists on website": 12,
+      "No Real Photo (Image Fetch/Validation Failed)": 29
     },
     "profit_tiers": {
-      "Unknown": 770,
-      "Low": 86,
+      "Unknown": 763,
+      "Low": 84,
       "Medium": 9,
-      "High": 134,
+      "High": 143,
       "Ultra-High": 1
     },
     "timeline": [
       {
         "date": "2026-09-13",
-        "count": 206
+        "count": 143
       },
       {
         "date": "2026-09-14",
@@ -62,24 +62,30 @@
       },
       {
         "date": "2026-09-23",
-        "count": 250
+        "count": 313
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 96,
-    "pinned": 96,
+    "total_deals": 97,
+    "pinned": 97,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
-    "last_run": "2026-09-23T12:05:34.086624",
+    "last_run": "2026-09-23T17:47:05.412286",
     "platforms": {
+      "Myntra": 7,
       "Ajio": 4,
-      "Myntra": 6,
       "Flipkart": 57,
       "Amazon": 29
     },
     "recent_deals": [
+      {
+        "title": "Myntra : Upto 80% Off On Duke Shoes.",
+        "platform": "Myntra",
+        "pinned": true,
+        "timestamp": "2026-09-23T17:47:05.412286"
+      },
       {
         "title": "AJIO: HIDDEN STARS SALE** **UPTO 80% OFF",
         "platform": "Ajio",
@@ -133,12 +139,6 @@
         "platform": "Myntra",
         "pinned": true,
         "timestamp": "2026-09-11T14:44:04.755880"
-      },
-      {
-        "title": "Myntra : Upto 70% Off On Hair Care.",
-        "platform": "Myntra",
-        "pinned": true,
-        "timestamp": "2026-09-11T09:47:38.507520"
       }
     ]
   },

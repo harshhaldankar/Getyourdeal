@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:54:50.149095Z",
+  "generated_at": "2026-09-23T01:58:39.631032Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,33 +20,29 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 1,
-    "fully_posted": 1,
+    "live": 0,
+    "fully_posted": 0,
     "website_only": 0,
-    "skipped": 999,
-    "success_rate_pct": 0.1,
-    "last_run": "2026-09-22T21:54:49.953191",
+    "skipped": 1000,
+    "success_rate_pct": 0.0,
+    "last_run": "2026-09-23T01:58:39.477417",
     "skip_reasons": {
-      "No product URL found": 405,
-      "Discount Filter": 557,
-      "No Real Photo (Image Fetch/Validation Failed)": 32,
-      "Already exists on website": 5
+      "No product URL found": 409,
+      "Discount Filter": 551,
+      "Already exists on website": 7,
+      "No Real Photo (Image Fetch/Validation Failed)": 33
     },
     "profit_tiers": {
-      "Unknown": 764,
-      "Medium": 12,
-      "Low": 91,
-      "High": 132,
+      "Unknown": 770,
+      "Medium": 11,
+      "Low": 85,
+      "High": 133,
       "Ultra-High": 1
     },
     "timeline": [
       {
-        "date": "2026-09-11",
-        "count": 110
-      },
-      {
         "date": "2026-09-13",
-        "count": 231
+        "count": 206
       },
       {
         "date": "2026-09-14",
@@ -62,13 +58,17 @@
       },
       {
         "date": "2026-09-22",
-        "count": 305
+        "count": 207
+      },
+      {
+        "date": "2026-09-23",
+        "count": 233
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 99,
-    "pinned": 99,
+    "total_deals": 98,
+    "pinned": 98,
     "not_pinned": 0,
     "pin_rate_pct": 100.0,
     "total_pins": 0,
@@ -77,7 +77,7 @@
       "Myntra": 6,
       "Ajio": 3,
       "Flipkart": 57,
-      "Amazon": 33
+      "Amazon": 32
     },
     "recent_deals": [
       {

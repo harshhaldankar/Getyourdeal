@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T03:28:45.941577Z",
+  "generated_at": "2026-10-02T08:55:49.523699Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -25,19 +25,19 @@
     "website_only": 0,
     "skipped": 1000,
     "success_rate_pct": 0.0,
-    "last_run": "2026-10-02T03:28:45.766451",
+    "last_run": "2026-10-02T08:55:49.330640",
     "skip_reasons": {
-      "No product URL found": 364,
+      "No product URL found": 365,
       "Discount Filter": 601,
-      "Already exists on website": 9,
+      "Already exists on website": 8,
       "No Real Photo (Image Fetch/Validation Failed)": 26
     },
     "profit_tiers": {
-      "Unknown": 688,
-      "Medium": 35,
-      "High": 197,
+      "Unknown": 682,
+      "Medium": 34,
+      "High": 200,
       "Ultra-High": 14,
-      "Low": 66
+      "Low": 70
     },
     "timeline": [
       {

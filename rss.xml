@@ -1,9 +1,22 @@
 <?xml version="1.0" ?>
-<rss xmlns:ns0="http://search.yahoo.com/mrss/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<rss xmlns:ns0="http://search.yahoo.com/mrss/" version="2.0">
   <channel>
     <title>GetYourDeal Verified Drops Feed</title>
     <link>https://harshhaldankar.github.io/Getyourdeal/</link>
     <description>Curated Indian E-Commerce Deals &amp; Video Reels for Make.com</description>
+    <item>
+      <title>Myntra | Dove Body Wash @62%</title>
+      <link>https://harshhaldankar.github.io/Getyourdeal/deals/deal_20261012_210216191776/</link>
+      <description>Axe : Min. 50% off Rexona: Min. 50% Off</description>
+      <pubDate>Mon, 12 Oct 2026 21:02:54 +0000</pubDate>
+      <instagram_eligible>true</instagram_eligible>
+      <category>Beauty &amp; Skincare Deals</category>
+      <board>Beauty &amp; Skincare Deals</board>
+      <image_url>https://harshhaldankar.github.io/Getyourdeal/deals/images/pin_deal_20261012_210215.jpg</image_url>
+      <affiliate_link>https://myntra.com/dove?sort=discount&amp;f=Categories%3ABody+Wash+and+Shower+Gel&amp;rawQuery=dove&amp;affid=growthte&amp;affExtParam2=5382823</affiliate_link>
+      <video_url>https://harshhaldankar.github.io/Getyourdeal/deals/videos/reel_p1_ugc_reel_pin_deal_20261012_210215_jpg.mp4</video_url>
+      <enclosure url="https://harshhaldankar.github.io/Getyourdeal/deals/videos/reel_p1_ugc_reel_pin_deal_20261012_210215_jpg.mp4" length="0" type="video/mp4"/>
+    </item>
     <item>
       <title>LOOT 🔥🔥 JACK &amp; JONES CLOTHING 75% OFF</title>
       <link>https://harshhaldankar.github.io/Getyourdeal/deals/deal_20261011_001939832477/</link>

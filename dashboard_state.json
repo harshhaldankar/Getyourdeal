@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T23:58:57.648984Z",
+  "generated_at": "2026-10-02T19:01:43.926109Z",
   "session_health": {
     "pinterest": {
       "status": "ACTIVE",
@@ -20,180 +20,133 @@
   },
   "pipeline1": {
     "total_processed": 1000,
-    "live": 3,
-    "fully_posted": 3,
+    "live": 0,
+    "fully_posted": 0,
     "website_only": 0,
-    "skipped": 997,
-    "success_rate_pct": 0.3,
-    "last_run": "2026-10-29T23:58:40.740254",
+    "skipped": 1000,
+    "success_rate_pct": 0.0,
+    "last_run": "2026-10-02T18:05:19.991897",
     "skip_reasons": {
-      "No product URL found": 185,
-      "Discount Filter": 156,
-      "Not fashion/beauty/home": 312,
-      "Junk title": 80,
-      "Off-niche category (Refrigerator)": 11,
-      "Off-niche category (Earbuds)": 4,
-      "Off-niche category (Laptop)": 5,
-      "Off-niche category (Gaming)": 18,
-      "Low-commission category": 25,
-      "Off-niche category (Router)": 2,
-      "Off-niche category (Monitor)": 3,
-      "Off-niche category (iPhone)": 5,
-      "Price above \u20b915,000": 9,
-      "Off-niche category (5G)": 16,
-      "No Real Photo (Image Fetch/Validation Failed)": 27,
-      "Off-niche category (Credit Card)": 10,
-      "Off-niche category (Cable)": 2,
-      "Off-niche category (Laptops)": 30,
-      "Off-niche category (Protein)": 2,
-      "Off-niche category (Ghee)": 1,
-      "Off-niche category (Grocery)": 7,
-      "Off-niche category (Air Fryer)": 1,
-      "Off-niche category (Speaker)": 3,
-      "Off-niche category (Mixer Grinder)": 4,
-      "Off-niche category (LED Bulb)": 2,
-      "Off-niche category (Credit card)": 2,
-      "Off-niche category (Headphone)": 2,
-      "Off-niche category (AC)": 2,
-      "Off-niche category (TV)": 9,
-      "Off-niche category (Ceiling Fan)": 5,
-      "Off-niche category (WiFi)": 2,
-      "Off-niche category (Scooter)": 6,
-      "Off-niche category (PCs)": 5,
-      "Off-niche category (Mobile)": 2,
-      "Off-niche category (Charger)": 3,
-      "Off-niche category (Whey)": 4,
-      "Off-niche category (Phone)": 6,
-      "Off-niche category (Cashews)": 2,
-      "Off-niche category (Helmet)": 2,
-      "Off-niche category (Luggage)": 2,
-      "Off-niche category (Fan)": 1,
-      "Off-niche category (Debit Card)": 1,
-      "Off-niche category (Rice)": 1,
-      "Off-niche category (Adapter)": 1,
-      "Already exists on website": 7,
-      "Off-niche category (Butter)": 1,
-      "Off-niche category (Power Bank)": 1,
-      "Off-niche category (PC)": 2,
-      "Off-niche category (Vitamin)": 2,
-      "Off-niche category (Pcs)": 1,
-      "Off-niche category (Mixer)": 1,
-      "Off-niche category (Wire)": 1,
-      "Off-niche category (Cashew)": 1,
-      "Off-niche category (Sugar)": 1,
-      "Off-niche category (Oil)": 1
+      "Discount Filter": 659,
+      "No product URL found": 304,
+      "No Real Photo (Image Fetch/Validation Failed)": 25,
+      "Already exists on website": 12
     },
     "profit_tiers": {
-      "Unknown": 832,
-      "High": 148,
-      "Medium": 13,
-      "Ultra-High": 7
+      "High": 192,
+      "Unknown": 710,
+      "Low": 65,
+      "Medium": 21,
+      "Ultra-High": 12
     },
     "timeline": [
       {
-        "date": "2026-10-23",
-        "count": 2
+        "date": "2026-09-23",
+        "count": 182
       },
       {
-        "date": "2026-10-24",
-        "count": 163
+        "date": "2026-09-24",
+        "count": 106
       },
       {
-        "date": "2026-10-25",
-        "count": 102
+        "date": "2026-09-25",
+        "count": 20
       },
       {
-        "date": "2026-10-26",
-        "count": 167
+        "date": "2026-09-28",
+        "count": 145
       },
       {
-        "date": "2026-10-27",
-        "count": 193
+        "date": "2026-09-29",
+        "count": 63
       },
       {
-        "date": "2026-10-28",
-        "count": 190
+        "date": "2026-09-30",
+        "count": 292
       },
       {
-        "date": "2026-10-29",
-        "count": 183
+        "date": "2026-10-01",
+        "count": 153
+      },
+      {
+        "date": "2026-10-02",
+        "count": 39
       }
     ]
   },
   "pipeline2": {
-    "total_deals": 198,
-    "pinned": 100,
-    "not_pinned": 98,
-    "pin_rate_pct": 50.51,
-    "total_pins": 58,
-    "last_run": "2026-10-29T23:58:08.452996",
+    "total_deals": 105,
+    "pinned": 51,
+    "not_pinned": 54,
+    "pin_rate_pct": 48.57,
+    "total_pins": 0,
+    "last_run": "2026-10-02T18:05:20.320213",
     "platforms": {
-      "Myntra": 48,
-      "Other": 60,
-      "Amazon": 23,
-      "Ajio": 10,
-      "Flipkart": 57
+      "Myntra": 14,
+      "Ajio": 6,
+      "Flipkart": 57,
+      "Amazon": 28
     },
     "recent_deals": [
       {
-        "title": "Myntra Loot : 80% Off On Levis Jeans Starts @519.",
+        "title": "Myntra : Upto 90% Off : HRX Footwears.",
         "platform": "Myntra",
         "pinned": false,
-        "timestamp": "2026-10-29T23:58:08.452996"
+        "timestamp": "2026-10-02T18:05:20.320213"
       },
       {
-        "title": "Roadster Women Blue Skinny Fit Mid-Rise Clean Look Stretchable Cropped Jeans @ \u20b9799 | 50% Off on Myntra",
-        "platform": "Other",
+        "title": "Myntra : Upto 50% Off : Nike Womens Shoes + Extra Coupon And Bank Offers",
+        "platform": "Myntra",
         "pinned": false,
-        "timestamp": "2026-10-29T18:47:37.212921Z"
+        "timestamp": "2026-10-01T20:43:06.597379"
       },
       {
-        "title": "Saree mall Sea Green & Pink Printed Saree @ \u20b9734 | 65% Off on Myntra",
-        "platform": "Other",
+        "title": "Nike Backpacks at 50% off + 10% off",
+        "platform": "Myntra",
         "pinned": false,
-        "timestamp": "2026-10-29T18:47:35.730488Z"
+        "timestamp": "2026-09-30T19:53:53.377066"
       },
       {
-        "title": "Roadster Women Black Skinny Fit Mid-Rise Clean Look Stretchable Cropped Jeans @ \u20b9769 | 65% Off on Myntra",
-        "platform": "Other",
+        "title": "Upto 77% Off On Timex Watches",
+        "platform": "Myntra",
         "pinned": false,
-        "timestamp": "2026-10-29T18:47:34.753786Z"
+        "timestamp": "2026-09-30T02:41:41.130437"
       },
       {
-        "title": "LOCOMOTIVE Men Blue Tapered Fit Jeans @ \u20b9749 | 70% Off on Myntra",
-        "platform": "Other",
+        "title": "AJIO Loot: Premium Watch Collection Upto 20% Off",
+        "platform": "Ajio",
         "pinned": false,
-        "timestamp": "2026-10-29T18:47:33.829355Z"
+        "timestamp": "2026-09-29T18:35:13.752708"
       },
       {
-        "title": "LOCOMOTIVE Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans @ \u20b9749 | 70% Off on Myntra",
-        "platform": "Other",
+        "title": "Upto 67% Off On Hair Care.",
+        "platform": "Myntra",
         "pinned": false,
-        "timestamp": "2026-10-29T18:47:32.768246Z"
+        "timestamp": "2026-09-28T14:52:37.205439"
       },
       {
-        "title": "AND Women Blue & White Striped A-Line Dress @ \u20b9749 | 75% Off on Myntra",
-        "platform": "Other",
-        "pinned": true,
-        "timestamp": "2026-10-29T09:19:09.778453Z"
+        "title": "AJIO Loot : 84% Off On Red Chief Shoes.",
+        "platform": "Ajio",
+        "pinned": false,
+        "timestamp": "2026-09-25T19:23:59.719880"
       },
       {
-        "title": "TIED RIBBONS Cream-Coloured & Yellow Ganesh Idol Playing Bansuri Showpiece @ \u20b9839 | 60% Off on Myntra",
-        "platform": "Other",
-        "pinned": true,
-        "timestamp": "2026-10-29T09:19:08.865722Z"
+        "title": "Upto 90% Off On Stylecast x Kotty Men Clothing.",
+        "platform": "Myntra",
+        "pinned": false,
+        "timestamp": "2026-09-24T18:56:10.508642"
       },
       {
-        "title": "Roadster Men Black Skinny Fit Mid-Rise Clean Look Stretchable Cropped Jeans @ \u20b9859 | 57% Off on Myntra",
-        "platform": "Other",
-        "pinned": true,
-        "timestamp": "2026-10-29T09:19:07.888559Z"
+        "title": "Nike Backpacks at 50% off",
+        "platform": "Myntra",
+        "pinned": false,
+        "timestamp": "2026-09-23T21:42:22.442470"
       },
       {
-        "title": "Saree mall Sea Green & Brown Printed Saree @ \u20b9835 | 62% Off on Myntra",
-        "platform": "Other",
-        "pinned": true,
-        "timestamp": "2026-10-29T09:19:06.969724Z"
+        "title": "Myntra : Upto 80% Off On Duke Shoes.",
+        "platform": "Myntra",
+        "pinned": false,
+        "timestamp": "2026-09-23T17:47:05.412286"
       }
     ]
   },
@@ -202,5 +155,249 @@
     "pending_posts": 0
   },
   "api_quotas": {},
-  "trending_keywords": {}
+  "trending_keywords": {
+    "timestamp": 1790932135.635258,
+    "trends": [
+      {
+        "keyword": "party wear sarees",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726174+00:00"
+      },
+      {
+        "keyword": "denim jacket men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915274+00:00"
+      },
+      {
+        "keyword": "festival outfits ideas",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363679+00:00"
+      },
+      {
+        "keyword": "party wear tops for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726319+00:00"
+      },
+      {
+        "keyword": "festival outfits 2026",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363677+00:00"
+      },
+      {
+        "keyword": "denim jacket for girls",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915286+00:00"
+      },
+      {
+        "keyword": "sneakers",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074463+00:00"
+      },
+      {
+        "keyword": "denim jacket outfit",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915283+00:00"
+      },
+      {
+        "keyword": "party wear",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726156+00:00"
+      },
+      {
+        "keyword": "lipstick shade finder",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549162+00:00"
+      },
+      {
+        "keyword": "party wear gown for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726323+00:00"
+      },
+      {
+        "keyword": "denim jackets for older women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915281+00:00"
+      },
+      {
+        "keyword": "sneakers app",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074495+00:00"
+      },
+      {
+        "keyword": "party wear suits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726321+00:00"
+      },
+      {
+        "keyword": "festival outfits on a budget",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363683+00:00"
+      },
+      {
+        "keyword": "lipstick shades",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549140+00:00"
+      },
+      {
+        "keyword": "sneakers movie",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074480+00:00"
+      },
+      {
+        "keyword": "denim jacket for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915276+00:00"
+      },
+      {
+        "keyword": "lipstick shade for morena",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549168+00:00"
+      },
+      {
+        "keyword": "festival outfits for summer",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363681+00:00"
+      },
+      {
+        "keyword": "sneakers for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074486+00:00"
+      },
+      {
+        "keyword": "party wear dresses for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726171+00:00"
+      },
+      {
+        "keyword": "sneakers for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074492+00:00"
+      },
+      {
+        "keyword": "festival outfits for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363674+00:00"
+      },
+      {
+        "keyword": "festival outfits",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363656+00:00"
+      },
+      {
+        "keyword": "lipstick shades trending",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549164+00:00"
+      },
+      {
+        "keyword": "lipstick shades for indian skin",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549156+00:00"
+      },
+      {
+        "keyword": "festival outfits pinterest",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363688+00:00"
+      },
+      {
+        "keyword": "party wear for men",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726314+00:00"
+      },
+      {
+        "keyword": "festival outfits for women",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.363672+00:00"
+      },
+      {
+        "keyword": "sneakers at mission bay park",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074490+00:00"
+      },
+      {
+        "keyword": "denim jacket",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915257+00:00"
+      },
+      {
+        "keyword": "party wear dresses",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.726317+00:00"
+      },
+      {
+        "keyword": "winter jackets",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.244935+00:00"
+      },
+      {
+        "keyword": "lipstick shades for office wear",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549166+00:00"
+      },
+      {
+        "keyword": "denim jacket short set",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915285+00:00"
+      },
+      {
+        "keyword": "sneakers o'toole",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074484+00:00"
+      },
+      {
+        "keyword": "sneakers at pacific beach",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:55.074489+00:00"
+      },
+      {
+        "keyword": "lipstick shades names",
+        "category": "beauty",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.549159+00:00"
+      },
+      {
+        "keyword": "denim jacket pattern drafting",
+        "category": "fashion",
+        "source_url": "https://duckduckgo.com/ac/",
+        "scraped_at": "2026-10-02T09:08:54.915279+00:00"
+      }
+    ]
+  }
 }

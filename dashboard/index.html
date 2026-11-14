@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Control Room</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --card: #ffffff;
+  --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --line: rgba(11,11,11,0.10);
+  --series: #2a78d6; --series-wash: rgba(42,120,214,0.10); --track: #cde2fb;
+  --brand: #c8186e;
+  --good: #0ca30c; --good-text: #006300; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
+  --crit-wash: #fdeeee; --warn-wash: #fff6e0; --good-wash: #ebf7eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --card: #1a1a19;
+    --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --line: rgba(255,255,255,0.10);
+    --series: #3987e5; --series-wash: rgba(57,135,229,0.12); --track: rgba(57,135,229,0.20);
+    --brand: #e0559a; --good-text: #0ca30c;
+    --crit-wash: #3a1d1d; --warn-wash: #3a3018; --good-wash: #18301a;
+  }
+  :root:where(:not([data-theme="light"])) .amz { background: linear-gradient(180deg, #2b2214, var(--card) 70%); border-color: #5a4320; }
+}
+:root[data-theme="dark"] .amz { background: linear-gradient(180deg, #2b2214, var(--card) 70%); border-color: #5a4320; }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --card: #1a1a19;
+  --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --line: rgba(255,255,255,0.10);
+  --series: #3987e5; --series-wash: rgba(57,135,229,0.12); --track: rgba(57,135,229,0.20);
+  --brand: #e0559a; --good-text: #0ca30c;
+  --crit-wash: #3a1d1d; --warn-wash: #3a3018; --good-wash: #18301a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--page); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: inherit; text-underline-offset: 2px; }
+main { max-width: 1180px; margin: 0 auto; padding: 8px 16px 64px; }
+.band { background: linear-gradient(135deg, #c8186e 0%, #7a1f73 55%, #2a3f8f 100%); color: #fff; }
+.band-in { max-width: 1180px; margin: 0 auto; padding: 22px 16px 20px; display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; justify-content: space-between; }
+.brand { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; opacity: .85; }
+h1 { font-size: 28px; margin: 2px 0 2px; font-weight: 700; letter-spacing: -0.01em; }
+.sub { font-size: 13px; opacity: .9; }
+.band button { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.35); color: #fff; }
+.band button:hover { background: rgba(255,255,255,.24); border-color: rgba(255,255,255,.6); }
+.health { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; }
+.health > span { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.14); }
+.health .dot { box-shadow: 0 0 0 2px rgba(255,255,255,.85); }
+.controls { display: flex; gap: 8px; align-items: center; }
+button { font: inherit; font-size: 13px; padding: 9px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+button:hover { background: var(--surface); border-color: var(--axis); }
+button:disabled { opacity: .6; cursor: progress; }
+.alerts { display: grid; gap: 8px; margin-bottom: 18px; }
+.alert { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); font-size: 14px; }
+.alert .ico { flex: none; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; }
+.alert.critical { background: var(--crit-wash); } .alert.critical .ico { background: var(--critical); }
+.alert.warning { background: var(--warn-wash); } .alert.warning .ico { background: var(--warning); color: #0b0b0b; }
+.alert.good { background: var(--good-wash); } .alert.good .ico { background: var(--good); }
+.alert b { font-weight: 650; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+nav.jump { position: sticky; top: 0; z-index: 5; display: flex; gap: 6px; overflow-x: auto; padding: 10px 0; margin: 0 0 14px;
+  background: var(--page); scrollbar-width: none; }
+nav.jump::-webkit-scrollbar { display: none; }
+nav.jump a { white-space: nowrap; }
+nav.jump a { font-size: 13px; text-decoration: none; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink-2); }
+nav.jump a:hover { color: var(--ink); border-color: var(--axis); }
+nav.jump a[aria-selected="true"] { background: var(--series); border-color: var(--series); color: #fff; font-weight: 600; }
+section[data-tab][hidden] { display: none; }
+section { margin: 0 0 28px; scroll-margin-top: 12px; }
+section > h2 { font-size: 19px; margin: 0 0 4px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+section h2 .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-size: 15px; background: var(--card); border: 1px solid var(--line); }
+section > .note { color: var(--ink-2); font-size: 13px; margin: 0 0 12px; }
+.grid { display: grid; gap: 12px; }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.tiles { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-bottom: 12px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; min-width: 0; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.035); }
+.tile { position: relative; overflow: hidden; }
+.tile::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--series); opacity: .55; }
+.amz { border: 1px solid #f5c77a; background: linear-gradient(180deg, #fff8ec, var(--card) 70%); }
+.amz .big { font-size: 44px; font-weight: 700; line-height: 1; margin: 2px 0; }
+.amz .row { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end; }
+.amz .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.amz .acts a, .amz .acts button { font-size: 13px; text-decoration: none; padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+.amz .acts .main { background: #ff9900; border-color: #ff9900; color: #111; font-weight: 600; }
+.amz ol { overflow-wrap: anywhere; margin: 14px 0 0; padding-left: 20px; font-size: 13px; color: var(--ink-2); }
+.amz ol li { margin: 4px 0; }
+.goals { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.goal .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.goal .top b { font-size: 14px; }
+.goal .now { font-size: 26px; font-weight: 700; margin: 6px 0 2px; }
+.goal .now small { font-size: 14px; font-weight: 500; color: var(--ink-2); }
+.goal .meter { height: 10px; margin: 8px 0 6px; }
+.goal .meter.done > span { background: var(--good); }
+.goal .foot { font-size: 12px; color: var(--ink-2); }
+.goal-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.goal-form { display: none; margin-bottom: 12px; }
+.goal-form.open { display: block; }
+.goal-form .fields { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.goal-form label { display: grid; gap: 4px; font-size: 13px; color: var(--ink-2); }
+.goal-form input { font: inherit; font-size: 15px; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--axis); background: var(--page); color: var(--ink); }
+.goal-form fieldset { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px 12px; margin: 0; display: grid; gap: 10px; align-content: start; }
+.goal-form legend { font-weight: 600; font-size: 13px; color: var(--ink); padding: 0 4px; }
+.goal-form .acts { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.goal-form select, .goal-form textarea { font: inherit; font-size: 15px; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--axis); background: var(--page); color: var(--ink); }
+.goal-form .opts { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.goal-form label.opt { display: flex; align-items: center; gap: 6px; color: var(--ink); font-size: 14px; }
+.goal-form label.opt input { width: auto; padding: 0; margin: 0; accent-color: var(--series); }
+.goal-form .hint { font-size: 12px; color: var(--ink-2); margin: 0; }
+.cr-create .goal-form { display: block; }
+.cr-status { margin-top: 12px; font-size: 14px; }
+.cr-status:empty { display: none; }
+.made { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); margin-top: 12px; }
+.made .card { display: flex; gap: 14px; }
+.made img { width: 96px; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 10px; background: var(--line); flex: none; }
+.made .mb { min-width: 0; display: grid; gap: 4px; align-content: start; font-size: 13px; }
+.made .mb b { font-size: 15px; }
+.made .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.made .chips span { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--page); border: 1px solid var(--line); }
+.made .acts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.made .acts a, .made .acts button { font-size: 12px; padding: 6px 10px; border-radius: 999px; text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+.tv { display: grid; grid-template-columns: 220px 1fr; gap: 18px; }
+.tv .ph img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; background: var(--line); display: block; }
+.tv .ph a { display: block; text-align: center; font-size: 13px; margin-top: 6px; }
+.tv h3 { margin: 0 0 2px; font-size: 18px; }
+.tv ol { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 10px; font-size: 14px; }
+.tv ol li p { margin: 2px 0 6px; color: var(--ink-2); }
+.tv .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tv .row a, .tv .row button { font-size: 13px; padding: 7px 12px; border-radius: 999px; text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+.tv .linkish { border: 0; background: none; padding: 0; color: var(--series); text-decoration: underline; cursor: pointer; font: inherit; }
+.tv .row .go { background: var(--series); border-color: var(--series); color: #fff; font-weight: 600; }
+.tv .done { margin-top: 12px; }
+@media (max-width: 640px) { .tv { grid-template-columns: 1fr; } .tv .ph img { max-width: 260px; margin: 0 auto; } }
+.wk-h { margin: 22px 0 4px; font-size: 16px; }
+.wk-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.wk-card { display: grid; gap: 8px; align-content: start; }
+.wk-card img { width: 100%; aspect-ratio: 16 / 7; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid var(--line); }
+.wk-card.reel img { aspect-ratio: 4 / 3; }
+.wk-card .t { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.wk-card .t b { font-size: 15px; }
+.wk-card .items { font-size: 12px; color: var(--ink-2); }
+.wk-card .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.wk-card .row a, .wk-card .row button { font-size: 12px; padding: 6px 11px; border-radius: 999px; text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+.wk-card .row .go { background: var(--series); border-color: var(--series); color: #fff; font-weight: 600; }
+.wk-card .st { font-size: 12px; font-weight: 600; }
+.wk-card .st.done { color: var(--good); }
+.wk-card .st.wait { color: var(--ink-2); }
+.wk-models { margin-bottom: 12px; font-size: 14px; display: grid; gap: 8px; }
+.wk-models .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.wk-models .row button, .wk-models .row a { font-size: 12px; padding: 6px 11px; border-radius: 999px; text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+.wk-shots { display: grid; gap: 6px; margin: 2px 0; }
+.wk-shot { display: flex; gap: 8px; align-items: center; justify-content: space-between; font-size: 12px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; }
+.wk-shot span { min-width: 0; }
+.wk-shot button { font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; flex: none; }
+.wk-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; text-align: center; font-size: 12px; }
+.wk-days div { border: 1px solid var(--line); border-radius: 10px; padding: 8px 4px; }
+.wk-days .today { border-color: var(--series); box-shadow: 0 0 0 1px var(--series) inset; }
+.wk-days b { display: block; font-size: 13px; margin-bottom: 4px; }
+.wk-bar { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 12px; font-size: 14px; }
+@media (max-width: 640px) { .wk-days { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.btn-main { background: var(--series); border-color: var(--series); color: #fff; font-weight: 600; }
+.btn-main:hover { background: var(--series); filter: brightness(1.08); }
+.card h3 { font-size: 14px; margin: 0 0 2px; font-weight: 600; }
+.card .cap { color: var(--muted); font-size: 12px; margin: 0 0 10px; }
+.tile .label { color: var(--ink-2); font-size: 13px; }
+.tile .value { font-size: 24px; font-weight: 600; margin-top: 2px; }
+.tile .delta { font-size: 12px; margin-top: 2px; color: var(--ink-2); }
+.delta.up { color: var(--good-text); } .delta.down { color: var(--critical); }
+.hero { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); align-items: end; }
+.hero .value { font-size: 52px; font-weight: 650; line-height: 1; letter-spacing: -0.01em; }
+.hero .label { color: var(--ink-2); font-size: 13px; margin-bottom: 6px; }
+.hero .split { color: var(--ink-2); font-size: 14px; margin-top: 8px; }
+.payout .meter { height: 10px; margin: 8px 0 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; font-size: 12px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.scroll { overflow-x: auto; }
+.pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
+.dot.good { background: var(--good); } .dot.warning { background: var(--warning); } .dot.critical { background: var(--critical); } .dot.idle { background: var(--muted); }
+.meter { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; min-width: 60px; }
+.meter > span { display: block; height: 100%; background: var(--series); border-radius: 999px; }
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.chart svg:focus-visible { outline: 2px solid var(--series); outline-offset: 4px; border-radius: 4px; }
+.chart .tip { position: absolute; pointer-events: none; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.12); white-space: nowrap; opacity: 0; transition: opacity .08s; z-index: 2; }
+.chart .tip b { font-weight: 600; }
+.chart .zero { color: var(--ink-2); font-size: 12px; margin: 0 0 6px; }
+details.data { margin-top: 8px; font-size: 13px; }
+details.data summary { cursor: pointer; color: var(--ink-2); padding: 4px 0; }
+.empty { color: var(--muted); font-size: 13px; padding: 14px 0; }
+.failed { color: var(--critical); font-size: 13px; padding: 10px 0; }
+.funnel { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.steps { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+.step .value { font-size: 22px; font-weight: 600; }
+.step .rate { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+.trend-row td:first-child a { font-weight: 600; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 32px; }
+@media (max-width: 560px) {
+  .hero .value { font-size: 44px; } h1 { font-size: 22px; }
+  .hide-sm { display: none; }
+}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="band-in">
+    <div>
+      <div class="brand">Get Your Deal</div>
+      <h1>Control room</h1>
+      <div class="sub" id="updated">Loading live data…</div>
+    </div>
+    <div class="controls">
+      <button id="refresh" type="button">Refresh</button>
+      <button id="theme" type="button" aria-label="Switch light or dark">Theme</button>
+    </div>
+    <div class="health" id="health" aria-label="Automation status"></div>
+  </div>
+</header>
+<main>
+
+  <div class="alerts" id="alerts" aria-live="polite"></div>
+
+  <nav class="jump" role="tablist" aria-label="Control room tabs">
+    <a href="#overview" role="tab" data-tab="overview">📊 Overview</a><a href="#content" role="tab" data-tab="content">🎬 Make content</a><a href="#pinterest" role="tab" data-tab="pinterest">📌 Pinterest</a><a href="#instagram" role="tab" data-tab="instagram">📱 Instagram</a><a href="#automation" role="tab" data-tab="automation">⚙️ Automation</a>
+  </nav>
+
+  <section id="weekly-kit" data-tab="content">
+    <h2><span class="ic" aria-hidden="true">🗓️</span>This week's kit</h2>
+    <p class="note">Make these once a week in Gemini (about an hour) and upload each one. They go out on their own over the week.</p>
+    <div class="card" id="wk-plan"></div>
+    <h3 class="wk-h">Outfit images <span class="muted" id="wk-img-count"></span></h3>
+    <p class="note">Trending looks of the week. For each: <b>Copy image prompt</b>, paste it in Gemini (nothing to attach), then <b>Upload</b> the image. No text goes on it: clean look-plus-pieces images are what get saved.</p>
+    <div class="wk-grid" id="wk-combos"></div>
+    <h3 class="wk-h">Reels <span class="muted" id="wk-reel-count"></span></h3>
+    <p class="note">Same idea: <b>Copy video prompt</b>, in Gemini choose Video and paste, then <b>Upload</b>. We add the look's name, music and the “Comment LINK” ending.</p>
+    <div class="wk-grid" id="wk-reels"></div>
+  </section>
+
+  <section id="create" data-tab="content" class="cr-create">
+    <h2><span class="ic" aria-hidden="true">✨</span>Create from a trend</h2>
+    <p class="note">Spotted something trending (korean pants, say)? Make pins, a reel and an Instagram story for it. The link, the Pinterest board and the design are picked for you.</p>
+    <form class="card goal-form" id="cr-form" autocomplete="off">
+      <div class="fields">
+        <fieldset><legend>The trend</legend>
+          <label>What's trending<input name="trend" required minlength="3" maxlength="60" placeholder="korean pants"></label>
+          <label>For<select name="audience"><option value="women">Women</option><option value="men">Men</option><option value="everyone">Everyone</option></select></label>
+          <label>Deal line (optional)<input name="line" maxlength="60" placeholder="Under ₹799 today"></label>
+        </fieldset>
+        <fieldset><legend>Where to buy</legend>
+          <label>Store<select name="store"><option value="amazon">Amazon (your Associates tag)</option><option value="myntra">Myntra (EarnKaro link)</option><option value="ajio">AJIO (EarnKaro link)</option></select></label>
+          <label>Deal link (optional)<input name="link" type="url" placeholder="https://www.amazon.in/dp/…"></label>
+          <p class="hint">Paste a product or deal link and we add your tag. Leave it empty to link to the store's search for the trend.</p>
+          <label>Pinterest board<select name="board"><option value="">Auto (from the trend)</option></select></label>
+        </fieldset>
+        <fieldset><legend>Photos (optional)</legend>
+          <p class="hint" style="font-size:13px">Pressing <b>Create</b> opens a ready-filled GitHub page in a new tab. Drag up to 6 photos into its text box there (Gemini images or your own photos, not Amazon's product photos, which Amazon doesn't allow), then press the green <b>Create</b> / <b>Submit new issue</b> button.</p>
+          <p class="hint">3 or more photos make a reel. With none, you get text-only designs and a Gemini prompt for the video.</p>
+        </fieldset>
+        <fieldset><legend>Make</legend>
+          <div class="opts"><label class="opt"><input type="checkbox" name="make" value="pins" checked>Pins</label><label class="opt"><input type="checkbox" name="make" value="reel" checked>Reel</label><label class="opt"><input type="checkbox" name="make" value="story" checked>Story</label></div>
+          <p class="hint">Reel</p>
+          <div class="opts"><label class="opt"><input type="radio" name="reel" value="tonight" checked>Post tonight</label><label class="opt"><input type="radio" name="reel" value="now">Post now (counts as today's reel)</label><label class="opt"><input type="radio" name="reel" value="no">Don't post</label></div>
+          <p class="hint">Story</p>
+          <div class="opts"><label class="opt"><input type="radio" name="story" value="download" checked>I'll post it with a link sticker</label><label class="opt"><input type="radio" name="story" value="now">Post now (no sticker)</label></div>
+        </fieldset>
+      </div>
+      <div class="acts"><button type="submit" class="btn-main" id="cr-go">Create ↗</button><span class="hint" style="align-self:center">Opens GitHub (you're logged in there); nothing to set up</span></div>
+      <div class="cr-status" id="cr-status" aria-live="polite"></div>
+    </form>
+    <div class="made" id="cr-made"></div>
+  </section>
+
+  <section id="goals" data-tab="overview">
+    <div class="goal-head">
+      <h2 style="margin:0"><span class="ic" aria-hidden="true">🎯</span>Goals</h2>
+      <button type="button" id="edit-goals">Edit goals</button>
+    </div>
+    <form class="card goal-form" id="goal-form" autocomplete="off">
+      <div class="fields">
+        <fieldset><legend>Amazon Associates</legend>
+          <label>Qualifying sales so far (from your Amazon report)<input type="number" min="0" step="1" name="amazonSales"></label>
+          <label>Sales needed<input type="number" min="1" step="1" name="amazonTarget"></label>
+          <label>Deadline<input type="date" name="amazonDeadline"></label>
+        </fieldset>
+        <fieldset><legend>EarnKaro</legend>
+          <label>Profit target this month (₹)<input type="number" min="0" step="50" name="profitTarget"></label>
+        </fieldset>
+        <fieldset><legend>Pinterest</legend>
+          <label>Clicks to the website, last 30 days<input type="number" min="0" step="10" name="clicksTarget"></label>
+          <label>Pins per day<input type="number" min="1" max="15" step="1" name="pinsTarget"></label>
+        </fieldset>
+        <fieldset><legend>Instagram</legend>
+          <label>Reels per week<input type="number" min="1" max="7" step="1" name="reelsTarget"></label>
+        </fieldset>
+      </div>
+      <div class="acts"><button type="submit" class="btn-main">Save goals</button><button type="button" id="cancel-goals">Cancel</button><button type="button" id="reset-goals">Reset to defaults</button></div>
+      <p class="small muted" style="margin:10px 0 0">Saved in this browser, so set them once on each phone or laptop you use.</p>
+    </form>
+    <div class="goals" id="goal-cards"></div>
+  </section>
+
+  <section id="amazon" data-tab="overview">
+    <h2><span class="ic" aria-hidden="true">🛒</span>Amazon</h2>
+    <p class="note">Amazon Associates closes accounts without 3 qualifying sales in the first 180 days. Your own purchases don't count.</p>
+    <div class="card amz" id="amz-card"></div>
+  </section>
+
+  <section id="money" data-tab="overview">
+    <h2><span class="ic" aria-hidden="true">₹</span>Money (EarnKaro)</h2>
+    <p class="note" id="money-note">From EarnKaro's Reports and Order details, read every morning.</p>
+    <div class="card hero" id="money-hero"></div>
+    <div class="tiles" id="money-tiles" style="margin-top:12px"></div>
+    <div class="grid g2">
+      <div class="card"><h3>Profit per day</h3><p class="cap">Last 14 days, ₹ by order date</p><div class="chart" id="chart-profit"></div></div>
+      <div class="card"><h3>EarnKaro link clicks per day</h3><p class="cap">All sources, one reading per morning (gaps = days not read)</p><div class="chart" id="chart-ekclicks"></div></div>
+      <div class="card"><h3>Orders</h3><p class="cap">Every order EarnKaro has tracked</p><div class="scroll" id="orders"></div></div>
+      <div class="card"><h3>By store</h3><p class="cap">Last 14 days</p><div class="scroll" id="brands"></div></div>
+    </div>
+  </section>
+
+  <section id="funnel" data-tab="overview">
+    <h2><span class="ic" aria-hidden="true">⏬</span>Funnel</h2>
+    <p class="note">Two separate funnels: Pinterest counts only Pinterest, EarnKaro counts link clicks from every source (including link checkers), so the two can't be divided into each other.</p>
+    <div class="funnel">
+      <div class="card"><h3>Pinterest → website</h3><p class="cap">Last 30 days</p><div class="steps" id="funnel-pin"></div></div>
+      <div class="card"><h3>EarnKaro → orders</h3><p class="cap">Last 14 days, all sources</p><div class="steps" id="funnel-ek"></div></div>
+    </div>
+  </section>
+
+  <section id="pinterest" data-tab="pinterest">
+    <h2><span class="ic" aria-hidden="true">📌</span>Pinterest</h2>
+    <p class="note" id="pin-note">From Pinterest Analytics, last 30 days.</p>
+    <div class="tiles" id="pin-tiles"></div>
+    <div class="grid g2">
+      <div class="card"><h3>Impressions per day</h3><p class="cap">Last 30 days (Pinterest counts days in UTC)</p><div class="chart" id="chart-impr"></div></div>
+      <div class="card"><h3>Boards</h3><p class="cap">Last 30 days · weight = how strongly the plan would favour the board if built today</p><div class="scroll" id="boards"></div></div>
+    </div>
+    <div class="card" style="margin-top:12px"><h3>Top pins</h3><p class="cap">Pinterest lists pins here about 2 days after they're posted</p><div class="scroll" id="top-pins"></div></div>
+  </section>
+
+  <section id="posting" data-tab="pinterest">
+    <h2><span class="ic" aria-hidden="true">🗓️</span>Pin posting</h2>
+    <p class="note">One pin due each hour from 8 AM IST (15 a day); hourly runs catch up when GitHub skips one.</p>
+    <div class="tiles" id="post-tiles"></div>
+    <div class="grid g2">
+      <div class="card"><h3>Pins posted per day</h3><p class="cap">Last 14 days (IST)</p><div class="chart" id="chart-posts"></div></div>
+      <div class="card"><h3>This week's ideas: pins out</h3><p class="cap">Posted of queued, per idea</p><div id="theme-progress"></div></div>
+    </div>
+    <div class="card" style="margin-top:12px"><h3>Latest pins</h3><p class="cap">Newest first</p><div class="scroll" id="recent-pins"></div></div>
+  </section>
+
+  <section id="instagram" data-tab="instagram">
+    <h2><span class="ic" aria-hidden="true">🎬</span>Instagram</h2>
+    <p class="note">One reel each evening (6–11:30 PM IST): a Gemini video from the inbox first, otherwise this week's editorial reel.</p>
+    <div class="tiles" id="ig-tiles"></div>
+    <div class="grid g2">
+      <div class="card"><h3>Up next</h3><p class="cap">What the next evening run will post</p><div id="ig-next"></div></div>
+      <div class="card"><h3>Reels posted</h3><p class="cap">Newest first</p><div class="scroll" id="ig-posted"></div></div>
+    </div>
+  </section>
+
+  <section id="trends" data-tab="pinterest">
+    <h2><span class="ic" aria-hidden="true">🔥</span>This week's trends</h2>
+    <p class="note" id="trends-note">Picked on Monday from what India searches on Pinterest, weighted by our boards' results.</p>
+    <div class="card scroll" id="trend-table"></div>
+  </section>
+
+  <section id="health" data-tab="automation">
+    <h2><span class="ic" aria-hidden="true">⚙️</span>Automation</h2>
+    <p class="note">Latest run of each GitHub workflow (checked every 15 minutes).</p>
+    <div class="card scroll" id="workflows"></div>
+  </section>
+
+  <footer>
+    Live data from the <a href="https://github.com/harshhaldankar/earnkaro_pinterest_automation">automation repo</a>
+    (refreshes every 5 minutes while open; GitHub may serve files up to 5 minutes old).
+    · <a href="../">Website</a> · <a href="../kit/">Video kit</a>
+  </footer>
+</main>
+
+<script>
+(() => {
+  "use strict";
+  const REPO = "harshhaldankar/earnkaro_pinterest_automation";
+  const RAW = `https://raw.githubusercontent.com/${REPO}/master/`;
+  const API = `https://api.github.com/repos/${REPO}`;
+  const SITE = "https://harshhaldankar.github.io/Getyourdeal/";
+  const MAX_PINS_PER_DAY = 15, FIRST_SLOT_HOUR = 8, MAX_AGE_DAYS = 21;   // as in trends/post.py
+  const DATA_EVERY = 5 * 60e3, API_EVERY = 15 * 60e3, TIMEOUT = 15e3;
+  const WORKFLOWS = [
+    ["1 · Weekly trends", "Mondays 7 AM IST (backup 9:20)"],
+    ["2 · Post pins", "Hourly, 8:47 AM–10:47 PM IST"],
+    ["3 · Instagram reel", "Evenings, 7–9 PM IST"],
+    ["4 · Daily stats", "Every day 9:30 AM IST"],
+    ["5 · Create", "When you press Create in the control room"],
+  ];
+
+  // ---------- helpers ----------
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const safeUrl = (u) => /^https:\/\//i.test(String(u || "")) ? esc(u) : "#";   // only https links from data
+  const nf = new Intl.NumberFormat("en-IN");
+  const num = (v) => nf.format(Math.round(Number(v) || 0));
+  const rs = (v, dp = 0) => "₹" + new Intl.NumberFormat("en-IN", { minimumFractionDigits: dp, maximumFractionDigits: dp }).format(Number(v) || 0);
+  const pct = (a, b) => (b > 0 ? (100 * a / b) : 0);
+  const fmtPct = (v) => (v >= 10 ? v.toFixed(0) : v >= 1 ? v.toFixed(1) : v.toFixed(2)) + "%";
+  const compact = (v) => v >= 1e5 ? +(v / 1e5).toFixed(1) + "L" : v >= 1e3 ? +(v / 1e3).toFixed(1) + "K" : String(+v.toFixed(2));
+  const IST_MS = 5.5 * 3600e3;
+  const istDate = (d) => new Date(d.getTime() + IST_MS).toISOString().slice(0, 10);
+  const istHour = (d) => new Date(d.getTime() + IST_MS).getUTCHours();
+  // "2026-11-08T18:48+05:30" or "2026-11-08T02:07" (no zone = IST)
+  const parseAt = (s) => { if (!s) return null; const d = new Date(/([+-]\d\d:\d\d|Z)$/.test(s) ? s : s + "+05:30"); return isNaN(d) ? null : d; };
+  const ago = (d) => {
+    if (!d) return "";
+    const s = (Date.now() - d.getTime()) / 1000;
+    if (s < 90) return "just now";
+    if (s < 3600) return Math.round(s / 60) + " min ago";
+    if (s < 86400 * 2) return Math.round(s / 3600) + " h ago";
+    return Math.round(s / 86400) + " days ago";
+  };
+  const when = (d) => d ? d.toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "";
+  const dayLabel = (iso) => new Date(iso + "T00:00:00Z").toLocaleDateString("en-IN", { day: "numeric", month: "short", timeZone: "UTC" });
+  const lastDays = (n, end = istDate(new Date())) => {
+    const out = [], e = new Date(end + "T00:00:00Z");
+    for (let i = n - 1; i >= 0; i--) out.push(new Date(e.getTime() - i * 86400e3).toISOString().slice(0, 10));
+    return out;
+  };
+
+  // ---------- data: every source is {ok, data, at}; a failed refresh keeps the last good copy ----------
+  const store = {};
+  async function fetchJSON(url) {
+    const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), TIMEOUT);
+    try {
+      const r = await fetch(url, { cache: "no-store", signal: ctl.signal });
+      if (r.status === 404) return { ok: true, data: null, missing: true };
+      if (!r.ok) return { ok: false, status: r.status };
+      return { ok: true, data: await r.json() };
+    } catch (e) { return { ok: false, status: "network" }; }
+    finally { clearTimeout(t); }
+  }
+  async function source(key, url, every = 0) {
+    const old = store[key];
+    if (every && old && old.ok && Date.now() - old.at < every) return old;     // API calls: at most every 15 min
+    const r = await fetchJSON(url);
+    if (r.ok) return (store[key] = { ...r, at: Date.now() });
+    return old ? { ...old, stale: true } : { ok: false, data: null, status: r.status };
+  }
+
+  // ---------- charts: one series, clean ticks, hover/tap/keyboard readout, table view ----------
+  function ticksFor(max) {
+    if (max <= 0) return { top: 1, step: 1 };
+    const raw = max / 4, p = Math.pow(10, Math.floor(Math.log10(raw)));
+    const step = [1, 2, 5, 10].map((m) => m * p).find((s) => s >= raw);
+    return { top: step * Math.ceil(max / step), step };
+  }
+  function chart(el, pts, opts = {}) {
+    const { kind = "line", fmt = num, label = "Value", zeroNote = "" } = opts;
+    el._chart = [pts, opts];
+    el.innerHTML = "";
+    if (!pts.length) { el.innerHTML = `<div class="empty">No data yet.</div>`; return; }
+    const vals = pts.map((p) => p.y).filter((v) => v !== null && v !== undefined);
+    if (vals.length && vals.every((v) => !v) && zeroNote) el.insertAdjacentHTML("beforeend", `<p class="zero">${esc(zeroNote)}</p>`);
+    const W = Math.max(280, Math.round(el.clientWidth || 560)), H = W < 420 ? 190 : 210, L = 46, R = 12, T = 12, B = 26;
+    const iw = W - L - R, ih = H - T - B;
+    const { top, step } = ticksFor(Math.max(0, ...vals));
+    const tickFmt = top >= 10000 ? compact : fmt;
+    const x = (i) => kind === "line" ? L + (pts.length === 1 ? iw / 2 : (i * iw) / (pts.length - 1)) : L + (i + 0.5) * (iw / pts.length);
+    const y = (v) => T + ih - ((v || 0) / top) * ih;
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" tabindex="0" aria-label="${esc(label)} per day. Use left and right arrows to read values.">`;
+    for (let t = 0; t <= top + 1e-9; t += step) {
+      svg += `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="${t === 0 ? "var(--axis)" : "var(--grid)"}" stroke-width="1"/>`;
+      svg += `<text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${esc(tickFmt(t))}</text>`;
+    }
+    const every = Math.max(1, Math.ceil(pts.length / (W < 420 ? 4 : 6))), lastI = pts.length - 1;
+    pts.forEach((p, i) => {
+      if ((i % every === 0 && lastI - i >= every * 0.7) || i === lastI)
+        svg += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle" font-size="11" fill="var(--muted)">${esc(dayLabel(p.x))}</text>`;
+    });
+    if (kind === "line") {
+      const d = pts.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.y).toFixed(1)}`).join("");
+      svg += `<path d="${d}L${x(lastI)},${y(0)}L${x(0)},${y(0)}Z" fill="var(--series-wash)"/>`;
+      svg += `<path d="${d}" fill="none" stroke="var(--series)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+      svg += `<circle cx="${x(lastI)}" cy="${y(pts[lastI].y)}" r="4" fill="var(--series)" stroke="var(--card)" stroke-width="2"/>`;
+    } else {
+      const bw = Math.max(2, Math.min(24, (iw / pts.length) - 2));
+      pts.forEach((p, i) => {
+        if (!p.y) return;
+        const h = Math.max(1, (p.y / top) * ih), x0 = x(i) - bw / 2, y0 = y(p.y), r = Math.min(4, h, bw / 2);
+        svg += `<path d="M${x0},${y(0)}V${y0 + r}Q${x0},${y0} ${x0 + r},${y0}H${x0 + bw - r}Q${x0 + bw},${y0} ${x0 + bw},${y0 + r}V${y(0)}Z" fill="var(--series)"/>`;
+      });
+    }
+    svg += `<line class="xh" x1="0" x2="0" y1="${T}" y2="${T + ih}" stroke="var(--axis)" stroke-width="1" visibility="hidden"/>`;
+    if (kind === "line") svg += `<circle class="hd" r="4" fill="var(--series)" stroke="var(--card)" stroke-width="2" visibility="hidden"/>`;
+    svg += `</svg>`;
+    const wrap = document.createElement("div");
+    wrap.style.position = "relative";
+    wrap.innerHTML = svg + `<div class="tip" role="status"></div>`;
+    el.appendChild(wrap);
+    const s = wrap.querySelector("svg"), tip = wrap.querySelector(".tip"), xh = s.querySelector(".xh"), hd = s.querySelector(".hd");
+    let cur = -1;
+    const val = (p) => (p.y === null || p.y === undefined) ? "not read" : `${fmt(p.y)} ${label.toLowerCase()}`;
+    const showAt = (i) => {
+      cur = i = Math.max(0, Math.min(lastI, i));
+      const p = pts[i], r = s.getBoundingClientRect();
+      xh.setAttribute("x1", x(i)); xh.setAttribute("x2", x(i)); xh.setAttribute("visibility", "visible");
+      if (hd && p.y !== null && p.y !== undefined) { hd.setAttribute("cx", x(i)); hd.setAttribute("cy", y(p.y)); hd.setAttribute("visibility", "visible"); }
+      tip.innerHTML = `${esc(dayLabel(p.x))}<br><b>${esc(val(p))}</b>`;
+      const left = (x(i) / W) * r.width, topPx = (y(p.y) / H) * r.height;
+      tip.style.left = Math.min(Math.max(0, left - 50), Math.max(0, r.width - 120)) + "px";
+      tip.style.top = Math.max(0, topPx - 52) + "px";
+      tip.style.opacity = 1;
+    };
+    const indexAt = (evt) => {
+      const r = s.getBoundingClientRect(), px = ((evt.clientX - r.left) / r.width) * W;
+      return kind === "line" ? Math.round(((px - L) / iw) * lastI) : Math.floor(((px - L) / iw) * pts.length);
+    };
+    const hide = () => { tip.style.opacity = 0; xh.setAttribute("visibility", "hidden"); if (hd) hd.setAttribute("visibility", "hidden"); };
+    s.addEventListener("pointermove", (e) => { if (e.pointerType === "mouse") showAt(indexAt(e)); });
+    s.addEventListener("pointerdown", (e) => showAt(indexAt(e)));          // touch: tap to read
+    s.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") hide(); });
+    s.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); showAt(cur < 0 ? lastI : cur + (e.key === "ArrowRight" ? 1 : -1)); }
+      if (e.key === "Escape") hide();
+    });
+    s.addEventListener("blur", hide);
+    const det = document.createElement("details");
+    det.className = "data";
+    det.innerHTML = `<summary>Show data</summary><div class="scroll"><table><thead><tr><th>Date</th><th class="num">${esc(label)}</th></tr></thead><tbody>${
+      pts.map((p) => `<tr><td>${esc(dayLabel(p.x))}</td><td class="num">${(p.y === null || p.y === undefined) ? "not read" : esc(fmt(p.y))}</td></tr>`).join("")}</tbody></table></div>`;
+    el.appendChild(det);
+  }
+  document.addEventListener("pointerdown", (e) => {     // tap outside a chart hides its readout
+    if (!e.target.closest(".chart")) document.querySelectorAll(".chart .tip").forEach((t) => (t.style.opacity = 0));
+  });
+
+  const tile = (label, value, delta = "", cls = "") => `<div class="card tile"><div class="label">${esc(label)}</div><div class="value">${value}</div>${delta ? `<div class="delta ${cls}">${delta}</div>` : ""}</div>`;
+  const deltaTxt = (d) => {
+    if (d === undefined || d === null) return ["", ""];
+    const v = Math.round(d * 100);
+    return [`${v > 0 ? "▲" : v < 0 ? "▼" : "■"} ${Math.abs(v)}% vs previous 30 days`, v > 0 ? "up" : v < 0 ? "down" : ""];
+  };
+  const table = (head, rows, empty = "Nothing yet.") => rows.length
+    ? `<table><thead><tr>${head.map(([h, n, cls]) => `<th class="${n ? "num" : ""} ${cls || ""}">${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.join("")}</tbody></table>`
+    : `<div class="empty">${esc(empty)}</div>`;
+  const failed = (what) => `<div class="failed">Couldn't load ${esc(what)} from GitHub just now; it will try again in a few minutes.</div>`;
+
+  // ---------- sections (each gets its sources; `A` collects this load's alerts) ----------
+  function renderMoney(A, latestSrc, histSrc) {
+    const latest = latestSrc.data;
+    if (!latestSrc.ok) { ["money-hero", "money-tiles", "orders", "brands", "chart-profit", "chart-ekclicks"].forEach((id) => ($(id).innerHTML = "")); $("money-hero").innerHTML = failed("the EarnKaro numbers"); return null; }
+    if (!latest || !latest.totals || latest.totals.total_earned === undefined) {
+      $("money-hero").innerHTML = `<div class="empty">No EarnKaro snapshot yet. The "4 · Daily stats" job (9:30 AM IST) creates the first one.</div>`;
+      ["money-tiles", "orders", "brands"].forEach((id) => ($(id).innerHTML = ""));
+      chart($("chart-profit"), []); chart($("chart-ekclicks"), []);
+      return null;
+    }
+    const t = latest.totals, l14 = latest.last14, yd = latest.yesterday;
+    const taken = parseAt(latest.taken_at);
+    $("money-note").textContent = `From EarnKaro's Reports and Order details · read ${when(taken)} (${ago(taken)}).`;
+    const confirmed = t.confirmed_cashback || 0, threshold = t.payment_threshold || 0;
+    $("money-hero").innerHTML = `
+      <div><div class="label">All-time profit</div><div class="value">${rs(t.total_earned, 2)}</div>
+        <div class="split">${rs(confirmed, 2)} confirmed · ${rs(t.pending_cashback, 2)} waiting for stores to confirm · on ${rs(t.total_ordervalue)} of orders</div></div>
+      <div class="payout"><div class="label">Towards a payout</div>
+        <div class="meter" role="img" aria-label="${esc(rs(confirmed, 2))} confirmed of ${esc(rs(threshold))} needed"><span style="width:${threshold ? Math.min(100, 100 * confirmed / threshold).toFixed(1) : 0}%"></span></div>
+        <div class="small">${rs(confirmed, 2)} confirmed of ${rs(threshold)} needed to withdraw</div></div>`;
+    $("money-tiles").innerHTML = [
+      tile("Paid out", rs(t.paid_cashback, 2)),
+      tile("Cancelled", rs(t.cancelled_cashback, 2)),
+      l14 ? tile("Link clicks, last 14 days", num(l14.clicks), `${num(l14.transactions)} orders · ${fmtPct(pct(l14.transactions, l14.clicks))} of clicks`) : tile("Link clicks, last 14 days", "—", "Not read in this snapshot"),
+      yd ? tile("Yesterday", `${num(yd.clicks)} clicks`, `${num(yd.transactions)} orders · ${rs(yd.profit, 2)}`) : tile("Yesterday", "—", "Not read in this snapshot"),
+    ].join("");
+    chart($("chart-profit"), (latest.daily_profit || []).map((d) => ({ x: d.date, y: d.profit })),
+      { kind: "column", fmt: (v) => rs(v, v % 1 ? 2 : 0), label: "Profit", zeroNote: "₹0 profit in these 14 days." });
+    const hist = histSrc.ok && Array.isArray(histSrc.data) ? histSrc.data : [];
+    if (hist.length) {
+      const byDate = Object.fromEntries(hist.map((r) => [r.date, r.clicks]));
+      const end = hist[hist.length - 1].date;
+      chart($("chart-ekclicks"), lastDays(Math.min(30, Math.max(7, hist.length)), end).map((d) => ({ x: d, y: d in byDate ? byDate[d] : null })),
+        { kind: "column", label: "Clicks", zeroNote: "No clicks on the days read." });
+    } else $("chart-ekclicks").innerHTML = histSrc.ok ? `<div class="empty">Starts after the first daily reading.</div>` : failed("the click history");
+    $("orders").innerHTML = table([["Date"], ["Store"], ["Status"], ["Commission", 1], ["Order", 0, "hide-sm"]],
+      (latest.orders || []).map((o) => `<tr><td>${esc(o.date)}</td><td>${esc(o.store)}</td><td>${esc(o.status)}</td><td class="num">${rs(o.commission, 2)}</td><td class="muted hide-sm">${esc(o.order)}</td></tr>`),
+      "No orders yet.");
+    const brands = (latest.brands || []).slice().sort((a, b) => b.clicks - a.clicks);
+    const bmax = Math.max(1, ...brands.map((b) => b.clicks));
+    $("brands").innerHTML = table([["Store"], ["Clicks", 1], ["", 0, "hide-sm"], ["Orders", 1], ["Profit", 1]],
+      brands.map((b) => `<tr><td>${esc(b.store)}</td><td class="num">${num(b.clicks)}</td><td class="hide-sm" style="width:30%"><div class="meter" aria-hidden="true"><span style="width:${(100 * b.clicks / bmax).toFixed(1)}%"></span></div></td><td class="num">${num(b.transactions)}</td><td class="num">${rs(b.profit, 2)}</td></tr>`),
+      "No store data in this snapshot.");
+    if (String(t.traffic_source_status || "").toLowerCase() === "disapproved")
+      A.push(["critical", `<b>EarnKaro shows your traffic source as "Disapproved".</b> Commissions can be held or cancelled. EarnKaro has no setting for this: raise a ticket at <a href="https://earnkaro.com/gethelp" target="_blank" rel="noopener">earnkaro.com/gethelp</a> asking them to approve your website, Pinterest and Instagram as traffic sources.`]);
+    if (l14 && l14.clicks > 300 && !l14.transactions)
+      A.push(["warning", `<b>${num(l14.clicks)} EarnKaro link clicks in 14 days but no orders.</b> Many are likely bots or link checks rather than shoppers; Pinterest's outbound clicks below are the real visitors.`]);
+    const ageH = (Date.now() - (taken?.getTime() || 0)) / 3600e3;
+    if (ageH > 36) A.push(["warning", `<b>The EarnKaro numbers are ${Math.round(ageH / 24)} days old.</b> Check "4 · Daily stats" under Automation.`]);
+    return latest;
+  }
+
+  function renderPinterest(A, src) {
+    const rep = src.data;
+    if (!src.ok) { $("pin-tiles").innerHTML = failed("the Pinterest numbers"); $("chart-impr").innerHTML = ""; $("boards").innerHTML = ""; $("top-pins").innerHTML = ""; return null; }
+    if (!rep || !rep.summary || rep.summary.impressions === undefined) {
+      $("pin-tiles").innerHTML = `<div class="empty">No Pinterest Analytics reading yet.</div>`;
+      chart($("chart-impr"), []); $("boards").innerHTML = ""; $("top-pins").innerHTML = "";
+      return null;
+    }
+    const s = rep.summary, d = rep.deltas || {}, read = parseAt(rep.fetched_at);
+    $("pin-note").textContent = `From Pinterest Analytics, last ${s.days || 30} days · read ${when(read)} (${ago(read)}).`;
+    const t = (label, v, key) => { const [txt, cls] = deltaTxt(d[key]); return tile(label, num(v), txt, cls); };
+    $("pin-tiles").innerHTML = [t("Impressions", s.impressions, "impression"), t("Engagements", s.engagements, "engagement"),
+      t("Outbound clicks", s.outbound_clicks, "outboundClick"), t("Saves", s.saves, "save"),
+      rep.audience && rep.audience.total !== undefined ? tile("Audience", num(rep.audience.total), `${num(rep.audience.engaged)} engaged`) : ""].join("");
+    chart($("chart-impr"), (rep.daily || []).map((p) => ({ x: p.date, y: p.impressions })), { kind: "line", label: "Impressions" });
+    const W = weights(rep);
+    $("boards").innerHTML = table([["Board"], ["Impr.", 1], ["Pin clicks", 1, "hide-sm"], ["Out. clicks", 1], ["Saves", 1, "hide-sm"], ["Weight", 1]],
+      (rep.boards || []).slice().sort((a, b) => b.impressions - a.impressions).map((b) => `<tr><td>${esc(b.name)}</td><td class="num">${num(b.impressions)}</td><td class="num hide-sm">${num(b.pin_clicks)}</td><td class="num">${num(b.outbound_clicks)}</td><td class="num hide-sm">${num(b.saves)}</td><td class="num">${(W[b.name] ?? 1).toFixed(2)}</td></tr>`),
+      "No board data yet.");
+    $("top-pins").innerHTML = table([["Pin"], ["Impr.", 1], ["Pin clicks", 1, "hide-sm"], ["Out. clicks", 1], ["Saves", 1]],
+      (rep.pins || []).slice().sort((a, b) => b.impressions - a.impressions).slice(0, 15).map((p) => `<tr><td>${p.link ? `<a href="${safeUrl(p.link)}" target="_blank" rel="noopener">${esc(p.title || p.id)}</a>` : esc(p.title || p.id)}</td><td class="num">${num(p.impressions)}</td><td class="num hide-sm">${num(p.pin_clicks)}</td><td class="num">${num(p.outbound_clicks)}</td><td class="num">${num(p.saves)}</td></tr>`),
+      "No pin-level data yet (new pins appear after ~2 days).");
+    const ageH = (Date.now() - (read?.getTime() || 0)) / 3600e3;
+    if (ageH > 36) A.push(["warning", `<b>The Pinterest numbers are ${Math.round(ageH / 24)} days old.</b> If "4 · Daily stats" keeps failing, the Pinterest login may have expired (run <code>python refresh_pinterest_session.py</code>).`]);
+    if (s.impressions > 500 && !s.saves) A.push(["warning", `<b>No saves in ${s.days || 30} days.</b> Saves are what Pinterest rewards most; the natural, idea-style pins are meant to fix this.`]);
+    return rep;
+  }
+  function weights(rep) {   // same rule as trends/analytics.py board_weights
+    const vals = {};
+    for (const b of rep.boards || []) if (b.pins > 0) vals[b.name] = (b.impressions + 25 * b.outbound_clicks + 15 * b.saves + 3 * b.pin_clicks) / b.pins;
+    const names = Object.keys(vals); if (!names.length) return {};
+    const avg = names.reduce((a, n) => a + vals[n], 0) / names.length; if (!avg) return {};
+    const out = {}; for (const n of names) out[n] = Math.max(0.75, Math.min(1.5, Math.sqrt(vals[n] / avg))); return out;
+  }
+
+  function renderFunnel(rep, ek) {
+    const step = (label, v, rate, money) => `<div class="step"><div class="small muted">${esc(label)}</div><div class="value">${v === undefined || v === null ? "—" : money ? rs(v, 2) : num(v)}</div>${rate ? `<div class="rate">${esc(rate)}</div>` : ""}</div>`;
+    const s = rep?.summary, l = ek?.last14;
+    $("funnel-pin").innerHTML = s
+      ? step("Impressions", s.impressions) + step("Clicks to the website", s.outbound_clicks, `${fmtPct(pct(s.outbound_clicks, s.impressions))} of impressions`) + step("Saves", s.saves, `${fmtPct(pct(s.saves, s.impressions))} of impressions`)
+      : `<div class="empty">No Pinterest reading yet.</div>`;
+    $("funnel-ek").innerHTML = l
+      ? step("Link clicks", l.clicks) + step("Orders", l.transactions, `${fmtPct(pct(l.transactions, l.clicks))} of clicks`) + step("Profit", l.profit, "", true)
+      : `<div class="empty">No EarnKaro reading with 14-day totals yet.</div>`;
+  }
+
+  function renderPosting(A, qSrc, pSrc, themes) {
+    if (!qSrc.ok || !pSrc.ok) { ["post-tiles", "theme-progress", "recent-pins"].forEach((id) => ($(id).innerHTML = "")); $("post-tiles").innerHTML = failed("the pin queue"); $("chart-posts").innerHTML = ""; return; }
+    const queue = qSrc.data || [], posted = pSrc.data || [];
+    const byId = Object.fromEntries(queue.map((q) => [q.id, q]));
+    const okPosts = posted.filter((p) => p.ok);
+    const now = new Date(), today = istDate(now);
+    const dayOf = (p) => { const d = parseAt(p.at); return d ? istDate(d) : ""; };
+    const todayCount = okPosts.filter((p) => dayOf(p) === today).length;
+    const dueByNow = Math.min(MAX_PINS_PER_DAY, Math.max(0, istHour(now) - FIRST_SLOT_HOUR + 1));
+    // waiting = what trends/post.py pending() would still post
+    const done = new Set(okPosts.map((p) => p.id)), fails = {};
+    for (const p of posted) if (!p.ok) fails[p.id] = (fails[p.id] || 0) + 1;
+    const cutoff = new Date(now.getTime() - MAX_AGE_DAYS * 86400e3); const cut = istDate(cutoff);
+    const waiting = queue.filter((q) => !done.has(q.id) && (fails[q.id] || 0) < 3 && q.id.split(":")[0] >= cut).length;
+    const failedCount = posted.filter((p) => !p.ok).length;
+    const last = okPosts.length ? parseAt(okPosts[okPosts.length - 1].at) : null;
+    $("post-tiles").innerHTML = [
+      tile("Posted today", `${todayCount} / ${MAX_PINS_PER_DAY}`, dueByNow ? `${dueByNow} due by now` : "Posting starts 8 AM IST"),
+      tile("Waiting in queue", num(waiting), waiting < 15 ? "Monday's run refills it" : ""),
+      tile("Posted, all time", num(okPosts.length)),
+      tile("Failed attempts", num(failedCount), failedCount ? "A pin is skipped after 3" : ""),
+      tile("Last pin", last ? ago(last) : "—", last ? when(last) : ""),
+    ].join("");
+    const counts = {}; for (const p of okPosts) { const d = dayOf(p); counts[d] = (counts[d] || 0) + 1; }
+    chart($("chart-posts"), lastDays(14).map((d) => ({ x: d, y: counts[d] || 0 })), { kind: "column", label: "Pins", zeroNote: "No pins posted in these 14 days." });
+    const week = themes[0]?.week, cur = themes.filter((t) => t.week === week);
+    $("theme-progress").innerHTML = cur.length ? `<table><tbody>${cur.map((t) => {
+      const mine = queue.filter((q) => q.id.startsWith(`${t.week}:${t.slug}:`));
+      const n = mine.filter((q) => done.has(q.id)).length;
+      return `<tr><td>${esc(t.title)}</td><td style="width:38%"><div class="meter" role="img" aria-label="${n} of ${mine.length} posted"><span style="width:${(100 * n / Math.max(1, mine.length)).toFixed(1)}%"></span></div></td><td class="num">${n} / ${mine.length}</td></tr>`;
+    }).join("")}</tbody></table>` : `<div class="empty">No ideas this week yet.</div>`;
+    $("recent-pins").innerHTML = table([["When"], ["Pin"], ["Board", 0, "hide-sm"], ["Status"]],
+      posted.slice(-12).reverse().map((p) => {
+        const q = byId[p.id] || {};
+        return `<tr><td class="small">${esc(when(parseAt(p.at)))}</td><td>${q.link ? `<a href="${safeUrl(q.link)}" target="_blank" rel="noopener">${esc(q.title || p.id)}</a>` : esc(q.title || p.id)}</td><td class="small hide-sm">${esc(q.board || "")}</td><td><span class="pill"><span class="dot ${p.ok ? "good" : "critical"}"></span>${p.ok ? "Posted" : "Failed"}</span></td></tr>`;
+      }), "No pins posted yet.");
+    if (waiting === 0) A.push(["warning", `<b>The pin queue is empty.</b> No pins go out until Monday's run (or run "1 · Weekly trends" by hand).`]);
+    if (dueByNow - todayCount >= 3 && istHour(now) < 23) A.push(["warning", `<b>Pins are behind: ${todayCount} of ${dueByNow} due by now.</b> The hourly runs catch up 3 at a time; if this stays, check "2 · Post pins" (the Pinterest login may need refreshing).`]);
+  }
+
+  function renderInstagram(A, igSrc, treeSrc, themes) {
+    if (!igSrc.ok) { $("ig-tiles").innerHTML = failed("the Instagram log"); $("ig-next").innerHTML = ""; $("ig-posted").innerHTML = ""; return; }
+    const ig = igSrc.data || [];
+    // a truncated listing (very large repo) can't prove a file is missing, so treat it as unknown
+    const paths = treeSrc.ok && treeSrc.data && !treeSrc.data.truncated ? (treeSrc.data.tree || []).map((t) => t.path) : null;
+    const inbox = paths ? paths.filter((p) => /^inbox\/[^/]+\/[^/]+\.(mp4|mov|m4v)$/i.test(p)).sort() : null;
+    const real = ig.filter((p) => p.ok && p.link);
+    const last = real.length ? parseAt(real[real.length - 1].at) : null;
+    const week = themes[0]?.week;
+    const done = new Set(ig.filter((p) => p.ok).map((p) => p.key));
+    const reelOk = (t) => !paths || paths.includes(`docs/ideas/${t.slug}/reel.mp4`);
+    const nextAuto = themes.filter((t) => t.week === week && !done.has(`auto:${week}:${t.slug}`) && reelOk(t));
+    $("ig-tiles").innerHTML = [
+      tile("Reels posted", num(real.length)),
+      tile("Gemini videos waiting", inbox ? num(inbox.length) : "?", inbox ? (inbox.length ? "Posted first" : "Make one from the kit") : "Couldn't check the inbox"),
+      tile("Editorial reels left this week", num(nextAuto.length)),
+      tile("Last reel", last ? ago(last) : "—", last ? when(last) : ""),
+    ].join("");
+    let next;
+    if (inbox && inbox.length) next = `<p><span class="pill"><span class="dot good"></span>Gemini video</span> <b>${esc(inbox[0].split("/")[1])}</b></p><p class="small muted">${esc(inbox[0])}</p>`;
+    else if (nextAuto.length) next = `<p><span class="pill"><span class="dot good"></span>Editorial reel</span> <b>${esc(nextAuto[0].title)}</b></p><p class="small"><a href="${SITE}ideas/${encodeURIComponent(nextAuto[0].slug)}/reel.mp4" target="_blank" rel="noopener">Watch the reel</a> · <a href="${SITE}ideas/${encodeURIComponent(nextAuto[0].slug)}/" target="_blank" rel="noopener">Idea page</a></p>${inbox ? "" : `<p class="small muted">(Couldn't check the inbox, so a Gemini video may go first.)</p>`}`;
+    else next = `<p><span class="pill"><span class="dot idle"></span>Nothing queued</span></p><p class="small">Upload a video from the <a href="${SITE}kit/">video kit</a>, or wait for Monday's reels.</p>`;
+    $("ig-next").innerHTML = next;
+    $("ig-posted").innerHTML = table([["When"], ["Reel"], ["Link"]],
+      ig.filter((p) => p.link || !p.ok).slice().reverse().slice(0, 15).map((p) => `<tr><td class="small">${esc(when(parseAt(p.at)))}</td><td>${esc(String(p.key).replace(/^auto:[\d-]+:/, "").replace(/-/g, " "))}${String(p.key).startsWith("auto:") ? ' <span class="pill">editorial</span>' : ""}</td><td>${p.ok ? `<a href="${safeUrl(p.link)}" target="_blank" rel="noopener">Open</a>` : `<span class="pill"><span class="dot critical"></span>Failed</span>`}</td></tr>`),
+      "No reels posted yet.");
+    if (inbox && !inbox.length && !nextAuto.length) A.push(["warning", `<b>Instagram has nothing to post</b> until Monday. Upload a Gemini video from the <a href="${SITE}kit/">video kit</a>.`]);
+    const lastFail = ig.length && !ig[ig.length - 1].ok ? ig[ig.length - 1] : null;
+    if (lastFail) A.push(["critical", `<b>The last Instagram post failed</b> (${esc(when(parseAt(lastFail.at)))}): ${esc(String(lastFail.error || "").slice(0, 160))}`]);
+  }
+
+  function renderTrends(themes, queue, posted) {
+    const week = themes[0]?.week, cur = themes.filter((t) => t.week === week);
+    $("trends-note").textContent = week ? `Week of ${dayLabel(week)} · picked from what India searches on Pinterest, weighted by our boards' results.` : "";
+    const done = new Set((posted || []).filter((p) => p.ok).map((p) => p.id));
+    $("trend-table").innerHTML = table([["Idea"], ["Board", 0, "hide-sm"], ["Score", 1, "hide-sm"], ["From", 1], ["Pins out", 1], ["Also searched", 0, "hide-sm"]],
+      cur.map((t) => {
+        const prods = t.products || [];
+        const mine = (queue || []).filter((q) => q.id.startsWith(`${t.week}:${t.slug}:`));
+        const n = mine.filter((q) => done.has(q.id)).length;
+        const low = prods.length ? Math.min(...prods.map((p) => p.price)) : 0;
+        return `<tr class="trend-row"><td><a href="${SITE}ideas/${encodeURIComponent(t.slug)}/" target="_blank" rel="noopener">${esc(t.title)}</a></td><td class="small hide-sm">${esc(t.board)}</td><td class="num hide-sm">${Number(t.score || 0).toFixed(1)}</td><td class="num">${rs(low)}</td><td class="num">${n} / ${mine.length}</td><td class="small muted hide-sm">${esc((t.related || []).slice(0, 3).join(", "))}</td></tr>`;
+      }), "No ideas yet.");
+  }
+
+  function renderWorkflows(A, src) {
+    if (!src.ok || !src.data) { $("workflows").innerHTML = failed("the workflow runs (GitHub allows 60 checks an hour per network)"); return; }
+    const runs = src.data.workflow_runs || [], latest = {}, fails = {};
+    for (const r of runs) {
+      if (!latest[r.name]) latest[r.name] = r;
+      if (r.conclusion === "failure") fails[r.name] = (fails[r.name] || 0) + 1;
+    }
+    $("workflows").innerHTML = table([["Workflow"], ["Schedule", 0, "hide-sm"], ["Last run"], ["Result"]],
+      WORKFLOWS.map(([name, sched]) => {
+        const r = latest[name], f = fails[name] || 0;
+        const failNote = f ? `<div class="small muted">${f} of the last ${runs.filter((x) => x.name === name).length} failed</div>` : "";
+        if (!r) return `<tr><td>${esc(name)}</td><td class="small hide-sm">${esc(sched)}</td><td class="muted">No runs yet</td><td><span class="pill"><span class="dot idle"></span>None</span></td></tr>`;
+        const running = r.status !== "completed";
+        const cls = running ? "good" : r.conclusion === "success" ? "good" : r.conclusion === "failure" ? "critical" : "warning";
+        const txt = running ? "Running" : r.conclusion === "success" ? "Succeeded" : r.conclusion === "failure" ? "Failed" : (r.conclusion || r.status);
+        return `<tr><td>${esc(name)}</td><td class="small hide-sm">${esc(sched)}</td><td class="small"><a href="${safeUrl(r.html_url)}" target="_blank" rel="noopener">${esc(ago(new Date(r.created_at)))}</a></td><td><span class="pill"><span class="dot ${cls}"></span>${esc(txt)}</span>${failNote}</td></tr>`;
+      }));
+    for (const [name] of WORKFLOWS) {
+      const r = latest[name];
+      if (r && r.status === "completed" && r.conclusion === "failure") A.push(["critical", `<b>"${esc(name)}" failed on its last run</b> (${esc(ago(new Date(r.created_at)))}). <a href="${safeUrl(r.html_url)}" target="_blank" rel="noopener">Open the log</a>.`]);
+    }
+  }
+
+  // ---------- Goals (edited on the page, kept in this browser) ----------
+  const GOAL_DEFAULTS = { amazonSales: 0, amazonTarget: 3, amazonDeadline: "2026-11-30", profitTarget: 500, clicksTarget: 300, pinsTarget: 15, reelsTarget: 7 };
+  function loadGoals() {
+    try { return { ...GOAL_DEFAULTS, ...JSON.parse(localStorage.getItem("cr-goals") || "{}") }; } catch (e) { return { ...GOAL_DEFAULTS }; }
+  }
+  function saveGoals(g) { try { localStorage.setItem("cr-goals", JSON.stringify(g)); } catch (e) {} }
+  let G = loadGoals(), lastCtx = null;
+  const daysTo = (iso) => Math.floor((new Date(iso + "T23:59:59+05:30") - Date.now()) / 86400e3);
+  function goalCard(title, now, nowTxt, target, targetTxt, foot) {
+    const pctDone = target > 0 ? Math.min(100, (100 * (now || 0)) / target) : 0;
+    const done = now !== null && now !== undefined && now >= target;
+    return `<div class="card goal"><div class="top"><b>${esc(title)}</b><span class="small muted">${done ? "✓ reached" : `${Math.round(pctDone)}%`}</span></div>
+      <div class="now">${nowTxt} <small>of ${targetTxt}</small></div>
+      <div class="meter ${done ? "done" : ""}" role="img" aria-label="${Math.round(pctDone)}% of the goal"><span style="width:${pctDone.toFixed(1)}%"></span></div>
+      <div class="foot">${foot}</div></div>`;
+  }
+  function renderGoals(ctx) {
+    lastCtx = ctx;
+    const { hist, rep, posted, ig } = ctx;
+    const dl = daysTo(G.amazonDeadline);
+    const month = istDate(new Date()).slice(0, 7);
+    const monthProfit = (hist || []).filter((r) => String(r.date).startsWith(month)).reduce((a, r) => a + (r.profit || 0), 0);
+    const clicks = rep?.summary?.outbound_clicks;
+    const week = lastDays(7), okPins = (posted || []).filter((p) => p.ok);
+    const pins7 = okPins.filter((p) => { const d = parseAt(p.at); return d && week.includes(istDate(d)); }).length;
+    const reels7 = (ig || []).filter((p) => p.ok && p.link && (() => { const d = parseAt(p.at); return d && week.includes(istDate(d)); })()).length;
+    $("goal-cards").innerHTML = [
+      goalCard("Amazon sales", G.amazonSales, num(G.amazonSales), G.amazonTarget, num(G.amazonTarget),
+        dl >= 0 ? `${dl} days left (until ${esc(dayLabel(G.amazonDeadline))}) · you update this from Amazon's report` : "Deadline passed: check Amazon's report"),
+      goalCard("EarnKaro profit this month", monthProfit, rs(monthProfit, 2), G.profitTarget, rs(G.profitTarget),
+        hist && hist.length ? "From the daily EarnKaro readings (order date)" : "Fills in from the daily EarnKaro readings"),
+      goalCard("Pinterest clicks to the website", clicks, clicks === undefined ? "—" : num(clicks), G.clicksTarget, num(G.clicksTarget), "Last 30 days, from Pinterest Analytics"),
+      goalCard("Pins per day", pins7 / 7, (pins7 / 7).toFixed(1), G.pinsTarget, num(G.pinsTarget), `Average over the last 7 days (${num(pins7)} pins)`),
+      goalCard("Reels per week", reels7, num(reels7), G.reelsTarget, num(G.reelsTarget), "Instagram reels posted in the last 7 days"),
+    ].join("");
+  }
+  const form = $("goal-form");
+  const fillForm = () => { for (const [k, v] of Object.entries(G)) if (form.elements[k]) form.elements[k].value = v; };
+  $("edit-goals").onclick = () => { fillForm(); form.classList.toggle("open"); if (form.classList.contains("open")) form.elements.amazonSales.focus(); };
+  $("cancel-goals").onclick = () => form.classList.remove("open");
+  $("reset-goals").onclick = () => { G = { ...GOAL_DEFAULTS }; saveGoals(G); fillForm(); if (lastCtx) renderGoals(lastCtx); renderAmazon(); };
+  form.onsubmit = (e) => {
+    e.preventDefault();
+    const g = {};
+    for (const k of Object.keys(GOAL_DEFAULTS)) {
+      const v = form.elements[k].value;
+      g[k] = k === "amazonDeadline" ? (v || GOAL_DEFAULTS[k]) : Math.max(0, Number(v) || 0);
+    }
+    G = g; saveGoals(G); form.classList.remove("open");
+    if (lastCtx) renderGoals(lastCtx);
+    renderAmazon();
+  };
+
+  // ---------- Amazon (no Amazon data is read: a countdown and the quickest actions) ----------
+  const WHATSAPP_TEXT = "Shopping on Amazon this week? Here are this week's trending picks and today's deals: " + SITE + "amazon/";
+  function renderAmazon() {
+    const days = daysTo(G.amazonDeadline), left = Math.max(0, G.amazonTarget - G.amazonSales);
+    $("amz-card").innerHTML = `
+      <div class="row">
+        <div><div class="small muted">Days left</div><div class="big">${Math.max(0, days)}</div><div class="small muted">until ${esc(dayLabel(G.amazonDeadline))}</div></div>
+        <div><div class="small muted">Sales still needed</div><div class="big">${left}</div><div class="small muted">${num(G.amazonSales)} of ${num(G.amazonTarget)} done</div></div>
+      </div>
+      <div class="acts">
+        <a class="main" href="${SITE}amazon/" target="_blank" rel="noopener">Open the Amazon picks page</a>
+        <button type="button" id="copy-wa">Copy WhatsApp message</button>
+        <a href="https://affiliate-program.amazon.in/p/reporting/earnings" target="_blank" rel="noopener">Check sales in Amazon</a>
+      </div>
+      <ol>
+        <li>Share the Amazon picks page in friends and family groups who shop on Amazon anyway: any purchase within 24 hours of their click counts, whatever they buy.</li>
+        <li>Put <b>${esc(SITE)}amazon/</b> in your Instagram bio for these weeks; every reel says "tap the link in our bio".</li>
+        <li>Never buy through your own link and never offer anything in return for buying: both can close the account.</li>
+      </ol>`;
+    $("copy-wa").onclick = async (e) => {
+      try { await navigator.clipboard.writeText(WHATSAPP_TEXT); e.target.textContent = "Copied"; }
+      catch (err) { prompt("Copy this message:", WHATSAPP_TEXT); }
+      setTimeout(() => (e.target.textContent = "Copy WhatsApp message"), 1800);
+    };
+    if (left > 0 && days <= 7 && days >= 0) return ["warning", `<b>${days} days left and ${left} Amazon ${left === 1 ? "sale" : "sales"} still needed.</b> Share the <a href="${SITE}amazon/" target="_blank" rel="noopener">Amazon picks page</a> today.`];
+    return null;
+  }
+  function renderHealth(src) {
+    const runs = src.ok && src.data ? src.data.workflow_runs || [] : null;
+    $("health").innerHTML = WORKFLOWS.map(([name]) => {
+      const r = runs && runs.find((x) => x.name === name);
+      const cls = !r ? "idle" : r.status !== "completed" || r.conclusion === "success" ? "good" : r.conclusion === "failure" ? "critical" : "warning";
+      const txt = !r ? "no runs" : r.status !== "completed" ? "running" : r.conclusion === "success" ? "ok" : r.conclusion;
+      return `<span><span class="dot ${cls}"></span>${esc(name.replace(/^\d · /, ""))}: ${esc(txt)}</span>`;
+    }).join("");
+  }
+
+  // ---------- Create: a trend as pins, a reel and a story (runs the "5 · Create" workflow) ----------
+  const BOARDS = ["Outfit Ideas for Women", "Men's Outfit Ideas", "Indian Ethnic Wear & Wedding Guest Outfits", "Shoes & Sneaker Outfits",
+                  "Jewellery & Accessories Ideas", "Makeup & Beauty Picks", "Home Decor Ideas India", "Amazon Finds India"];
+  const crForm = $("cr-form");
+  crForm.elements.board.insertAdjacentHTML("beforeend", BOARDS.map((b) => `<option>${esc(b)}</option>`).join(""));
+  const crStatus = (html, level = "") => { $("cr-status").innerHTML = html ? `<div class="alert ${level}"><div>${html}</div></div>` : ""; };
+
+  let watching = 0;
+  async function watchRun(since, title) {
+    const my = ++watching, end = Date.now() + 45 * 60e3;
+    while (my === watching && Date.now() < end) {
+      const r = await fetch(`${API}/actions/workflows/create.yml/runs?per_page=5`, { cache: "no-store" }).catch(() => null);
+      const runs = r && r.ok ? (await r.json()).workflow_runs || [] : [];
+      const run = runs.find((x) => new Date(x.created_at).getTime() >= since - 60e3);
+      const link = run ? ` · <a href="${safeUrl(run.html_url)}" target="_blank" rel="noopener">see the run</a>` : "";
+      if (run && run.status === "completed") {
+        if (run.conclusion === "success") {
+          crStatus(`<b>✓ ${esc(title)} is ready.</b> Pins are first in line; the list below updates within about 5 minutes${link}.`, "good");
+          delete store.created; setTimeout(load, 60e3); setTimeout(load, 300e3);
+        } else crStatus(`<b>✗ Making ${esc(title)} failed</b> (${esc(run.conclusion)})${link}. The run's log says why.`, "critical");
+        return;
+      }
+      crStatus(`<b>${run ? `Making ${esc(title)}…` : `Waiting for you to submit ${esc(title)} on GitHub`}</b> ${run ? (run.status === "queued" ? "waiting for GitHub to start" : "working: usually 5–10 minutes") : "(add photos there if you like, then press the green button)"}${link}`, "warning");
+      await new Promise((res) => setTimeout(res, 30e3));
+    }
+  }
+
+  crForm.onsubmit = (e) => {
+    e.preventDefault();
+    const el = crForm.elements, trend = el.trend.value.trim();
+    const make = [...crForm.querySelectorAll('input[name="make"]:checked')].map((x) => x.value);
+    if (!make.length) { crStatus("<b>Tick at least one of Pins, Reel or Story.</b>", "warning"); return; }
+    const clean = (v) => String(v || "").replace(/[\r\n]+/g, " ").trim();
+    const body = [
+      "<!-- Made by the control room. Change a value after the colon if you like; keep the names. -->",
+      `trend: ${clean(trend)}`, `audience: ${el.audience.value}`, `store: ${el.store.value}`,
+      `link: ${clean(el.link.value)}`, `line: ${clean(el.line.value)}`, `board: ${clean(el.board.value)}`,
+      `make: ${make.join(",")}`, `reel: ${el.reel.value}`, `story: ${el.story.value}`,
+      "", "**Photos (optional):** drag up to 6 photos into this box, below this line. 3 or more make a reel.", "",
+    ].join("\n");
+    const url = `https://github.com/${REPO}/issues/new?` + new URLSearchParams({ title: `Create: ${clean(trend)}`, body });
+    const w = window.open(url, "_blank");  // ("noopener" would make it return null even when it opened)
+    if (w) w.opener = null;
+    else location.href = url;  // pop-up blocked: open it here
+    watchRun(Date.now(), trend);
+  };
+
+  async function copyText(text, btn) {
+    const old = btn.textContent;
+    try { await navigator.clipboard.writeText(text); btn.textContent = "Copied"; }
+    catch (e) { prompt("Copy this:", text); }
+    setTimeout(() => (btn.textContent = old), 1800);
+  }
+  let made = [];
+  $("cr-made").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-copy]");
+    if (!b) return;
+    const [i, field] = b.dataset.copy.split(":"), c = made[+i];
+    if (c) copyText(field === "prompt" ? c.gemini.prompt : c[field], b);
+  });
+  function renderCreated(src) {
+    made = src.ok && Array.isArray(src.data) ? src.data.slice(0, 8) : [];
+    $("cr-made").innerHTML = made.map((c, i) => {
+      const img = `${SITE}deals/${encodeURIComponent(c.slug)}/${c.story ? "story" : "card"}.jpg`;
+      const reel = c.reel_link ? `<a href="${safeUrl(c.reel_link)}" target="_blank" rel="noopener">Reel on Instagram</a>`
+        : c.reel ? `<a href="${safeUrl(c.reel)}" target="_blank" rel="noopener">Watch the reel</a>` : "";
+      const gem = c.gemini ? `<button type="button" data-copy="${i}:prompt">Copy Gemini prompt</button><a href="${safeUrl(c.gemini.upload)}" target="_blank" rel="noopener">Upload the video</a>` : "";
+      const story = c.story_link ? `<a href="${safeUrl(c.story_link)}" target="_blank" rel="noopener">Story on Instagram</a>`
+        : c.story ? `<a href="${safeUrl(c.story)}" target="_blank" rel="noopener">Open story image</a><button type="button" data-copy="${i}:link">Copy link for the sticker</button>` : "";
+      return `<div class="card"><img src="${esc(img)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div class="mb"><b>${esc(c.title)}</b><span class="muted">${esc(c.line)} · ${esc(when(parseAt(c.at)))}</span>
+          <div class="chips"><span>${esc(c.store)}</span><span>📌 ${esc(c.board)}</span><span>${num(c.pins)} pins queued</span>${c.photos ? `<span>${num(c.photos)} photos</span>` : ""}</div>
+          ${c.reel_status ? `<span>🎬 ${esc(c.reel_status)}</span>` : ""}${c.story_status ? `<span>📱 Story: ${esc(c.story_status)}</span>` : ""}
+          <div class="acts">${story}${reel}${gem}<button type="button" data-copy="${i}:caption">Copy caption</button><a href="${safeUrl(c.link)}" target="_blank" rel="noopener">Test the link</a></div>
+        </div></div>`;
+    }).join("");
+  }
+
+  // ---------- This week's kit (data/weekly_kit.json; uploads -> data/looks.json; reels -> data/video_plan.json) ----------
+  function renderWeekly(ctx) {
+    const { kit, looks, ig, tree } = ctx;
+    const combos = kit && Array.isArray(kit.combos) ? kit.combos : [];
+    const lookBy = new Map((looks || []).map((l) => [l.id, l]));
+    const inbox = new Set(((tree && tree.tree) || []).map((t) => t.path.split("/")).filter((a) => a[0] === "inbox" && a.length > 2).map((a) => a[1]));
+    const igOk = (ig || []).filter((x) => x.ok);
+    const inCarousel = new Set(igOk.filter((x) => (x.key || "").startsWith("carousel:")).flatMap((x) => x.key.slice(9).split(",")));
+    const reelPosted = new Map(igOk.filter((x) => x.link).map((x) => [x.key, x]));
+    const today = istDate(new Date());
+    const dayName = (iso) => new Date(iso + "T00:00:00Z").toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+    // outfit images (a prompt each; Gemini makes the whole image)
+    let made = 0;
+    const card = (c, kind) => {
+      const isReel = kind === "reel";
+      const lk = lookBy.get(c.id), up = inbox.has((isReel ? "reel-" : "look-") + c.id);
+      const post = isReel ? reelPosted.get("reel-" + c.id) : null;
+      const done = isReel ? !!(post || up) : !!(lk || up);
+      const st = isReel
+        ? (post ? `<span class="st done">✓ Posted · <a href="${safeUrl(post.link)}" target="_blank" rel="noopener">open</a></span>`
+           : up ? `<span class="st done">✓ Uploaded · posts on the next reel day</span>` : `<span class="st wait">To make</span>`)
+        : (lk ? `<span class="st done">✓ Made · pin ${lk.pin_day <= today ? "posting" : "on " + esc(dayName(lk.pin_day))}${inCarousel.has(c.id) ? " · in a carousel ✓" : ""}</span>`
+           : up ? `<span class="st done">✓ Uploaded · ready within the hour</span>` : `<span class="st wait">To make</span>`);
+      const thumb = lk ? `<img src="${safeUrl(SITE + "looks/" + c.id + "/pin.jpg")}" alt="${esc(c.name)}" loading="lazy" style="aspect-ratio:4/5;object-fit:cover">` : "";
+      return [done, `<div class="card wk-card">
+        ${isReel ? "" : thumb}
+        <div class="t"><b>${isReel ? "Reel" : num(c.n) + "."} ${esc(c.name)}</b><span class="muted small">${esc(c.gender)}</span></div>
+        <div class="items">${c.pieces.map((x) => esc(x.what)).join(" · ")}</div>
+        ${st}
+        ${done ? (lk && !isReel ? `<div class="row"><a href="${safeUrl(lk.page)}" target="_blank" rel="noopener">See the look page</a></div>` : "") : `<div class="row">
+          <button type="button" class="go" data-copy="${esc(c.id)}|${isReel ? "reel_prompt" : "prompt"}">1. Copy ${isReel ? "video" : "image"} prompt</button>
+          <a href="https://gemini.google.com" target="_blank" rel="noopener">2. Gemini</a>
+          <a class="go" href="${safeUrl(isReel ? c.reel_upload : c.upload)}" target="_blank" rel="noopener">3. Upload ↗</a></div>`}
+      </div>`];
+    };
+    $("wk-combos").innerHTML = combos.map((c) => { const [d, h] = card(c, "look"); if (d) made++; return h; }).join("")
+      || `<p class="muted">The kit is made on Monday with the week's trends.</p>`;
+    $("wk-img-count").textContent = combos.length ? `· ${made} of ${combos.length} made` : "";
+    const reels = ((kit && kit.reels) || []).map((id) => combos.find((c) => c.id === id)).filter(Boolean);
+    let reelsMade = 0;
+    $("wk-reels").innerHTML = reels.map((c) => { const [d, h] = card(c, "reel"); if (d) reelsMade++; return h; }).join("")
+      || `<p class="muted">Reels for the week appear on Monday.</p>`;
+    $("wk-reel-count").textContent = reels.length ? `· ${reelsMade} of ${reels.length} made` : "";
+    document.querySelectorAll("#wk-combos button[data-copy], #wk-reels button[data-copy]").forEach((b) => (b.onclick = () => {
+      const [id, field] = b.dataset.copy.split("|"), c = combos.find((x) => x.id === id); if (c) copyText(c[field], b);
+    }));
+    // the week at a glance
+    const start = kit && kit.week ? kit.week : today;
+    const pinsBy = {};
+    (looks || []).forEach((l) => (pinsBy[l.pin_day] = (pinsBy[l.pin_day] || 0) + 1));
+    const days = lastDays(7, new Date(new Date(start + "T00:00:00Z").getTime() + 6 * 86400e3).toISOString().slice(0, 10));
+    $("wk-plan").innerHTML = `<div class="wk-bar"><span>🖼️ <b>${made}</b> of ${combos.length || 14} outfit images</span><span>🎬 <b>${reelsMade}</b> of ${reels.length || 4} reels</span>
+        <span class="muted">Instagram: reels Mon, Wed, Fri, Sun · carousels Tue, Thu, Sat · Pinterest: 2 outfit pins a day</span></div>
+      <div class="wk-days">${days.map((d) => {
+        const wd = new Date(d + "T00:00:00Z").getUTCDay();  // 0 Sun ... 6 Sat
+        const igKind = [2, 4, 6].includes(wd) ? "🖼️ Carousel" : "🎬 Reel";
+        return `<div class="${d === today ? "today" : ""}"><b>${esc(dayName(d))}</b>${igKind}<br><span class="muted">📌 ${num(pinsBy[d] || 0)} outfit pins</span></div>`;
+      }).join("")}</div>`;
+  }
+
+  // ---------- tabs (the section's tab opens for a #section link; remembered per browser) ----------
+  const TAB_OF = {};
+  document.querySelectorAll("section[data-tab]").forEach((sec) => (TAB_OF[sec.id] = sec.dataset.tab));
+  const TAB_NAMES = [...document.querySelectorAll("nav.jump [data-tab]")].map((a) => a.dataset.tab);
+  function showTab(tab, scrollTo) {
+    if (!TAB_NAMES.includes(tab)) tab = "overview";
+    document.querySelectorAll("section[data-tab]").forEach((sec) => (sec.hidden = sec.dataset.tab !== tab));
+    document.querySelectorAll("nav.jump [data-tab]").forEach((a) => a.setAttribute("aria-selected", a.dataset.tab === tab ? "true" : "false"));
+    try { localStorage.setItem("cr-tab", tab); } catch (e) {}
+    requestAnimationFrame(() => {  // charts drawn while hidden had no width: draw the visible ones again
+      document.querySelectorAll(`section[data-tab="${tab}"] .chart`).forEach((el) => el._chart && chart(el, ...el._chart));
+      if (scrollTo) $(scrollTo)?.scrollIntoView({ block: "start" });
+    });
+  }
+  function tabFromHash() {
+    const h = decodeURIComponent(location.hash.slice(1));
+    if (TAB_NAMES.includes(h)) return showTab(h);
+    if (TAB_OF[h]) return showTab(TAB_OF[h], h);
+    let saved = "";
+    try { saved = localStorage.getItem("cr-tab") || ""; } catch (e) {}
+    showTab(saved);
+  }
+  document.querySelectorAll("nav.jump [data-tab]").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    history.replaceState(null, "", "#" + a.dataset.tab);
+    showTab(a.dataset.tab);
+  }));
+  addEventListener("hashchange", tabFromHash);
+  tabFromHash();
+
+  // ---------- load ----------
+  let gen = 0, loading = false;
+  async function load() {
+    if (loading) return;
+    loading = true; $("refresh").disabled = true;
+    const my = ++gen;
+    try {
+      const [themesS, queueS, postedS, igS, anaS, ekS, histS, treeS, runsS, createdS, planS, kitS, looksS] = await Promise.all([
+        source("themes", RAW + "data/themes.json"), source("queue", RAW + "data/queue.json"),
+        source("posted", RAW + "data/posted.json"), source("ig", RAW + "data/ig_posted.json"),
+        source("analytics", RAW + "data/analytics/latest.json"), source("earnings", RAW + "data/earnings/latest.json"),
+        source("history", RAW + "data/earnings/history.json"),
+        source("tree", `${API}/git/trees/master?recursive=1`, API_EVERY), source("runs", `${API}/actions/runs?per_page=60`, API_EVERY),
+        source("created", RAW + "data/created.json"), source("videoplan", RAW + "data/video_plan.json"),
+        source("weeklykit", RAW + "data/weekly_kit.json"), source("looks", RAW + "data/looks.json"),
+      ]);
+      if (my !== gen) return;
+      // Before the first daily job writes latest.json, fall back to the newest dated analytics file
+      let ana = anaS;
+      if (ana.ok && !ana.data && treeS.ok && treeS.data) {
+        const files = (treeS.data.tree || []).map((t) => t.path).filter((p) => /^data\/analytics\/\d{4}-\d{2}-\d{2}\.json$/.test(p)).sort();
+        if (files.length) ana = await source("analytics-dated", RAW + files[files.length - 1]);
+        if (my !== gen) return;
+      }
+      const A = [];
+      const themes = themesS.ok && Array.isArray(themesS.data) ? themesS.data : [];
+      const run = (f) => { try { return f(); } catch (e) { console.error(e); } };
+      const ek = run(() => renderMoney(A, ekS, histS));
+      const rep = run(() => renderPinterest(A, ana));
+      run(() => renderFunnel(rep, ek));
+      run(() => renderPosting(A, queueS, postedS, themes));
+      run(() => renderInstagram(A, igS, treeS, themes));
+      run(() => renderTrends(themes, queueS.data, postedS.data));
+      run(() => renderWorkflows(A, runsS));
+      run(() => renderHealth(runsS));
+      run(() => renderCreated(createdS));
+      run(() => renderWeekly({ kit: kitS.ok ? kitS.data : null, looks: looksS.ok ? looksS.data : null, plan: planS.ok ? planS.data : null,
+                               ig: igS.ok ? igS.data : null, tree: treeS.ok ? treeS.data : null }));
+      run(() => { const a = renderAmazon(); if (a) A.push(a); });
+      run(() => renderGoals({ hist: histS.ok ? histS.data : null, rep: ana.ok ? ana.data : null,
+                               posted: postedS.ok ? postedS.data : null, ig: igS.ok ? igS.data : null }));
+      const bad = [["themes", themesS], ["pin queue", queueS], ["posted pins", postedS], ["Instagram log", igS], ["Pinterest numbers", ana], ["EarnKaro numbers", ekS]]
+        .filter(([, s]) => !s.ok).map(([n]) => n);
+      const stale = [themesS, queueS, postedS, igS, ana, ekS].some((s) => s.stale);
+      if (bad.length) A.push(["warning", `<b>Couldn't load ${esc(bad.join(", "))} just now.</b> Those parts may be empty; the page tries again every 5 minutes.`]);
+      else if (stale) A.push(["warning", `<b>GitHub didn't answer this refresh</b>, so some numbers are from the previous load.`]);
+      if (!A.length) A.push(["good", "<b>All good.</b> Nothing needs your attention right now."]);
+      $("alerts").innerHTML = A.map(([level, html]) => `<div class="alert ${level}"><span class="ico" aria-hidden="true">${level === "good" ? "✓" : "!"}</span><div><span class="vh">${level === "critical" ? "Problem: " : level === "warning" ? "Check: " : ""}</span>${html}</div></div>`).join("");
+      $("updated").textContent = `Live · loaded ${new Date().toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata", hour: "numeric", minute: "2-digit" })} IST`;
+    } finally {
+      if (my === gen) { loading = false; $("refresh").disabled = false; }
+    }
+  }
+
+  // theme toggle (kept per browser)
+  const root = document.documentElement;
+  try { const t = localStorage.getItem("cr-theme"); if (t) root.dataset.theme = t; } catch (e) {}
+  $("theme").addEventListener("click", () => {
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("cr-theme", root.dataset.theme); } catch (e) {}
+  });
+  $("refresh").addEventListener("click", () => { delete store.tree; delete store.runs; load(); });
+  let resizeTimer;
+  addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => document.querySelectorAll(".chart").forEach((el) => el._chart && chart(el, ...el._chart)), 150);
+  });
+  // refresh every 5 minutes while the tab is visible, and right away when it comes back
+  setInterval(() => { if (!document.hidden) load(); }, DATA_EVERY);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - (store.posted?.at || 0) > DATA_EVERY) load(); });
+  load();
+})();
+</script>
+</body>
+</html>
